@@ -77,7 +77,49 @@ Public Class FrmHome
 
     Private m_ChildFormNumber As Integer
 
-    Private Sub OptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OptionsToolStripMenuItem.Click
 
-    End Sub
+    'enfoca a login'
+
+    Private _IdUsuario As String
+    Private _IdRol As String
+    Private _Rol As String
+    Private _Nombre As String
+
+    Public Property IdUsuario As String
+        Get
+            Return _IdUsuario
+        End Get
+        Set(value As String)
+            _IdUsuario = value
+        End Set
+    End Property
+
+    Public Property IdRol As String
+        Get
+            Return _IdRol
+        End Get
+        Set(value As String)
+            _IdRol = value
+        End Set
+    End Property
+
+    Public Property Rol As String
+        Get
+            Return _Rol
+        End Get
+        Set(value As String)
+            _Rol = value
+        End Set
+    End Property
+
+    Public Property Nombre As String
+        Get
+            Return _Nombre
+        End Get
+        Set(value As String)
+            _Nombre = value
+        End Set
+    End Property
+
+    'fin de login '
 End Class

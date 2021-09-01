@@ -32,11 +32,11 @@ Partial Class FrmLogin
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,7 +61,7 @@ Partial Class FrmLogin
         Me.Txt_Usuario.Animated = True
         Me.Txt_Usuario.BorderRadius = 13
         Me.Txt_Usuario.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Txt_Usuario.DefaultText = ""
+        Me.Txt_Usuario.DefaultText = "hever"
         Me.Txt_Usuario.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Txt_Usuario.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.Txt_Usuario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
@@ -81,6 +81,7 @@ Partial Class FrmLogin
         Me.Txt_Usuario.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.Txt_Usuario.PlaceholderText = "Digite Su Usuario"
         Me.Txt_Usuario.SelectedText = ""
+        Me.Txt_Usuario.SelectionStart = 5
         Me.Txt_Usuario.ShadowDecoration.Parent = Me.Txt_Usuario
         Me.Txt_Usuario.Size = New System.Drawing.Size(367, 41)
         Me.Txt_Usuario.TabIndex = 115
@@ -94,7 +95,7 @@ Partial Class FrmLogin
         Me.Txt_Clave.Animated = True
         Me.Txt_Clave.BorderRadius = 13
         Me.Txt_Clave.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Txt_Clave.DefaultText = ""
+        Me.Txt_Clave.DefaultText = "12345"
         Me.Txt_Clave.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Txt_Clave.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.Txt_Clave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
@@ -104,7 +105,7 @@ Partial Class FrmLogin
         Me.Txt_Clave.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Txt_Clave.FocusedState.Parent = Me.Txt_Clave
         Me.Txt_Clave.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.Txt_Clave.ForeColor = System.Drawing.Color.White
+        Me.Txt_Clave.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(197, Byte), Integer))
         Me.Txt_Clave.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Txt_Clave.HoverState.Parent = Me.Txt_Clave
         Me.Txt_Clave.Location = New System.Drawing.Point(667, 338)
@@ -114,6 +115,7 @@ Partial Class FrmLogin
         Me.Txt_Clave.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.Txt_Clave.PlaceholderText = "Contraseña"
         Me.Txt_Clave.SelectedText = ""
+        Me.Txt_Clave.SelectionStart = 5
         Me.Txt_Clave.ShadowDecoration.Parent = Me.Txt_Clave
         Me.Txt_Clave.Size = New System.Drawing.Size(367, 41)
         Me.Txt_Clave.TabIndex = 116
@@ -140,7 +142,7 @@ Partial Class FrmLogin
         Me.btn_IniciarSesion.ShadowDecoration.Parent = Me.btn_IniciarSesion
         Me.btn_IniciarSesion.Size = New System.Drawing.Size(253, 53)
         Me.btn_IniciarSesion.TabIndex = 118
-        Me.btn_IniciarSesion.Text = "INICIAR SESIÓN"
+        Me.btn_IniciarSesion.Text = "Iniciar Sesión"
         '
         'Guna2Button1
         '
@@ -186,47 +188,6 @@ Partial Class FrmLogin
         Me.Label2.TabIndex = 122
         Me.Label2.Text = "Dr. Zahaj"
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox2.BackColor = System.Drawing.Color.Silver
-        Me.PictureBox2.Image = Global.Capa_Presentacion.My.Resources.Resources.user
-        Me.PictureBox2.Location = New System.Drawing.Point(732, 88)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(232, 171)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 123
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(37, Byte), Integer))
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(124, 77)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(256, 309)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 121
-        Me.PictureBox1.TabStop = False
-        '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Guna2PictureBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(37, Byte), Integer))
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(530, 596)
-        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Guna2PictureBox1.TabIndex = 1
-        Me.Guna2PictureBox1.TabStop = False
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -250,6 +211,47 @@ Partial Class FrmLogin
         Me.Label4.Size = New System.Drawing.Size(147, 35)
         Me.Label4.TabIndex = 125
         Me.Label4.Text = "Bienvenido"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox2.BackColor = System.Drawing.Color.Silver
+        Me.PictureBox2.Image = Global.Capa_Presentacion.My.Resources.Resources.user
+        Me.PictureBox2.Location = New System.Drawing.Point(732, 88)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(232, 171)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 123
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(37, Byte), Integer))
+        Me.PictureBox1.Image = Global.Capa_Presentacion.My.Resources.Resources.iglesia
+        Me.PictureBox1.Location = New System.Drawing.Point(124, 77)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(256, 309)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 121
+        Me.PictureBox1.TabStop = False
+        '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Guna2PictureBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(37, Byte), Integer))
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(530, 596)
+        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Guna2PictureBox1.TabIndex = 1
+        Me.Guna2PictureBox1.TabStop = False
         '
         'FrmLogin
         '
