@@ -27,7 +27,7 @@ Public Class Clase_Conecta
         Dim C As SqlCommand
 
         'DESARROLLO
-        oConex = New SqlConnection("Initial Catalog=DB_Hospedaje;Data Source=(local);Integrated Security = true")
+        oConex = New SqlConnection("Initial Catalog=BD_Parroquia;Data Source=(local);Integrated Security = true")
         oConex.Open()
         C = oConex.CreateCommand()
         C.CommandText = "SET DATEFORMAT DMY"

@@ -2,19 +2,62 @@
 
 Public Class FrmHome
 
-    Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs) Handles NewToolStripButton.Click, NewWindowToolStripMenuItem.Click
-        ' Cree una nueva instancia del formulario secundario.
-        Dim ChildForm As New System.Windows.Forms.Form
-        ' Conviértalo en un elemento secundario de este formulario MDI antes de mostrarlo.
-        ChildForm.MdiParent = Me
+    'muestra el roly y nombre
+    Private Sub FrmHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ''  Handles MyBase.MouseMove '' aca puedes agregar mas controles que quieras usar para mover el formulario ej: label1.MouseMove
 
-        m_ChildFormNumber += 1
-        ChildForm.Text = "Ventana " & m_ChildFormNumber
 
-        ChildForm.Show()
+        'mostrara el menu principal de estado habitaciones
+        ''Dim frm As New FrmMostrarEstadoHabitacion
+        ''frm.MdiParent = Me
+        ''frm.Show()"
+
+        NombreDelUsuarioSegunSuRolToolStripMenuItem.Text = "Bienvenido " & Me.Rol + " " + Me.Nombre
+
+        If (Me.Rol = "Padre") Then
+            MenuRegistro.Enabled = True
+            MenuUsuarios.Enabled = True
+        ElseIf (Me.Rol = "Secretaria") Then
+            MenuRegistro.Enabled = False
+            MenuUsuarios.Enabled = False
+        Else
+            MenuRegistro.Enabled = False
+            MenuUsuarios.Enabled = False
+        End If
+    End Sub
+    ' Fin mostrar el roly y nombre
+
+    'desabilitar el boton cerrar de form'
+    Dim _enabledCerrar As Boolean = False
+    <System.ComponentModel.DefaultValue(False), System.ComponentModel.Description("Define si se habilita el botón cerrar en el formulario")>
+    Public Property EnabledCerrar() As Boolean
+        Get
+            Return _enabledCerrar
+        End Get
+        Set(ByVal Value As Boolean)
+            If _enabledCerrar <> Value Then
+                _enabledCerrar = Value
+            End If
+        End Set
+    End Property
+    Protected Overrides ReadOnly Property CreateParams() As CreateParams
+        Get
+            Dim cp As CreateParams = MyBase.CreateParams
+            If _enabledCerrar = False Then
+                Const CS_NOCLOSE As Integer = &H200
+                cp.ClassStyle = cp.ClassStyle Or CS_NOCLOSE
+            End If
+            Return cp
+        End Get
+    End Property
+    'fin   desabilitar el boton cerrar de form'
+    Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs) Handles UsuariosParroquiaToolStripMenuItem.Click
+        Dim frm As New FrmUsuario
+        frm.MdiParent = Me
+        frm.Show()
     End Sub
 
-    Private Sub OpenFile(ByVal sender As Object, ByVal e As EventArgs) Handles OpenToolStripButton.Click
+    Private Sub OpenFile(ByVal sender As Object, ByVal e As EventArgs)
         Dim OpenFileDialog As New OpenFileDialog
         OpenFileDialog.InitialDirectory = My.Computer.FileSystem.SpecialDirectories.MyDocuments
         OpenFileDialog.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*"
@@ -120,6 +163,14 @@ Public Class FrmHome
             _Nombre = value
         End Set
     End Property
+
+    Private Sub SALIRToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SALIRToolStripMenuItem.Click
+        If (MsgBox("CERRAR SESIÓN", vbYesNo + vbExclamation, "Cerrar Sistema Parroquia") = vbYes) Then
+            Me.Close()
+            End
+        End If
+    End Sub
+
 
     'fin de login '
 End Class

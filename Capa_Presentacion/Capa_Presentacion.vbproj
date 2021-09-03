@@ -51,6 +51,9 @@
     <ApplicationIcon>ico.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.2.0, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.2\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
@@ -91,6 +94,12 @@
     <Compile Include="FrmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmUsuario.Designer.vb">
+      <DependentUpon>FrmUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -115,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuario.resx">
+      <DependentUpon>FrmUsuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -151,6 +163,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ico.ico" />
+    <None Include="Resources\usuario.png" />
+    <None Include="Resources\candado.png" />
+    <None Include="Resources\editar.png" />
+    <None Include="Resources\BLOCK.png" />
     <None Include="Resources\iglesia.png" />
     <None Include="Resources\user.png" />
   </ItemGroup>

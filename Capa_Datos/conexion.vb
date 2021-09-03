@@ -9,7 +9,7 @@ Public Class conexion
     Public Function Abrir() As SqlConnection
         Try
             Dim sql As String
-            sql = "Data Source = (Local); Initial Catalog = DB_Hospedaje; Integrated Security = true"
+            sql = "Data Source = (Local); Initial Catalog = BD_Parroquia; Integrated Security = true"
             con = New SqlConnection(sql)
             con.Open()
             conx = 0
