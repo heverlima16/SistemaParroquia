@@ -1,16 +1,14 @@
 ﻿Public Class EUsuario
+#Region "campos"
     Private _IdUsuario As Integer
     Private _IdRol As Integer
-    Private _Nombre As String
-    Private _TipoDocumento As String
-    Private _NumDocumento As String
-    Private _Direccion As String
-    Private _Telefono As String
-    Private _Email As String
-    Private _Clave As String
-    Private _Estado As Boolean
-    Private _Rol As String
-
+    Private _Usuario_Nombre As String
+    Private _Usuario_NickName As String
+    Private _Usuario_Clave As String
+    Private _Usuario_Estado As Boolean
+    Private _Usuario_Rol As String
+#End Region
+#Region "propiedades"
     Public Property IdUsuario As Integer
         Get
             Return _IdUsuario
@@ -29,83 +27,49 @@
         End Set
     End Property
 
-    Public Property Nombre As String
+    Public Property Usuario_Nombre As String
         Get
-            Return _Nombre
+            Return _Usuario_Nombre
         End Get
         Set(value As String)
-            _Nombre = value
+            _Usuario_Nombre = value
         End Set
     End Property
 
-    Public Property TipoDocumento As String
+    Public Property Usuario_NickName As String
         Get
-            Return _TipoDocumento
+            Return _Usuario_NickName
         End Get
         Set(value As String)
-            _TipoDocumento = value
+            _Usuario_NickName = value
         End Set
     End Property
 
-    Public Property NumDocumento As String
+    Public Property Usuario_Clave As String
         Get
-            Return _NumDocumento
+            Return _Usuario_Clave
         End Get
         Set(value As String)
-            _NumDocumento = value
+            _Usuario_Clave = value
         End Set
     End Property
 
-    Public Property Direccion As String
+    Public Property Usuario_Estado As Boolean
         Get
-            Return _Direccion
-        End Get
-        Set(value As String)
-            _Direccion = value
-        End Set
-    End Property
-
-    Public Property Telefono As String
-        Get
-            Return _Telefono
-        End Get
-        Set(value As String)
-            _Telefono = value
-        End Set
-    End Property
-
-    Public Property Email As String
-        Get
-            Return _Email
-        End Get
-        Set(value As String)
-            _Email = value
-        End Set
-    End Property
-
-    Public Property Clave As String
-        Get
-            Return _Clave
-        End Get
-        Set(value As String)
-            _Clave = value
-        End Set
-    End Property
-
-    Public Property Estado As Boolean
-        Get
-            Return _Estado
+            Return _Usuario_Estado
         End Get
         Set(value As Boolean)
-            _Estado = value
+            _Usuario_Estado = value
         End Set
     End Property
-    Public Property Rol As String
+
+    Public Property Usuario_Rol As String
         Get
-            Return _Rol
+            Return _Usuario_Rol
         End Get
         Set(value As String)
-            _Rol = value
+            _Usuario_Rol = value
         End Set
     End Property
+#End Region
 End Class

@@ -1,9 +1,9 @@
 ﻿Imports Capa_Datos
 Imports Capa_Entidades
-Public Class NUsuario
+Public Class NSacerdote
     Public Function Listar() As DataTable
         Try
-            Dim Datos As New DUsuario
+            Dim Datos As New DSacerdote
             Dim Tabla As New DataTable
             Tabla = Datos.Listar()
             Return Tabla
@@ -15,7 +15,7 @@ Public Class NUsuario
 
     Public Function Buscar(Valor As String) As DataTable
         Try
-            Dim Datos As New DUsuario
+            Dim Datos As New DSacerdote
             Dim Tabla As New DataTable
             Tabla = Datos.Buscar(Valor)
             Return Tabla
@@ -25,9 +25,9 @@ Public Class NUsuario
         End Try
     End Function
 
-    Public Function Insertar(Obj As EUsuario) As Boolean
+    Public Function Insertar(Obj As ESacerdote) As Boolean
         Try
-            Dim Datos As New DUsuario
+            Dim Datos As New DSacerdote
             Datos.Insertar(Obj)
             Return True
         Catch ex As Exception
@@ -36,9 +36,9 @@ Public Class NUsuario
         End Try
     End Function
 
-    Public Function Actualizar(Obj As EUsuario) As Boolean
+    Public Function Actualizar(Obj As ESacerdote) As Boolean
         Try
-            Dim Datos As New DUsuario
+            Dim Datos As New DSacerdote
             Datos.Actualizar(Obj)
             Return True
         Catch ex As Exception
@@ -49,13 +49,12 @@ Public Class NUsuario
 
     Public Function Eliminar(Id As Integer) As Boolean
         Try
-            Dim Datos As New DUsuario
+            Dim Datos As New DSacerdote
             Datos.Eliminar(Id)
             Return True
         Catch ex As Exception
-            MsgBox("No se ha podido Eliminar el Usuario, Porque", vbOKOnly + vbInformation, "Falló la Eliminacion")
+            MsgBox("No se ha podido Eliminar", vbOKOnly + vbInformation, "Falló la Eliminacion")
             Return False
         End Try
     End Function
-
 End Class

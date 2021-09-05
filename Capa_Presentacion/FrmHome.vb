@@ -164,7 +164,9 @@ Public Class FrmHome
         End Set
     End Property
 
-    Private Sub SALIRToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SALIRToolStripMenuItem.Click
+
+
+    Private Sub IconButtonCerrarSesion_Click(sender As Object, e As EventArgs) Handles IconButtonCerrarSesion.Click
         If (MsgBox("CERRAR SESIÓN", vbYesNo + vbExclamation, "Cerrar Sistema Parroquia") = vbYes) Then
             Me.Close()
             End

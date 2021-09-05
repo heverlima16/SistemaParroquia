@@ -1,6 +1,6 @@
 ﻿Imports Capa_Entidades
 Imports System.Data.SqlClient
-Public Class DUsuario
+Public Class DSacerdote
     'heredacion
     Inherits conexion
 
@@ -8,7 +8,7 @@ Public Class DUsuario
         Try
             Dim Resultado As SqlDataReader
             Dim Tabla As New DataTable
-            Dim Comando As New SqlCommand("usuario_listar", MyBase.conn)
+            Dim Comando As New SqlCommand("sacerdote_listar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
             MyBase.conn.Open()
             Resultado = Comando.ExecuteReader()
@@ -24,7 +24,7 @@ Public Class DUsuario
         Try
             Dim Resultado As SqlDataReader
             Dim Tabla As New DataTable
-            Dim Comando As New SqlCommand("usuario_buscar", MyBase.conn)
+            Dim Comando As New SqlCommand("sacerdote_buscar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
             Comando.Parameters.Add("@valor", SqlDbType.VarChar).Value = Valor
             MyBase.conn.Open()
@@ -41,14 +41,12 @@ Public Class DUsuario
 
     '' End Function"
 
-    Public Sub Insertar(Obj As EUsuario)
+    Public Sub Insertar(Obj As ESacerdote)
         Try
-            Dim Comando As New SqlCommand("usuario_insertar", MyBase.conn)
+            Dim Comando As New SqlCommand("sacerdote_insertar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
-            Comando.Parameters.Add("@idrol", SqlDbType.Int).Value = Obj.IdRol
-            Comando.Parameters.Add("@usu_nombre", SqlDbType.VarChar).Value = Obj.Usuario_Nombre
-            Comando.Parameters.Add("@usu_nickname", SqlDbType.VarChar).Value = Obj.Usuario_NickName
-            Comando.Parameters.Add("@usu_clave", SqlDbType.VarChar).Value = Obj.Usuario_Clave
+            Comando.Parameters.Add("@idsacerdote", SqlDbType.Int).Value = Obj.IdSacerdote
+            Comando.Parameters.Add("@sa_nombre", SqlDbType.VarChar).Value = Obj.Sacerdote_Nombre
             MyBase.conn.Open()
             Comando.ExecuteReader()
             MyBase.conn.Close()
@@ -57,15 +55,12 @@ Public Class DUsuario
         End Try
     End Sub
 
-    Public Sub Actualizar(Obj As EUsuario)
+    Public Sub Actualizar(Obj As ESacerdote)
         Try
-            Dim Comando As New SqlCommand("usuario_actualizar", MyBase.conn)
+            Dim Comando As New SqlCommand("sacerdote_actualizar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
-            Comando.Parameters.Add("@idusuario", SqlDbType.Int).Value = Obj.IdUsuario
-            Comando.Parameters.Add("@idrol", SqlDbType.Int).Value = Obj.IdRol
-            Comando.Parameters.Add("@usu_nombre", SqlDbType.VarChar).Value = Obj.Usuario_Nombre
-            Comando.Parameters.Add("@usu_nickname", SqlDbType.VarChar).Value = Obj.Usuario_NickName
-            Comando.Parameters.Add("@usu_clave", SqlDbType.VarChar).Value = Obj.Usuario_Clave
+            Comando.Parameters.Add("@idsacerdote", SqlDbType.Int).Value = Obj.IdSacerdote
+            Comando.Parameters.Add("@sa_nombre", SqlDbType.VarChar).Value = Obj.Sacerdote_Nombre
             MyBase.conn.Open()
             Comando.ExecuteReader()
             MyBase.conn.Close()
@@ -76,9 +71,9 @@ Public Class DUsuario
 
     Public Sub Eliminar(Id As Integer)
         Try
-            Dim Comando As New SqlCommand("usuario_eliminar", MyBase.conn)
+            Dim Comando As New SqlCommand("sacerdote_eliminar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
-            Comando.Parameters.Add("@idusuario", SqlDbType.Int).Value = Id
+            Comando.Parameters.Add("@idsacerdote", SqlDbType.Int).Value = Id
             MyBase.conn.Open()
             Comando.ExecuteReader()
             MyBase.conn.Close()
