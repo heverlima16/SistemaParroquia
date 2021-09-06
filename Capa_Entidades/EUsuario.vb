@@ -5,10 +5,8 @@
     Private _Usuario_Nombre As String
     Private _Usuario_NickName As String
     Private _Usuario_Clave As String
-    Private _Usuario_Estado As Boolean
     Private _Usuario_Rol As String
-#End Region
-#Region "propiedades"
+
     Public Property IdUsuario As Integer
         Get
             Return _IdUsuario
@@ -51,15 +49,6 @@
         End Get
         Set(value As String)
             _Usuario_Clave = value
-        End Set
-    End Property
-
-    Public Property Usuario_Estado As Boolean
-        Get
-            Return _Usuario_Estado
-        End Get
-        Set(value As Boolean)
-            _Usuario_Estado = value
         End Set
     End Property
 

@@ -14,18 +14,15 @@
             If (Obj Is Nothing) Then
                 MsgBox("No existe un usuario con ese email o clave", vbOKOnly + vbCritical, "Datos incorrectos")
             Else
-                If (Obj.Estado = False) Then
-                    MsgBox("El usuario no esta activo", vbOKOnly + vbCritical, "Usuario no tiene acceso")
-                Else
-                    Me.Hide()
-                    FrmHome.IdUsuario = Obj.IdUsuario
-                    'aki capturamos
-                    Variables2.IdUsuario = Obj.IdUsuario
-                    FrmHome.IdRol = Obj.IdRol
-                    FrmHome.Rol = Obj.Rol
-                    FrmHome.Nombre = Obj.Nombre
-                    FrmHome.Show()
-                End If
+                Me.Hide()
+                FrmHome.IdUsuario = Obj.IdUsuario
+                'aki capturamos
+                Variables2.IdUsuario = Obj.IdUsuario
+                FrmHome.IdRol = Obj.IdRol
+                FrmHome.Rol = Obj.Usuario_Rol
+                FrmHome.Nombre = Obj.Usuario_Nombre
+                FrmHome.Show()
+
             End If
         Catch ex As Exception
             MsgBox(ex.Message)

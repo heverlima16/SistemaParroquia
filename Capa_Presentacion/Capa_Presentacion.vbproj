@@ -82,16 +82,34 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmFoja.Designer.vb">
+      <DependentUpon>FrmFoja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFoja.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmHome.Designer.vb">
       <DependentUpon>FrmHome.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmHome.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmLibro.Designer.vb">
+      <DependentUpon>FrmLibro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLibro.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmLogin.Designer.vb">
       <DependentUpon>FrmLogin.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSacerdote.Designer.vb">
+      <DependentUpon>FrmSacerdote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSacerdote.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmUsuario.Designer.vb">
@@ -119,11 +137,20 @@
     <Compile Include="Variables.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmFoja.resx">
+      <DependentUpon>FrmFoja.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLibro.resx">
+      <DependentUpon>FrmLibro.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSacerdote.resx">
+      <DependentUpon>FrmSacerdote.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUsuario.resx">
       <DependentUpon>FrmUsuario.vb</DependentUpon>

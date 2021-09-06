@@ -30,6 +30,7 @@ Partial Class FrmHome
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegistrarLugaresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegistrarNumeroLibroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegistrarNumeroFajoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuUsuarios = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosParroquiaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NombreDelUsuarioSegunSuRolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -37,15 +38,15 @@ Partial Class FrmHome
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.IconButtonCerrarSesion = New FontAwesome.Sharp.IconButton()
+        Me.IconButton6 = New FontAwesome.Sharp.IconButton()
+        Me.IconButton5 = New FontAwesome.Sharp.IconButton()
+        Me.IconButton4 = New FontAwesome.Sharp.IconButton()
+        Me.IconButton2 = New FontAwesome.Sharp.IconButton()
         Me.IconButton1 = New FontAwesome.Sharp.IconButton()
         Me.PanelLogo = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.IconButton2 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton4 = New FontAwesome.Sharp.IconButton()
-        Me.RegistrarNumeroFajoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.IconButton5 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton6 = New FontAwesome.Sharp.IconButton()
-        Me.IconButtonCerrarSesion = New FontAwesome.Sharp.IconButton()
+        Me.RegistrarSacerdoteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.PanelMenu.SuspendLayout()
@@ -66,7 +67,7 @@ Partial Class FrmHome
         '
         'MenuRegistro
         '
-        Me.MenuRegistro.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OptionsToolStripMenuItem, Me.RegistrarLugaresToolStripMenuItem, Me.RegistrarNumeroLibroToolStripMenuItem, Me.RegistrarNumeroFajoToolStripMenuItem})
+        Me.MenuRegistro.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OptionsToolStripMenuItem, Me.RegistrarLugaresToolStripMenuItem, Me.RegistrarNumeroLibroToolStripMenuItem, Me.RegistrarNumeroFajoToolStripMenuItem, Me.RegistrarSacerdoteToolStripMenuItem})
         Me.MenuRegistro.Image = Global.Capa_Presentacion.My.Resources.Resources.editar
         Me.MenuRegistro.Name = "MenuRegistro"
         Me.MenuRegistro.Size = New System.Drawing.Size(118, 27)
@@ -89,6 +90,12 @@ Partial Class FrmHome
         Me.RegistrarNumeroLibroToolStripMenuItem.Name = "RegistrarNumeroLibroToolStripMenuItem"
         Me.RegistrarNumeroLibroToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
         Me.RegistrarNumeroLibroToolStripMenuItem.Text = "Registrar Numero Libro"
+        '
+        'RegistrarNumeroFajoToolStripMenuItem
+        '
+        Me.RegistrarNumeroFajoToolStripMenuItem.Name = "RegistrarNumeroFajoToolStripMenuItem"
+        Me.RegistrarNumeroFajoToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
+        Me.RegistrarNumeroFajoToolStripMenuItem.Text = "Registrar Numero Fajo"
         '
         'MenuUsuarios
         '
@@ -148,6 +155,106 @@ Partial Class FrmHome
         Me.PanelMenu.Size = New System.Drawing.Size(220, 640)
         Me.PanelMenu.TabIndex = 9
         '
+        'IconButtonCerrarSesion
+        '
+        Me.IconButtonCerrarSesion.Dock = System.Windows.Forms.DockStyle.Top
+        Me.IconButtonCerrarSesion.FlatAppearance.BorderSize = 0
+        Me.IconButtonCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButtonCerrarSesion.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconButtonCerrarSesion.IconColor = System.Drawing.Color.Red
+        Me.IconButtonCerrarSesion.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButtonCerrarSesion.IconSize = 32
+        Me.IconButtonCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButtonCerrarSesion.Location = New System.Drawing.Point(0, 450)
+        Me.IconButtonCerrarSesion.Name = "IconButtonCerrarSesion"
+        Me.IconButtonCerrarSesion.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.IconButtonCerrarSesion.Size = New System.Drawing.Size(220, 60)
+        Me.IconButtonCerrarSesion.TabIndex = 12
+        Me.IconButtonCerrarSesion.Text = "Cerrar Sesión"
+        Me.IconButtonCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButtonCerrarSesion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButtonCerrarSesion.UseVisualStyleBackColor = True
+        '
+        'IconButton6
+        '
+        Me.IconButton6.Dock = System.Windows.Forms.DockStyle.Top
+        Me.IconButton6.FlatAppearance.BorderSize = 0
+        Me.IconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton6.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconButton6.IconColor = System.Drawing.Color.Orange
+        Me.IconButton6.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton6.IconSize = 32
+        Me.IconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton6.Location = New System.Drawing.Point(0, 390)
+        Me.IconButton6.Name = "IconButton6"
+        Me.IconButton6.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.IconButton6.Size = New System.Drawing.Size(220, 60)
+        Me.IconButton6.TabIndex = 11
+        Me.IconButton6.Text = "Digitalizar Casados"
+        Me.IconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButton6.UseVisualStyleBackColor = True
+        '
+        'IconButton5
+        '
+        Me.IconButton5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.IconButton5.FlatAppearance.BorderSize = 0
+        Me.IconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton5.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconButton5.IconColor = System.Drawing.Color.Orange
+        Me.IconButton5.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton5.IconSize = 32
+        Me.IconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton5.Location = New System.Drawing.Point(0, 330)
+        Me.IconButton5.Name = "IconButton5"
+        Me.IconButton5.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.IconButton5.Size = New System.Drawing.Size(220, 60)
+        Me.IconButton5.TabIndex = 10
+        Me.IconButton5.Text = "Digitalizar Bautizados"
+        Me.IconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButton5.UseVisualStyleBackColor = True
+        '
+        'IconButton4
+        '
+        Me.IconButton4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.IconButton4.FlatAppearance.BorderSize = 0
+        Me.IconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton4.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconButton4.IconColor = System.Drawing.Color.Orange
+        Me.IconButton4.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton4.IconSize = 32
+        Me.IconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton4.Location = New System.Drawing.Point(0, 270)
+        Me.IconButton4.Name = "IconButton4"
+        Me.IconButton4.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.IconButton4.Size = New System.Drawing.Size(220, 60)
+        Me.IconButton4.TabIndex = 9
+        Me.IconButton4.Text = "------"
+        Me.IconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButton4.UseVisualStyleBackColor = True
+        '
+        'IconButton2
+        '
+        Me.IconButton2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.IconButton2.FlatAppearance.BorderSize = 0
+        Me.IconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconButton2.IconColor = System.Drawing.Color.Orange
+        Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton2.IconSize = 32
+        Me.IconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton2.Location = New System.Drawing.Point(0, 210)
+        Me.IconButton2.Name = "IconButton2"
+        Me.IconButton2.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.IconButton2.Size = New System.Drawing.Size(220, 60)
+        Me.IconButton2.TabIndex = 7
+        Me.IconButton2.Text = "Entregar Partida Matrimonio"
+        Me.IconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButton2.UseVisualStyleBackColor = True
+        '
         'IconButton1
         '
         Me.IconButton1.Dock = System.Windows.Forms.DockStyle.Top
@@ -187,111 +294,11 @@ Partial Class FrmHome
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'IconButton2
+        'RegistrarSacerdoteToolStripMenuItem
         '
-        Me.IconButton2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton2.FlatAppearance.BorderSize = 0
-        Me.IconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconButton2.IconColor = System.Drawing.Color.Orange
-        Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton2.IconSize = 32
-        Me.IconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton2.Location = New System.Drawing.Point(0, 210)
-        Me.IconButton2.Name = "IconButton2"
-        Me.IconButton2.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
-        Me.IconButton2.Size = New System.Drawing.Size(220, 60)
-        Me.IconButton2.TabIndex = 7
-        Me.IconButton2.Text = "Entregar Partida Matrimonio"
-        Me.IconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButton2.UseVisualStyleBackColor = True
-        '
-        'IconButton4
-        '
-        Me.IconButton4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton4.FlatAppearance.BorderSize = 0
-        Me.IconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton4.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconButton4.IconColor = System.Drawing.Color.Orange
-        Me.IconButton4.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton4.IconSize = 32
-        Me.IconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton4.Location = New System.Drawing.Point(0, 270)
-        Me.IconButton4.Name = "IconButton4"
-        Me.IconButton4.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
-        Me.IconButton4.Size = New System.Drawing.Size(220, 60)
-        Me.IconButton4.TabIndex = 9
-        Me.IconButton4.Text = "------"
-        Me.IconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButton4.UseVisualStyleBackColor = True
-        '
-        'RegistrarNumeroFajoToolStripMenuItem
-        '
-        Me.RegistrarNumeroFajoToolStripMenuItem.Name = "RegistrarNumeroFajoToolStripMenuItem"
-        Me.RegistrarNumeroFajoToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
-        Me.RegistrarNumeroFajoToolStripMenuItem.Text = "Registrar Numero Fajo"
-        '
-        'IconButton5
-        '
-        Me.IconButton5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton5.FlatAppearance.BorderSize = 0
-        Me.IconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton5.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconButton5.IconColor = System.Drawing.Color.Orange
-        Me.IconButton5.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton5.IconSize = 32
-        Me.IconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton5.Location = New System.Drawing.Point(0, 330)
-        Me.IconButton5.Name = "IconButton5"
-        Me.IconButton5.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
-        Me.IconButton5.Size = New System.Drawing.Size(220, 60)
-        Me.IconButton5.TabIndex = 10
-        Me.IconButton5.Text = "Digitalizar Bautizados"
-        Me.IconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButton5.UseVisualStyleBackColor = True
-        '
-        'IconButton6
-        '
-        Me.IconButton6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton6.FlatAppearance.BorderSize = 0
-        Me.IconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton6.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconButton6.IconColor = System.Drawing.Color.Orange
-        Me.IconButton6.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton6.IconSize = 32
-        Me.IconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton6.Location = New System.Drawing.Point(0, 390)
-        Me.IconButton6.Name = "IconButton6"
-        Me.IconButton6.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
-        Me.IconButton6.Size = New System.Drawing.Size(220, 60)
-        Me.IconButton6.TabIndex = 11
-        Me.IconButton6.Text = "Digitalizar Casados"
-        Me.IconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButton6.UseVisualStyleBackColor = True
-        '
-        'IconButtonCerrarSesion
-        '
-        Me.IconButtonCerrarSesion.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButtonCerrarSesion.FlatAppearance.BorderSize = 0
-        Me.IconButtonCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButtonCerrarSesion.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconButtonCerrarSesion.IconColor = System.Drawing.Color.Red
-        Me.IconButtonCerrarSesion.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButtonCerrarSesion.IconSize = 32
-        Me.IconButtonCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButtonCerrarSesion.Location = New System.Drawing.Point(0, 450)
-        Me.IconButtonCerrarSesion.Name = "IconButtonCerrarSesion"
-        Me.IconButtonCerrarSesion.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
-        Me.IconButtonCerrarSesion.Size = New System.Drawing.Size(220, 60)
-        Me.IconButtonCerrarSesion.TabIndex = 12
-        Me.IconButtonCerrarSesion.Text = "Cerrar Sesión"
-        Me.IconButtonCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButtonCerrarSesion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButtonCerrarSesion.UseVisualStyleBackColor = True
+        Me.RegistrarSacerdoteToolStripMenuItem.Name = "RegistrarSacerdoteToolStripMenuItem"
+        Me.RegistrarSacerdoteToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
+        Me.RegistrarSacerdoteToolStripMenuItem.Text = "Registrar Sacerdote"
         '
         'FrmHome
         '
@@ -341,4 +348,5 @@ Partial Class FrmHome
     Friend WithEvents IconButtonCerrarSesion As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton6 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton5 As FontAwesome.Sharp.IconButton
+    Friend WithEvents RegistrarSacerdoteToolStripMenuItem As ToolStripMenuItem
 End Class
