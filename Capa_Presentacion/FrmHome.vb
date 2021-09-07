@@ -154,7 +154,7 @@ Public Class FrmHome
     End Sub
 
     Private Sub IconButton4_Click(sender As Object, e As EventArgs) Handles IconButton4.Click
-        Dim frm As New FrmLibro
+        Dim frm As New FrmGivePartBautis
         frm.MdiParent = Me
         frm.Show()
     End Sub
