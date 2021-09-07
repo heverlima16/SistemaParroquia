@@ -1,9 +1,9 @@
 ﻿Imports Capa_Datos
 Imports Capa_Entidades
-Public Class NFoja
+Public Class NLibro
     Public Function Listar() As DataTable
         Try
-            Dim Datos As New DFoja
+            Dim Datos As New DLibro
             Dim Tabla As New DataTable
             Tabla = Datos.Listar()
             Return Tabla
@@ -15,7 +15,7 @@ Public Class NFoja
 
     Public Function Buscar(Valor As String) As DataTable
         Try
-            Dim Datos As New DFoja
+            Dim Datos As New DLibro
             Dim Tabla As New DataTable
             Tabla = Datos.Buscar(Valor)
             Return Tabla
@@ -25,9 +25,9 @@ Public Class NFoja
         End Try
     End Function
 
-    Public Function Insertar(Obj As EFoja) As Boolean
+    Public Function Insertar(Obj As ELibro) As Boolean
         Try
-            Dim Datos As New DFoja
+            Dim Datos As New DLibro
             Datos.Insertar(Obj)
             Return True
         Catch ex As Exception
@@ -41,9 +41,9 @@ Public Class NFoja
         End Try
     End Function
 
-    Public Function Actualizar(Obj As EFoja) As Boolean
+    Public Function Actualizar(Obj As ELibro) As Boolean
         Try
-            Dim Datos As New DFoja
+            Dim Datos As New DLibro
             Datos.Actualizar(Obj)
             Return True
         Catch ex As Exception
@@ -54,7 +54,7 @@ Public Class NFoja
 
     Public Function Eliminar(Id As Integer) As Boolean
         Try
-            Dim Datos As New DFoja
+            Dim Datos As New DLibro
             Datos.Eliminar(Id)
             Return True
         Catch ex As Exception
@@ -63,4 +63,17 @@ Public Class NFoja
         End Try
     End Function
 
+
+
+    Public Function Seleccionar() As DataTable
+        Try
+            Dim Datos As New DLibro
+            Dim Tabla As New DataTable
+            Tabla = Datos.Seleccionar()
+            Return Tabla
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        End Try
+    End Function
 End Class

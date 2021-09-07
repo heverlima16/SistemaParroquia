@@ -1,15 +1,20 @@
 ﻿Public Class FrmFoja
     Private Sub FrmFoja_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.listar()
+        Me.CargarLibro()
     End Sub
 
     Private Sub Formato()
         DgvListado.Columns(0).Visible = False
-        BtnEliminar.Visible = False
-        ChkSeleccionar.Checked = False
-        DgvListado.Columns(0).Visible = False
         DgvListado.Columns(1).Visible = False
 
+
+        BtnEliminar.Visible = False
+        ChkSeleccionar.Checked = False
+        DgvListado.Columns(0).Width = 0
+        DgvListado.Columns(1).Width = 100
+        DgvListado.Columns(2).Width = 100
+        DgvListado.Columns(3).Width = 100
 
     End Sub
     Private Sub listar()
@@ -47,15 +52,29 @@
         TxtAnotaciones.Text = ""
     End Sub
 
+    'L.LIBRO
+    Private Sub CargarLibro()
+        Try
+            Dim Negocio As New Capa_Negocio.NLibro
+            CboLibro.DataSource = Negocio.Seleccionar
+            CboLibro.ValueMember = "idlibro"
+            CboLibro.DisplayMember = "li_numero"
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
     Private Sub BtnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
         Me.Buscar()
     End Sub
 
     Private Sub BtnGuardar_Click(sender As Object, e As EventArgs) Handles BtnGuardar.Click
-        If Me.ValidateChildren = True And TxtNumero.Text <> "" And TxtAnotaciones.Text <> "" Then
+        If Me.ValidateChildren = True And TxtNumero.Text <> "" And CboLibro.Text <> "" Then
             Dim obj As New Capa_Entidades.EFoja
             Dim Negocio As New Capa_Negocio.NFoja
             'recibe datos
+
+            obj.IdLibro = CboLibro.SelectedValue
             obj.Fo_Numero = TxtNumero.Text
             obj.Fo_Anotaciones = TxtAnotaciones.Text
 
@@ -101,6 +120,7 @@
             Dim Negocio As New Capa_Negocio.NFoja
             'recibe datos
             obj.IdFoja = TxtId.Text
+            obj.IdLibro = CboLibro.SelectedValue
             obj.Fo_Numero = TxtNumero.Text
             obj.Fo_Anotaciones = TxtAnotaciones.Text
 
@@ -127,7 +147,7 @@
                 For Each row As DataGridViewRow In DgvListado.Rows
                     Dim marcado As Boolean = Convert.ToBoolean(row.Cells("Seleccionar").Value)
                     If marcado Then
-                        Dim OneKey As Integer = Convert.ToInt32(row.Cells("IdFoja").Value)
+                        Dim OneKey As Integer = Convert.ToInt32(row.Cells("Idfoja").Value)
                         Neg.Eliminar(OneKey)
                     End If
                 Next
@@ -159,7 +179,6 @@
         End If
     End Sub
 
-    '' evitar duplicados
 
 
 End Class

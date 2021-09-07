@@ -1,5 +1,6 @@
 ﻿Public Class EFoja
     Private _IdFoja As Integer
+    Private _IdLibro As Integer
     Private _Fo_Numero As Integer
     Private _Fo_Anotaciones As String
 
@@ -9,6 +10,15 @@
         End Get
         Set(value As Integer)
             _IdFoja = value
+        End Set
+    End Property
+
+    Public Property IdLibro As Integer
+        Get
+            Return _IdLibro
+        End Get
+        Set(value As Integer)
+            _IdLibro = value
         End Set
     End Property
 

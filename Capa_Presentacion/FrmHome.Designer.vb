@@ -31,6 +31,7 @@ Partial Class FrmHome
         Me.RegistrarLugaresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegistrarNumeroLibroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegistrarNumeroFajoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegistrarSacerdoteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuUsuarios = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosParroquiaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NombreDelUsuarioSegunSuRolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -46,7 +47,6 @@ Partial Class FrmHome
         Me.IconButton1 = New FontAwesome.Sharp.IconButton()
         Me.PanelLogo = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.RegistrarSacerdoteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.PanelMenu.SuspendLayout()
@@ -96,6 +96,12 @@ Partial Class FrmHome
         Me.RegistrarNumeroFajoToolStripMenuItem.Name = "RegistrarNumeroFajoToolStripMenuItem"
         Me.RegistrarNumeroFajoToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
         Me.RegistrarNumeroFajoToolStripMenuItem.Text = "Registrar Numero Fajo"
+        '
+        'RegistrarSacerdoteToolStripMenuItem
+        '
+        Me.RegistrarSacerdoteToolStripMenuItem.Name = "RegistrarSacerdoteToolStripMenuItem"
+        Me.RegistrarSacerdoteToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
+        Me.RegistrarSacerdoteToolStripMenuItem.Text = "Registrar Sacerdote"
         '
         'MenuUsuarios
         '
@@ -230,7 +236,7 @@ Partial Class FrmHome
         Me.IconButton4.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
         Me.IconButton4.Size = New System.Drawing.Size(220, 60)
         Me.IconButton4.TabIndex = 9
-        Me.IconButton4.Text = "------"
+        Me.IconButton4.Text = "libro"
         Me.IconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.IconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButton4.UseVisualStyleBackColor = True
@@ -250,7 +256,7 @@ Partial Class FrmHome
         Me.IconButton2.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
         Me.IconButton2.Size = New System.Drawing.Size(220, 60)
         Me.IconButton2.TabIndex = 7
-        Me.IconButton2.Text = "Entregar Partida Matrimonio"
+        Me.IconButton2.Text = "foja"
         Me.IconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.IconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButton2.UseVisualStyleBackColor = True
@@ -293,12 +299,6 @@ Partial Class FrmHome
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
-        '
-        'RegistrarSacerdoteToolStripMenuItem
-        '
-        Me.RegistrarSacerdoteToolStripMenuItem.Name = "RegistrarSacerdoteToolStripMenuItem"
-        Me.RegistrarSacerdoteToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
-        Me.RegistrarSacerdoteToolStripMenuItem.Text = "Registrar Sacerdote"
         '
         'FrmHome
         '

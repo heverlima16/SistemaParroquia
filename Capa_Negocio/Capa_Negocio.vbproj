@@ -80,6 +80,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="NFoja.vb" />
+    <Compile Include="NLibro.vb" />
     <Compile Include="NSacerdote.vb" />
     <Compile Include="NUsuario.vb" />
   </ItemGroup>

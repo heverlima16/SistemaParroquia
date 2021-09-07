@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="conexion.vb" />
     <Compile Include="DFoja.vb" />
+    <Compile Include="DLibro.vb" />
     <Compile Include="DSacerdote.vb" />
     <Compile Include="DUsuario.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
