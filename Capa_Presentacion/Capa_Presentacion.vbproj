@@ -82,6 +82,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmDepartamento.Designer.vb">
+      <DependentUpon>FrmDepartamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDepartamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDistrito.Designer.vb">
+      <DependentUpon>FrmDistrito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDistrito.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmFoja.Designer.vb">
       <DependentUpon>FrmFoja.vb</DependentUpon>
     </Compile>
@@ -104,6 +116,18 @@
       <DependentUpon>FrmLogin.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPais.Designer.vb">
+      <DependentUpon>FrmPais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProvincia.Designer.vb">
+      <DependentUpon>FrmProvincia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProvincia.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmSacerdote.Designer.vb">
@@ -137,6 +161,12 @@
     <Compile Include="Variables.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmDepartamento.resx">
+      <DependentUpon>FrmDepartamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDistrito.resx">
+      <DependentUpon>FrmDistrito.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmFoja.resx">
       <DependentUpon>FrmFoja.vb</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +178,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPais.resx">
+      <DependentUpon>FrmPais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProvincia.resx">
+      <DependentUpon>FrmProvincia.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSacerdote.resx">
       <DependentUpon>FrmSacerdote.vb</DependentUpon>

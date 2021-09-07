@@ -64,8 +64,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EDepartamento.vb" />
     <Compile Include="EFoja.vb" />
     <Compile Include="ELibro.vb" />
+    <Compile Include="EPais.vb" />
+    <Compile Include="EProvincia.vb" />
     <Compile Include="ESacerdote.vb" />
     <Compile Include="EUsuario.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

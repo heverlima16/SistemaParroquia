@@ -216,7 +216,7 @@ Partial Class FrmHome
         Me.IconButton5.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
         Me.IconButton5.Size = New System.Drawing.Size(220, 60)
         Me.IconButton5.TabIndex = 10
-        Me.IconButton5.Text = "Digitalizar Bautizados"
+        Me.IconButton5.Text = "distrito"
         Me.IconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.IconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButton5.UseVisualStyleBackColor = True
@@ -236,7 +236,7 @@ Partial Class FrmHome
         Me.IconButton4.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
         Me.IconButton4.Size = New System.Drawing.Size(220, 60)
         Me.IconButton4.TabIndex = 9
-        Me.IconButton4.Text = "libro"
+        Me.IconButton4.Text = "provincia"
         Me.IconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.IconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButton4.UseVisualStyleBackColor = True
@@ -256,7 +256,7 @@ Partial Class FrmHome
         Me.IconButton2.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
         Me.IconButton2.Size = New System.Drawing.Size(220, 60)
         Me.IconButton2.TabIndex = 7
-        Me.IconButton2.Text = "foja"
+        Me.IconButton2.Text = "departamento"
         Me.IconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.IconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButton2.UseVisualStyleBackColor = True
@@ -276,7 +276,7 @@ Partial Class FrmHome
         Me.IconButton1.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
         Me.IconButton1.Size = New System.Drawing.Size(220, 60)
         Me.IconButton1.TabIndex = 1
-        Me.IconButton1.Text = "Entregar Partida Bautismo"
+        Me.IconButton1.Text = "pais"
         Me.IconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.IconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButton1.UseVisualStyleBackColor = True

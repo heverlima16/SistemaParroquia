@@ -1,6 +1,6 @@
 ﻿Imports Capa_Entidades
 Imports System.Data.SqlClient
-Public Class DLibro
+Public Class DDepartamento
 
     Inherits conexion
 
@@ -8,7 +8,7 @@ Public Class DLibro
         Try
             Dim Resultado As SqlDataReader
             Dim Tabla As New DataTable
-            Dim Comando As New SqlCommand("libro_listar", MyBase.conn)
+            Dim Comando As New SqlCommand("departamento_listar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
             MyBase.conn.Open()
             Resultado = Comando.ExecuteReader()
@@ -24,7 +24,7 @@ Public Class DLibro
         Try
             Dim Resultado As SqlDataReader
             Dim Tabla As New DataTable
-            Dim Comando As New SqlCommand("libro_buscar", MyBase.conn)
+            Dim Comando As New SqlCommand("departamento_buscar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
             Comando.Parameters.Add("@valor", SqlDbType.VarChar).Value = Valor
             MyBase.conn.Open()
@@ -38,12 +38,12 @@ Public Class DLibro
     End Function
 
 
-    Public Sub Insertar(Obj As ELibro)
+    Public Sub Insertar(Obj As EDepartamento)
         Try
-            Dim Comando As New SqlCommand("libro_insertar", MyBase.conn)
+            Dim Comando As New SqlCommand("departamento_insertar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
-            Comando.Parameters.Add("@li_numero", SqlDbType.Int).Value = Obj.Li_Numero
-            Comando.Parameters.Add("@li_anotaciones", SqlDbType.VarChar).Value = Obj.Li_Anotaciones
+            Comando.Parameters.Add("@idpais", SqlDbType.Int).Value = Obj.IdPais
+            Comando.Parameters.Add("@de_nombre", SqlDbType.VarChar).Value = Obj.De_Nombre
             MyBase.conn.Open()
             Comando.ExecuteReader()
             MyBase.conn.Close()
@@ -52,13 +52,13 @@ Public Class DLibro
         End Try
     End Sub
 
-    Public Sub Actualizar(Obj As ELibro)
+    Public Sub Actualizar(Obj As EDepartamento)
         Try
-            Dim Comando As New SqlCommand("libro_actualizar", MyBase.conn)
+            Dim Comando As New SqlCommand("departamento_actualizar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
-            Comando.Parameters.Add("@idlibro", SqlDbType.Int).Value = Obj.IdLibro
-            Comando.Parameters.Add("@li_numero", SqlDbType.Int).Value = Obj.Li_Numero
-            Comando.Parameters.Add("@li_anotaciones", SqlDbType.VarChar).Value = Obj.Li_Anotaciones
+            Comando.Parameters.Add("@iddepartamento", SqlDbType.Int).Value = Obj.IdDepartamento
+            Comando.Parameters.Add("@idpais", SqlDbType.Int).Value = Obj.IdPais
+            Comando.Parameters.Add("@de_nombre", SqlDbType.VarChar).Value = Obj.De_Nombre
             MyBase.conn.Open()
             Comando.ExecuteReader()
             MyBase.conn.Close()
@@ -69,9 +69,9 @@ Public Class DLibro
 
     Public Sub Eliminar(Id As Integer)
         Try
-            Dim Comando As New SqlCommand("libro_eliminar", MyBase.conn)
+            Dim Comando As New SqlCommand("departamento_eliminar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
-            Comando.Parameters.Add("@idlibro", SqlDbType.Int).Value = Id
+            Comando.Parameters.Add("@iddepartamento", SqlDbType.Int).Value = Id
             MyBase.conn.Open()
             Comando.ExecuteReader()
             MyBase.conn.Close()
@@ -84,7 +84,7 @@ Public Class DLibro
         Try
             Dim Resultado As SqlDataReader
             Dim Tabla As New DataTable
-            Dim Comando As New SqlCommand("libro_seleccionar", MyBase.conn)
+            Dim Comando As New SqlCommand("departamento_seleccionar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
             MyBase.conn.Open()
             Resultado = Comando.ExecuteReader()

@@ -154,13 +154,19 @@ Public Class FrmHome
     End Sub
 
     Private Sub IconButton4_Click(sender As Object, e As EventArgs) Handles IconButton4.Click
-        Dim frm As New FrmLibro
+        Dim frm As New FrmProvincia
         frm.MdiParent = Me
         frm.Show()
     End Sub
 
     Private Sub IconButton2_Click(sender As Object, e As EventArgs) Handles IconButton2.Click
-        Dim frm As New FrmFoja
+        Dim frm As New FrmDepartamento
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
+
+    Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
+        Dim frm As New FrmPais
         frm.MdiParent = Me
         frm.Show()
     End Sub

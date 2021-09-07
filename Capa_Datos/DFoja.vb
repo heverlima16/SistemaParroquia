@@ -1,7 +1,7 @@
 ﻿Imports Capa_Entidades
 Imports System.Data.SqlClient
 Public Class DFoja
-    'heredacion
+
     Inherits conexion
 
     Public Function Listar() As DataTable
