@@ -65,10 +65,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="conexion.vb" />
+    <Compile Include="DCMatrimonio.vb" />
     <Compile Include="DDepartamento.vb" />
+    <Compile Include="DDistrito.vb" />
     <Compile Include="DFoja.vb" />
     <Compile Include="DLibro.vb" />
     <Compile Include="DPais.vb" />
+    <Compile Include="DParroquia.vb" />
     <Compile Include="DProvincia.vb" />
     <Compile Include="DSacerdote.vb" />
     <Compile Include="DUsuario.vb" />

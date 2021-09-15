@@ -82,6 +82,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCMatrimonio.Designer.vb">
+      <DependentUpon>FrmCMatrimonio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCMatrimonio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmDepartamento.Designer.vb">
       <DependentUpon>FrmDepartamento.vb</DependentUpon>
     </Compile>
@@ -124,6 +130,12 @@
     <Compile Include="FrmPais.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmParroquia.Designer.vb">
+      <DependentUpon>FrmParroquia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParroquia.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmProvincia.Designer.vb">
       <DependentUpon>FrmProvincia.vb</DependentUpon>
     </Compile>
@@ -161,6 +173,9 @@
     <Compile Include="Variables.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmCMatrimonio.resx">
+      <DependentUpon>FrmCMatrimonio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDepartamento.resx">
       <DependentUpon>FrmDepartamento.vb</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPais.resx">
       <DependentUpon>FrmPais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParroquia.resx">
+      <DependentUpon>FrmParroquia.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProvincia.resx">
       <DependentUpon>FrmProvincia.vb</DependentUpon>

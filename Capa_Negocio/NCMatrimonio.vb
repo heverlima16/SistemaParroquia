@@ -1,9 +1,9 @@
 ﻿Imports Capa_Datos
 Imports Capa_Entidades
-Public Class NSacerdote
+Public Class NCMatrimonio
     Public Function Listar() As DataTable
         Try
-            Dim Datos As New DSacerdote
+            Dim Datos As New DCMatrimonio
             Dim Tabla As New DataTable
             Tabla = Datos.Listar()
             Return Tabla
@@ -15,7 +15,7 @@ Public Class NSacerdote
 
     Public Function Buscar(Valor As String) As DataTable
         Try
-            Dim Datos As New DSacerdote
+            Dim Datos As New DCMatrimonio
             Dim Tabla As New DataTable
             Tabla = Datos.Buscar(Valor)
             Return Tabla
@@ -25,20 +25,25 @@ Public Class NSacerdote
         End Try
     End Function
 
-    Public Function Insertar(Obj As ESacerdote) As Boolean
+    Public Function Insertar(Obj As ECMatrimonio) As Boolean
         Try
-            Dim Datos As New DSacerdote
+            Dim Datos As New DCMatrimonio
             Datos.Insertar(Obj)
             Return True
         Catch ex As Exception
-            MsgBox(ex.Message)
+
+            MsgBox("El dato que intenta registrar ya existe", vbOKOnly + vbCritical, "No se ha podido Guardar")
             Return False
+
+            'MsgBox(ex.Message)
+            'Return False
+
         End Try
     End Function
 
-    Public Function Actualizar(Obj As ESacerdote) As Boolean
+    Public Function Actualizar(Obj As ECMatrimonio) As Boolean
         Try
-            Dim Datos As New DSacerdote
+            Dim Datos As New DCMatrimonio
             Datos.Actualizar(Obj)
             Return True
         Catch ex As Exception
@@ -49,7 +54,7 @@ Public Class NSacerdote
 
     Public Function Eliminar(Id As Integer) As Boolean
         Try
-            Dim Datos As New DSacerdote
+            Dim Datos As New DCMatrimonio
             Datos.Eliminar(Id)
             Return True
         Catch ex As Exception
@@ -58,15 +63,4 @@ Public Class NSacerdote
         End Try
     End Function
 
-    Public Function Seleccionar() As DataTable
-        Try
-            Dim Datos As New DSacerdote
-            Dim Tabla As New DataTable
-            Tabla = Datos.Seleccionar()
-            Return Tabla
-        Catch ex As Exception
-            MsgBox(ex.Message)
-            Return Nothing
-        End Try
-    End Function
 End Class

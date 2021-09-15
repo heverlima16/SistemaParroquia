@@ -2,6 +2,8 @@
 
     Private Sub FrmSacerdote_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.listar()
+        Me.CargarParroquia()
+
     End Sub
     Private Sub Formato()
         DgvListado.Columns(0).Visible = False
@@ -45,6 +47,17 @@
         TxtNombre.Text = ""
     End Sub
 
+    Private Sub CargarParroquia()
+        Try
+            Dim Negocio As New Capa_Negocio.NParroquia
+            CboParroquia.DataSource = Negocio.Seleccionar
+            CboParroquia.ValueMember = "idparroquia"
+            CboParroquia.DisplayMember = "pa_nombre"
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
 
     Private Sub BtnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
         Me.Buscar()
@@ -55,6 +68,7 @@
             Dim obj As New Capa_Entidades.ESacerdote
             Dim Negocio As New Capa_Negocio.NSacerdote
             'recibe datos
+            obj.IdParroquia = CboParroquia.SelectedValue
             obj.Sacerdote_Nombre = TxtNombre.Text
 
 
@@ -101,6 +115,7 @@
             Dim Negocio As New Capa_Negocio.NSacerdote
             'recibe datos
             obj.IdSacerdote = TxtId.Text
+            obj.IdParroquia = CboParroquia.SelectedValue
             obj.Sacerdote_Nombre = TxtNombre.Text
 
 

@@ -38,6 +38,12 @@ Partial Class FrmDistrito
         Me.DgvListado = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Seleccionar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.CboProvincia = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.CboDepartamento = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.CboPais = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.BtnGuardar = New Guna.UI2.WinForms.Guna2Button()
         Me.BtnActualizar = New Guna.UI2.WinForms.Guna2Button()
         Me.TxtDistrito = New System.Windows.Forms.TextBox()
@@ -45,12 +51,6 @@ Partial Class FrmDistrito
         Me.BtnCancelar = New Guna.UI2.WinForms.Guna2Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ErrorIcono = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.CboDepartamento = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.CboPais = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.CboProvincia = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.TabGeneral.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.DgvListado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -96,7 +96,7 @@ Partial Class FrmDistrito
         Me.TabGeneral.Controls.Add(Me.TabPage1)
         Me.TabGeneral.Controls.Add(Me.TabPage2)
         Me.TabGeneral.ItemSize = New System.Drawing.Size(180, 40)
-        Me.TabGeneral.Location = New System.Drawing.Point(13, 51)
+        Me.TabGeneral.Location = New System.Drawing.Point(13, 50)
         Me.TabGeneral.Name = "TabGeneral"
         Me.TabGeneral.SelectedIndex = 0
         Me.TabGeneral.Size = New System.Drawing.Size(799, 496)
@@ -312,6 +312,93 @@ Partial Class FrmDistrito
         Me.TabPage2.TabIndex = 0
         Me.TabPage2.Text = "Registrar"
         '
+        'CboProvincia
+        '
+        Me.CboProvincia.BackColor = System.Drawing.Color.Transparent
+        Me.CboProvincia.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CboProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CboProvincia.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CboProvincia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CboProvincia.FocusedState.Parent = Me.CboProvincia
+        Me.CboProvincia.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CboProvincia.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CboProvincia.HoverState.Parent = Me.CboProvincia
+        Me.CboProvincia.ItemHeight = 30
+        Me.CboProvincia.ItemsAppearance.Parent = Me.CboProvincia
+        Me.CboProvincia.Location = New System.Drawing.Point(83, 241)
+        Me.CboProvincia.Name = "CboProvincia"
+        Me.CboProvincia.ShadowDecoration.Parent = Me.CboProvincia
+        Me.CboProvincia.Size = New System.Drawing.Size(444, 36)
+        Me.CboProvincia.TabIndex = 19
+        '
+        'CboDepartamento
+        '
+        Me.CboDepartamento.BackColor = System.Drawing.Color.Transparent
+        Me.CboDepartamento.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CboDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CboDepartamento.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CboDepartamento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CboDepartamento.FocusedState.Parent = Me.CboDepartamento
+        Me.CboDepartamento.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CboDepartamento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CboDepartamento.HoverState.Parent = Me.CboDepartamento
+        Me.CboDepartamento.ItemHeight = 30
+        Me.CboDepartamento.ItemsAppearance.Parent = Me.CboDepartamento
+        Me.CboDepartamento.Location = New System.Drawing.Point(83, 152)
+        Me.CboDepartamento.Name = "CboDepartamento"
+        Me.CboDepartamento.ShadowDecoration.Parent = Me.CboDepartamento
+        Me.CboDepartamento.Size = New System.Drawing.Size(444, 36)
+        Me.CboDepartamento.TabIndex = 18
+        '
+        'CboPais
+        '
+        Me.CboPais.BackColor = System.Drawing.Color.Transparent
+        Me.CboPais.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CboPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CboPais.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CboPais.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CboPais.FocusedState.Parent = Me.CboPais
+        Me.CboPais.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CboPais.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CboPais.HoverState.Parent = Me.CboPais
+        Me.CboPais.ItemHeight = 30
+        Me.CboPais.ItemsAppearance.Parent = Me.CboPais
+        Me.CboPais.Location = New System.Drawing.Point(82, 65)
+        Me.CboPais.Name = "CboPais"
+        Me.CboPais.ShadowDecoration.Parent = Me.CboPais
+        Me.CboPais.Size = New System.Drawing.Size(444, 36)
+        Me.CboPais.TabIndex = 17
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(79, 119)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(171, 17)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "Nombre Departamento (*)"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(79, 33)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(108, 17)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "Nombre Pais (*)"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(79, 208)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(139, 17)
+        Me.Label4.TabIndex = 14
+        Me.Label4.Text = "Nombre Provincia (*)"
+        '
         'BtnGuardar
         '
         Me.BtnGuardar.CheckedState.Parent = Me.BtnGuardar
@@ -324,7 +411,7 @@ Partial Class FrmDistrito
         Me.BtnGuardar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
         Me.BtnGuardar.HoverState.Parent = Me.BtnGuardar
-        Me.BtnGuardar.Location = New System.Drawing.Point(82, 413)
+        Me.BtnGuardar.Location = New System.Drawing.Point(-8, 381)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.ShadowDecoration.Parent = Me.BtnGuardar
         Me.BtnGuardar.Size = New System.Drawing.Size(195, 45)
@@ -398,93 +485,6 @@ Partial Class FrmDistrito
         '
         Me.ErrorIcono.ContainerControl = Me
         '
-        'CboDepartamento
-        '
-        Me.CboDepartamento.BackColor = System.Drawing.Color.Transparent
-        Me.CboDepartamento.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.CboDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CboDepartamento.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CboDepartamento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CboDepartamento.FocusedState.Parent = Me.CboDepartamento
-        Me.CboDepartamento.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.CboDepartamento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.CboDepartamento.HoverState.Parent = Me.CboDepartamento
-        Me.CboDepartamento.ItemHeight = 30
-        Me.CboDepartamento.ItemsAppearance.Parent = Me.CboDepartamento
-        Me.CboDepartamento.Location = New System.Drawing.Point(83, 152)
-        Me.CboDepartamento.Name = "CboDepartamento"
-        Me.CboDepartamento.ShadowDecoration.Parent = Me.CboDepartamento
-        Me.CboDepartamento.Size = New System.Drawing.Size(444, 36)
-        Me.CboDepartamento.TabIndex = 18
-        '
-        'CboPais
-        '
-        Me.CboPais.BackColor = System.Drawing.Color.Transparent
-        Me.CboPais.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.CboPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CboPais.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CboPais.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CboPais.FocusedState.Parent = Me.CboPais
-        Me.CboPais.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.CboPais.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.CboPais.HoverState.Parent = Me.CboPais
-        Me.CboPais.ItemHeight = 30
-        Me.CboPais.ItemsAppearance.Parent = Me.CboPais
-        Me.CboPais.Location = New System.Drawing.Point(82, 65)
-        Me.CboPais.Name = "CboPais"
-        Me.CboPais.ShadowDecoration.Parent = Me.CboPais
-        Me.CboPais.Size = New System.Drawing.Size(444, 36)
-        Me.CboPais.TabIndex = 17
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(79, 119)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(171, 17)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "Nombre Departamento (*)"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(79, 33)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(108, 17)
-        Me.Label3.TabIndex = 15
-        Me.Label3.Text = "Nombre Pais (*)"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(79, 208)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(139, 17)
-        Me.Label4.TabIndex = 14
-        Me.Label4.Text = "Nombre Provincia (*)"
-        '
-        'CboProvincia
-        '
-        Me.CboProvincia.BackColor = System.Drawing.Color.Transparent
-        Me.CboProvincia.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.CboProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CboProvincia.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CboProvincia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CboProvincia.FocusedState.Parent = Me.CboProvincia
-        Me.CboProvincia.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.CboProvincia.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.CboProvincia.HoverState.Parent = Me.CboProvincia
-        Me.CboProvincia.ItemHeight = 30
-        Me.CboProvincia.ItemsAppearance.Parent = Me.CboProvincia
-        Me.CboProvincia.Location = New System.Drawing.Point(83, 241)
-        Me.CboProvincia.Name = "CboProvincia"
-        Me.CboProvincia.ShadowDecoration.Parent = Me.CboProvincia
-        Me.CboProvincia.Size = New System.Drawing.Size(444, 36)
-        Me.CboProvincia.TabIndex = 19
-        '
         'FrmDistrito
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -496,6 +496,7 @@ Partial Class FrmDistrito
         Me.Controls.Add(Me.Label10)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmDistrito"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmDistrito"
         Me.TabGeneral.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)

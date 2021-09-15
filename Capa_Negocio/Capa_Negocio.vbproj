@@ -79,10 +79,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NCMatrimonio.vb" />
     <Compile Include="NDepartamento.vb" />
+    <Compile Include="NDistrito.vb" />
     <Compile Include="NFoja.vb" />
     <Compile Include="NLibro.vb" />
     <Compile Include="NPais.vb" />
+    <Compile Include="NParroquia.vb" />
     <Compile Include="NProvincia.vb" />
     <Compile Include="NSacerdote.vb" />
     <Compile Include="NUsuario.vb" />

@@ -92,6 +92,7 @@
     Private Sub DgvListado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DgvListado.CellDoubleClick
         TxtId.Text = DgvListado.SelectedCells.Item(1).Value
         TxtNumero.Text = DgvListado.SelectedCells.Item(2).Value
+        TxtAnotaciones.Text = DgvListado.SelectedCells.Item(3).Value
         BtnGuardar.Visible = False
         BtnActualizar.Visible = True
         TabGeneral.SelectedIndex = 1
