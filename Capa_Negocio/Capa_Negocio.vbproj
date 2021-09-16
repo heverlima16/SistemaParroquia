@@ -79,6 +79,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NCBautismo.vb" />
     <Compile Include="NCMatrimonio.vb" />
     <Compile Include="NDepartamento.vb" />
     <Compile Include="NDistrito.vb" />

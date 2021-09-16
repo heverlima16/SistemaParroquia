@@ -184,6 +184,12 @@ Public Class FrmHome
         frm.Show()
     End Sub
 
+    Private Sub IconButton4_Click(sender As Object, e As EventArgs) Handles IconButton4.Click
+        Dim frm As New FrmCBautismo
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
+
 
 
     'fin de login '

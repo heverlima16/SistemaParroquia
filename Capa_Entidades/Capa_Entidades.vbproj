@@ -64,6 +64,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ECBautismo.vb" />
     <Compile Include="ECMatrimonio.vb" />
     <Compile Include="EDepartamento.vb" />
     <Compile Include="EDistrito.vb" />

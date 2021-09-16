@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="conexion.vb" />
+    <Compile Include="DCBautismo.vb" />
     <Compile Include="DCMatrimonio.vb" />
     <Compile Include="DDepartamento.vb" />
     <Compile Include="DDistrito.vb" />

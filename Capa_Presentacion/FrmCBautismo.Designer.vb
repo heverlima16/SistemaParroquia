@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class FrmCMatrimonio
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class FrmCBautismo
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,12 @@ Partial Class FrmCMatrimonio
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TabGeneral = New Guna.UI2.WinForms.Guna2TabControl()
@@ -38,39 +38,30 @@ Partial Class FrmCMatrimonio
         Me.TxtValor = New Guna.UI2.WinForms.Guna2TextBox()
         Me.LblTotal = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TxtMa_AnotacionesTextuales = New System.Windows.Forms.TextBox()
-        Me.TxtNumeroCasado = New System.Windows.Forms.TextBox()
+        Me.TxtBa_AnotacionesTextuales = New System.Windows.Forms.TextBox()
+        Me.TxtBa_Numero = New System.Windows.Forms.TextBox()
         Me.CboFoja = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.CboLibro = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.DateMa_FMatrimonio = New Guna.UI2.WinForms.Guna2DateTimePicker()
-        Me.TxtMa_LMatrimonio = New System.Windows.Forms.TextBox()
-        Me.TxtMa_NPadrino = New System.Windows.Forms.TextBox()
-        Me.TxtMa_NMadreEsposa = New System.Windows.Forms.TextBox()
-        Me.TxtMa_NMadreEsposo = New System.Windows.Forms.TextBox()
-        Me.TxtMa_NPadreEsposa = New System.Windows.Forms.TextBox()
-        Me.TxtMa_NPadreEsposo = New System.Windows.Forms.TextBox()
-        Me.TxtMa_LEsposa = New System.Windows.Forms.TextBox()
-        Me.DateMa_FNEsposa = New Guna.UI2.WinForms.Guna2DateTimePicker()
-        Me.TxtMa_LEsposo = New System.Windows.Forms.TextBox()
-        Me.DateMa_FNEsposo = New Guna.UI2.WinForms.Guna2DateTimePicker()
-        Me.TxtMa_NEsposa = New System.Windows.Forms.TextBox()
-        Me.TxtMa_NEsposo = New System.Windows.Forms.TextBox()
+        Me.DateBa_FBautismo = New Guna.UI2.WinForms.Guna2DateTimePicker()
+        Me.TxtBa_LBautismo = New System.Windows.Forms.TextBox()
+        Me.TxtBa_NPadrino = New System.Windows.Forms.TextBox()
+        Me.TxtBa_NMadre = New System.Windows.Forms.TextBox()
+        Me.TxtBa_NPadre = New System.Windows.Forms.TextBox()
+        Me.TxtBa_LNacimiento = New System.Windows.Forms.TextBox()
+        Me.DateBa_FNacimiento = New Guna.UI2.WinForms.Guna2DateTimePicker()
+        Me.TxtBa_Nombre = New System.Windows.Forms.TextBox()
         Me.CboSacerdote = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.CboParroquia = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.TxtId = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -102,7 +93,7 @@ Partial Class FrmCMatrimonio
         Me.Guna2ControlBox1.PressedColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.Guna2ControlBox1.ShadowDecoration.Parent = Me.Guna2ControlBox1
         Me.Guna2ControlBox1.Size = New System.Drawing.Size(73, 44)
-        Me.Guna2ControlBox1.TabIndex = 54
+        Me.Guna2ControlBox1.TabIndex = 56
         '
         'Label10
         '
@@ -114,8 +105,8 @@ Partial Class FrmCMatrimonio
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(1223, 44)
-        Me.Label10.TabIndex = 53
-        Me.Label10.Text = "DIGITALIZAR CARTA DE MATRIMONIO"
+        Me.Label10.TabIndex = 55
+        Me.Label10.Text = "DIGITALIZAR CARTA DE BAUTISMO"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TabGeneral
@@ -124,7 +115,7 @@ Partial Class FrmCMatrimonio
         Me.TabGeneral.Controls.Add(Me.TabPage1)
         Me.TabGeneral.Controls.Add(Me.TabPage2)
         Me.TabGeneral.ItemSize = New System.Drawing.Size(180, 40)
-        Me.TabGeneral.Location = New System.Drawing.Point(12, 50)
+        Me.TabGeneral.Location = New System.Drawing.Point(12, 40)
         Me.TabGeneral.Name = "TabGeneral"
         Me.TabGeneral.SelectedIndex = 0
         Me.TabGeneral.Size = New System.Drawing.Size(1199, 705)
@@ -144,7 +135,7 @@ Partial Class FrmCMatrimonio
         Me.TabGeneral.TabButtonSelectedState.ForeColor = System.Drawing.Color.White
         Me.TabGeneral.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TabGeneral.TabButtonSize = New System.Drawing.Size(180, 40)
-        Me.TabGeneral.TabIndex = 55
+        Me.TabGeneral.TabIndex = 57
         Me.TabGeneral.TabMenuBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
         '
         'TabPage1
@@ -167,31 +158,31 @@ Partial Class FrmCMatrimonio
         Me.DgvListado.AllowUserToAddRows = False
         Me.DgvListado.AllowUserToDeleteRows = False
         Me.DgvListado.AllowUserToOrderColumns = True
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.White
-        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DgvListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DgvListado.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.DgvListado.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DgvListado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DgvListado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DgvListado.ColumnHeadersHeight = 27
         Me.DgvListado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Seleccionar})
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle3
         Me.DgvListado.EnableHeadersVisualStyles = False
         Me.DgvListado.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DgvListado.Location = New System.Drawing.Point(6, 108)
@@ -323,39 +314,30 @@ Partial Class FrmCMatrimonio
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
-        Me.TabPage2.Controls.Add(Me.TxtMa_AnotacionesTextuales)
-        Me.TabPage2.Controls.Add(Me.TxtNumeroCasado)
+        Me.TabPage2.Controls.Add(Me.TxtBa_AnotacionesTextuales)
+        Me.TabPage2.Controls.Add(Me.TxtBa_Numero)
         Me.TabPage2.Controls.Add(Me.CboFoja)
         Me.TabPage2.Controls.Add(Me.CboLibro)
-        Me.TabPage2.Controls.Add(Me.DateMa_FMatrimonio)
-        Me.TabPage2.Controls.Add(Me.TxtMa_LMatrimonio)
-        Me.TabPage2.Controls.Add(Me.TxtMa_NPadrino)
-        Me.TabPage2.Controls.Add(Me.TxtMa_NMadreEsposa)
-        Me.TabPage2.Controls.Add(Me.TxtMa_NMadreEsposo)
-        Me.TabPage2.Controls.Add(Me.TxtMa_NPadreEsposa)
-        Me.TabPage2.Controls.Add(Me.TxtMa_NPadreEsposo)
-        Me.TabPage2.Controls.Add(Me.TxtMa_LEsposa)
-        Me.TabPage2.Controls.Add(Me.DateMa_FNEsposa)
-        Me.TabPage2.Controls.Add(Me.TxtMa_LEsposo)
-        Me.TabPage2.Controls.Add(Me.DateMa_FNEsposo)
-        Me.TabPage2.Controls.Add(Me.TxtMa_NEsposa)
-        Me.TabPage2.Controls.Add(Me.TxtMa_NEsposo)
+        Me.TabPage2.Controls.Add(Me.DateBa_FBautismo)
+        Me.TabPage2.Controls.Add(Me.TxtBa_LBautismo)
+        Me.TabPage2.Controls.Add(Me.TxtBa_NPadrino)
+        Me.TabPage2.Controls.Add(Me.TxtBa_NMadre)
+        Me.TabPage2.Controls.Add(Me.TxtBa_NPadre)
+        Me.TabPage2.Controls.Add(Me.TxtBa_LNacimiento)
+        Me.TabPage2.Controls.Add(Me.DateBa_FNacimiento)
+        Me.TabPage2.Controls.Add(Me.TxtBa_Nombre)
         Me.TabPage2.Controls.Add(Me.CboSacerdote)
         Me.TabPage2.Controls.Add(Me.CboParroquia)
         Me.TabPage2.Controls.Add(Me.TxtId)
         Me.TabPage2.Controls.Add(Me.Label18)
         Me.TabPage2.Controls.Add(Me.Label17)
-        Me.TabPage2.Controls.Add(Me.Label16)
         Me.TabPage2.Controls.Add(Me.Label15)
         Me.TabPage2.Controls.Add(Me.Label4)
         Me.TabPage2.Controls.Add(Me.Label3)
-        Me.TabPage2.Controls.Add(Me.Label2)
-        Me.TabPage2.Controls.Add(Me.Label1)
         Me.TabPage2.Controls.Add(Me.Label14)
         Me.TabPage2.Controls.Add(Me.Label13)
         Me.TabPage2.Controls.Add(Me.Label12)
         Me.TabPage2.Controls.Add(Me.Label11)
-        Me.TabPage2.Controls.Add(Me.Label9)
         Me.TabPage2.Controls.Add(Me.Label8)
         Me.TabPage2.Controls.Add(Me.Label7)
         Me.TabPage2.Controls.Add(Me.Label6)
@@ -369,21 +351,21 @@ Partial Class FrmCMatrimonio
         Me.TabPage2.TabIndex = 0
         Me.TabPage2.Text = "Registrar"
         '
-        'TxtMa_AnotacionesTextuales
+        'TxtBa_AnotacionesTextuales
         '
-        Me.TxtMa_AnotacionesTextuales.Location = New System.Drawing.Point(520, 513)
-        Me.TxtMa_AnotacionesTextuales.Multiline = True
-        Me.TxtMa_AnotacionesTextuales.Name = "TxtMa_AnotacionesTextuales"
-        Me.TxtMa_AnotacionesTextuales.Size = New System.Drawing.Size(427, 94)
-        Me.TxtMa_AnotacionesTextuales.TabIndex = 80
+        Me.TxtBa_AnotacionesTextuales.Location = New System.Drawing.Point(520, 513)
+        Me.TxtBa_AnotacionesTextuales.Multiline = True
+        Me.TxtBa_AnotacionesTextuales.Name = "TxtBa_AnotacionesTextuales"
+        Me.TxtBa_AnotacionesTextuales.Size = New System.Drawing.Size(427, 94)
+        Me.TxtBa_AnotacionesTextuales.TabIndex = 80
         '
-        'TxtNumeroCasado
+        'TxtBa_Numero
         '
-        Me.TxtNumeroCasado.Location = New System.Drawing.Point(265, 627)
-        Me.TxtNumeroCasado.Multiline = True
-        Me.TxtNumeroCasado.Name = "TxtNumeroCasado"
-        Me.TxtNumeroCasado.Size = New System.Drawing.Size(92, 36)
-        Me.TxtNumeroCasado.TabIndex = 79
+        Me.TxtBa_Numero.Location = New System.Drawing.Point(265, 627)
+        Me.TxtBa_Numero.Multiline = True
+        Me.TxtBa_Numero.Name = "TxtBa_Numero"
+        Me.TxtBa_Numero.Size = New System.Drawing.Size(92, 36)
+        Me.TxtBa_Numero.TabIndex = 79
         '
         'CboFoja
         '
@@ -423,133 +405,85 @@ Partial Class FrmCMatrimonio
         Me.CboLibro.Size = New System.Drawing.Size(93, 36)
         Me.CboLibro.TabIndex = 77
         '
-        'DateMa_FMatrimonio
+        'DateBa_FBautismo
         '
-        Me.DateMa_FMatrimonio.CheckedState.Parent = Me.DateMa_FMatrimonio
-        Me.DateMa_FMatrimonio.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.DateMa_FMatrimonio.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.DateMa_FMatrimonio.HoverState.Parent = Me.DateMa_FMatrimonio
-        Me.DateMa_FMatrimonio.Location = New System.Drawing.Point(47, 552)
-        Me.DateMa_FMatrimonio.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.DateMa_FMatrimonio.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.DateMa_FMatrimonio.Name = "DateMa_FMatrimonio"
-        Me.DateMa_FMatrimonio.ShadowDecoration.Parent = Me.DateMa_FMatrimonio
-        Me.DateMa_FMatrimonio.Size = New System.Drawing.Size(310, 36)
-        Me.DateMa_FMatrimonio.TabIndex = 76
-        Me.DateMa_FMatrimonio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.DateMa_FMatrimonio.Value = New Date(2021, 9, 8, 15, 36, 24, 541)
+        Me.DateBa_FBautismo.CheckedState.Parent = Me.DateBa_FBautismo
+        Me.DateBa_FBautismo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.DateBa_FBautismo.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.DateBa_FBautismo.HoverState.Parent = Me.DateBa_FBautismo
+        Me.DateBa_FBautismo.Location = New System.Drawing.Point(47, 552)
+        Me.DateBa_FBautismo.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.DateBa_FBautismo.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
+        Me.DateBa_FBautismo.Name = "DateBa_FBautismo"
+        Me.DateBa_FBautismo.ShadowDecoration.Parent = Me.DateBa_FBautismo
+        Me.DateBa_FBautismo.Size = New System.Drawing.Size(310, 36)
+        Me.DateBa_FBautismo.TabIndex = 76
+        Me.DateBa_FBautismo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.DateBa_FBautismo.Value = New Date(2021, 9, 8, 15, 36, 24, 541)
         '
-        'TxtMa_LMatrimonio
+        'TxtBa_LBautismo
         '
-        Me.TxtMa_LMatrimonio.Location = New System.Drawing.Point(209, 485)
-        Me.TxtMa_LMatrimonio.Multiline = True
-        Me.TxtMa_LMatrimonio.Name = "TxtMa_LMatrimonio"
-        Me.TxtMa_LMatrimonio.Size = New System.Drawing.Size(271, 26)
-        Me.TxtMa_LMatrimonio.TabIndex = 75
+        Me.TxtBa_LBautismo.Location = New System.Drawing.Point(209, 485)
+        Me.TxtBa_LBautismo.Multiline = True
+        Me.TxtBa_LBautismo.Name = "TxtBa_LBautismo"
+        Me.TxtBa_LBautismo.Size = New System.Drawing.Size(271, 26)
+        Me.TxtBa_LBautismo.TabIndex = 75
         '
-        'TxtMa_NPadrino
+        'TxtBa_NPadrino
         '
-        Me.TxtMa_NPadrino.Location = New System.Drawing.Point(50, 446)
-        Me.TxtMa_NPadrino.Multiline = True
-        Me.TxtMa_NPadrino.Name = "TxtMa_NPadrino"
-        Me.TxtMa_NPadrino.Size = New System.Drawing.Size(427, 26)
-        Me.TxtMa_NPadrino.TabIndex = 74
+        Me.TxtBa_NPadrino.Location = New System.Drawing.Point(50, 446)
+        Me.TxtBa_NPadrino.Multiline = True
+        Me.TxtBa_NPadrino.Name = "TxtBa_NPadrino"
+        Me.TxtBa_NPadrino.Size = New System.Drawing.Size(427, 26)
+        Me.TxtBa_NPadrino.TabIndex = 74
         '
-        'TxtMa_NMadreEsposa
+        'TxtBa_NMadre
         '
-        Me.TxtMa_NMadreEsposa.Location = New System.Drawing.Point(520, 387)
-        Me.TxtMa_NMadreEsposa.Multiline = True
-        Me.TxtMa_NMadreEsposa.Name = "TxtMa_NMadreEsposa"
-        Me.TxtMa_NMadreEsposa.Size = New System.Drawing.Size(427, 26)
-        Me.TxtMa_NMadreEsposa.TabIndex = 73
+        Me.TxtBa_NMadre.Location = New System.Drawing.Point(50, 387)
+        Me.TxtBa_NMadre.Multiline = True
+        Me.TxtBa_NMadre.Name = "TxtBa_NMadre"
+        Me.TxtBa_NMadre.Size = New System.Drawing.Size(427, 26)
+        Me.TxtBa_NMadre.TabIndex = 72
         '
-        'TxtMa_NMadreEsposo
+        'TxtBa_NPadre
         '
-        Me.TxtMa_NMadreEsposo.Location = New System.Drawing.Point(50, 387)
-        Me.TxtMa_NMadreEsposo.Multiline = True
-        Me.TxtMa_NMadreEsposo.Name = "TxtMa_NMadreEsposo"
-        Me.TxtMa_NMadreEsposo.Size = New System.Drawing.Size(427, 26)
-        Me.TxtMa_NMadreEsposo.TabIndex = 72
+        Me.TxtBa_NPadre.Location = New System.Drawing.Point(47, 307)
+        Me.TxtBa_NPadre.Multiline = True
+        Me.TxtBa_NPadre.Name = "TxtBa_NPadre"
+        Me.TxtBa_NPadre.Size = New System.Drawing.Size(427, 26)
+        Me.TxtBa_NPadre.TabIndex = 70
         '
-        'TxtMa_NPadreEsposa
+        'TxtBa_LNacimiento
         '
-        Me.TxtMa_NPadreEsposa.Location = New System.Drawing.Point(520, 307)
-        Me.TxtMa_NPadreEsposa.Multiline = True
-        Me.TxtMa_NPadreEsposa.Name = "TxtMa_NPadreEsposa"
-        Me.TxtMa_NPadreEsposa.Size = New System.Drawing.Size(427, 26)
-        Me.TxtMa_NPadreEsposa.TabIndex = 71
+        Me.TxtBa_LNacimiento.Location = New System.Drawing.Point(330, 217)
+        Me.TxtBa_LNacimiento.Multiline = True
+        Me.TxtBa_LNacimiento.Name = "TxtBa_LNacimiento"
+        Me.TxtBa_LNacimiento.Size = New System.Drawing.Size(132, 36)
+        Me.TxtBa_LNacimiento.TabIndex = 67
         '
-        'TxtMa_NPadreEsposo
+        'DateBa_FNacimiento
         '
-        Me.TxtMa_NPadreEsposo.Location = New System.Drawing.Point(47, 307)
-        Me.TxtMa_NPadreEsposo.Multiline = True
-        Me.TxtMa_NPadreEsposo.Name = "TxtMa_NPadreEsposo"
-        Me.TxtMa_NPadreEsposo.Size = New System.Drawing.Size(427, 26)
-        Me.TxtMa_NPadreEsposo.TabIndex = 70
+        Me.DateBa_FNacimiento.CheckedState.Parent = Me.DateBa_FNacimiento
+        Me.DateBa_FNacimiento.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.DateBa_FNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateBa_FNacimiento.HoverState.Parent = Me.DateBa_FNacimiento
+        Me.DateBa_FNacimiento.Location = New System.Drawing.Point(50, 217)
+        Me.DateBa_FNacimiento.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.DateBa_FNacimiento.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
+        Me.DateBa_FNacimiento.Name = "DateBa_FNacimiento"
+        Me.DateBa_FNacimiento.ShadowDecoration.Parent = Me.DateBa_FNacimiento
+        Me.DateBa_FNacimiento.Size = New System.Drawing.Size(157, 36)
+        Me.DateBa_FNacimiento.TabIndex = 66
+        Me.DateBa_FNacimiento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.DateBa_FNacimiento.Value = New Date(2021, 9, 8, 15, 36, 24, 541)
         '
-        'TxtMa_LEsposa
+        'TxtBa_Nombre
         '
-        Me.TxtMa_LEsposa.Location = New System.Drawing.Point(815, 217)
-        Me.TxtMa_LEsposa.Multiline = True
-        Me.TxtMa_LEsposa.Name = "TxtMa_LEsposa"
-        Me.TxtMa_LEsposa.Size = New System.Drawing.Size(132, 36)
-        Me.TxtMa_LEsposa.TabIndex = 69
-        '
-        'DateMa_FNEsposa
-        '
-        Me.DateMa_FNEsposa.CheckedState.Parent = Me.DateMa_FNEsposa
-        Me.DateMa_FNEsposa.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.DateMa_FNEsposa.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateMa_FNEsposa.HoverState.Parent = Me.DateMa_FNEsposa
-        Me.DateMa_FNEsposa.Location = New System.Drawing.Point(520, 217)
-        Me.DateMa_FNEsposa.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.DateMa_FNEsposa.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.DateMa_FNEsposa.Name = "DateMa_FNEsposa"
-        Me.DateMa_FNEsposa.ShadowDecoration.Parent = Me.DateMa_FNEsposa
-        Me.DateMa_FNEsposa.Size = New System.Drawing.Size(166, 36)
-        Me.DateMa_FNEsposa.TabIndex = 68
-        Me.DateMa_FNEsposa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.DateMa_FNEsposa.Value = New Date(2021, 9, 8, 15, 36, 24, 541)
-        '
-        'TxtMa_LEsposo
-        '
-        Me.TxtMa_LEsposo.Location = New System.Drawing.Point(345, 217)
-        Me.TxtMa_LEsposo.Multiline = True
-        Me.TxtMa_LEsposo.Name = "TxtMa_LEsposo"
-        Me.TxtMa_LEsposo.Size = New System.Drawing.Size(132, 36)
-        Me.TxtMa_LEsposo.TabIndex = 67
-        '
-        'DateMa_FNEsposo
-        '
-        Me.DateMa_FNEsposo.CheckedState.Parent = Me.DateMa_FNEsposo
-        Me.DateMa_FNEsposo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.DateMa_FNEsposo.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateMa_FNEsposo.HoverState.Parent = Me.DateMa_FNEsposo
-        Me.DateMa_FNEsposo.Location = New System.Drawing.Point(46, 217)
-        Me.DateMa_FNEsposo.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.DateMa_FNEsposo.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.DateMa_FNEsposo.Name = "DateMa_FNEsposo"
-        Me.DateMa_FNEsposo.ShadowDecoration.Parent = Me.DateMa_FNEsposo
-        Me.DateMa_FNEsposo.Size = New System.Drawing.Size(157, 36)
-        Me.DateMa_FNEsposo.TabIndex = 66
-        Me.DateMa_FNEsposo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.DateMa_FNEsposo.Value = New Date(2021, 9, 8, 15, 36, 24, 541)
-        '
-        'TxtMa_NEsposa
-        '
-        Me.TxtMa_NEsposa.Location = New System.Drawing.Point(520, 153)
-        Me.TxtMa_NEsposa.Multiline = True
-        Me.TxtMa_NEsposa.Name = "TxtMa_NEsposa"
-        Me.TxtMa_NEsposa.Size = New System.Drawing.Size(427, 26)
-        Me.TxtMa_NEsposa.TabIndex = 65
-        '
-        'TxtMa_NEsposo
-        '
-        Me.TxtMa_NEsposo.Location = New System.Drawing.Point(47, 153)
-        Me.TxtMa_NEsposo.Multiline = True
-        Me.TxtMa_NEsposo.Name = "TxtMa_NEsposo"
-        Me.TxtMa_NEsposo.Size = New System.Drawing.Size(427, 26)
-        Me.TxtMa_NEsposo.TabIndex = 64
+        Me.TxtBa_Nombre.Location = New System.Drawing.Point(47, 153)
+        Me.TxtBa_Nombre.Multiline = True
+        Me.TxtBa_Nombre.Name = "TxtBa_Nombre"
+        Me.TxtBa_Nombre.Size = New System.Drawing.Size(427, 26)
+        Me.TxtBa_Nombre.TabIndex = 64
         '
         'CboSacerdote
         '
@@ -619,25 +553,15 @@ Partial Class FrmCMatrimonio
         Me.Label17.TabIndex = 58
         Me.Label17.Text = "Fecha de Nacimiento (*)"
         '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(526, 197)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(160, 17)
-        Me.Label16.TabIndex = 57
-        Me.Label16.Text = "Fecha de Nacimiento (*)"
-        '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.ForeColor = System.Drawing.Color.White
         Me.Label15.Location = New System.Drawing.Point(47, 532)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(159, 17)
+        Me.Label15.Size = New System.Drawing.Size(148, 17)
         Me.Label15.TabIndex = 54
-        Me.Label15.Text = "Fecha de Matrimonio (*)"
+        Me.Label15.Text = "Fecha de Bautismo (*)"
         '
         'Label4
         '
@@ -645,9 +569,9 @@ Partial Class FrmCMatrimonio
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(46, 488)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(157, 17)
+        Me.Label4.Size = New System.Drawing.Size(146, 17)
         Me.Label4.TabIndex = 51
-        Me.Label4.Text = "Lugar de Matrimonio (*)"
+        Me.Label4.Text = "Lugar de Bautismo (*)"
         '
         'Label3
         '
@@ -659,35 +583,15 @@ Partial Class FrmCMatrimonio
         Me.Label3.TabIndex = 48
         Me.Label3.Text = "Padrino (*)"
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(517, 349)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(117, 17)
-        Me.Label2.TabIndex = 41
-        Me.Label2.Text = "Madre esposa (*)"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(517, 271)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(115, 17)
-        Me.Label1.TabIndex = 39
-        Me.Label1.Text = "Padre esposa (*)"
-        '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.ForeColor = System.Drawing.Color.White
         Me.Label14.Location = New System.Drawing.Point(46, 349)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(140, 17)
+        Me.Label14.Size = New System.Drawing.Size(157, 17)
         Me.Label14.TabIndex = 37
-        Me.Label14.Text = "Madre del esposo (*)"
+        Me.Label14.Text = "Madre del Bautisado (*)"
         '
         'Label13
         '
@@ -695,9 +599,9 @@ Partial Class FrmCMatrimonio
         Me.Label13.ForeColor = System.Drawing.Color.White
         Me.Label13.Location = New System.Drawing.Point(46, 271)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(138, 17)
+        Me.Label13.Size = New System.Drawing.Size(155, 17)
         Me.Label13.TabIndex = 35
-        Me.Label13.Text = "Padre del esposo (*)"
+        Me.Label13.Text = "Padre del Bautisado (*)"
         '
         'Label12
         '
@@ -705,9 +609,9 @@ Partial Class FrmCMatrimonio
         Me.Label12.ForeColor = System.Drawing.Color.White
         Me.Label12.Location = New System.Drawing.Point(517, 45)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(260, 17)
+        Me.Label12.Size = New System.Drawing.Size(249, 17)
         Me.Label12.TabIndex = 34
-        Me.Label12.Text = "Nombre del sacerdote de Matrimonio (*)"
+        Me.Label12.Text = "Nombre del sacerdote de Bautismo (*)"
         '
         'Label11
         '
@@ -715,29 +619,19 @@ Partial Class FrmCMatrimonio
         Me.Label11.ForeColor = System.Drawing.Color.White
         Me.Label11.Location = New System.Drawing.Point(46, 45)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(182, 17)
+        Me.Label11.Size = New System.Drawing.Size(171, 17)
         Me.Label11.TabIndex = 30
-        Me.Label11.Text = "Parroquia de Matrimonio (*)"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(517, 119)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(127, 17)
-        Me.Label9.TabIndex = 28
-        Me.Label9.Text = "Nombre esposa (*)"
+        Me.Label11.Text = "Parroquia de Bautismo (*)"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(46, 119)
+        Me.Label8.Location = New System.Drawing.Point(47, 133)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(127, 17)
+        Me.Label8.Size = New System.Drawing.Size(144, 17)
         Me.Label8.TabIndex = 26
-        Me.Label8.Text = "Nombre esposo (*)"
+        Me.Label8.Text = "Nombre Bautisado (*)"
         '
         'Label7
         '
@@ -745,9 +639,9 @@ Partial Class FrmCMatrimonio
         Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(262, 603)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(95, 17)
+        Me.Label7.Size = New System.Drawing.Size(105, 17)
         Me.Label7.TabIndex = 24
-        Me.Label7.Text = "N° Casado (*)"
+        Me.Label7.Text = "N° Bautismo (*)"
         '
         'Label6
         '
@@ -781,7 +675,7 @@ Partial Class FrmCMatrimonio
         Me.BtnGuardar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
         Me.BtnGuardar.HoverState.Parent = Me.BtnGuardar
-        Me.BtnGuardar.Location = New System.Drawing.Point(665, 627)
+        Me.BtnGuardar.Location = New System.Drawing.Point(710, 427)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.ShadowDecoration.Parent = Me.BtnGuardar
         Me.BtnGuardar.Size = New System.Drawing.Size(282, 45)
@@ -830,7 +724,7 @@ Partial Class FrmCMatrimonio
         '
         Me.ErrorIcono.ContainerControl = Me
         '
-        'FrmCMatrimonio
+        'FrmCBautismo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -840,9 +734,9 @@ Partial Class FrmCMatrimonio
         Me.Controls.Add(Me.Guna2ControlBox1)
         Me.Controls.Add(Me.Label10)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "FrmCMatrimonio"
+        Me.Name = "FrmCBautismo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FrmCMatrimonio"
+        Me.Text = "FrmCBautismo"
         Me.TabGeneral.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
@@ -858,53 +752,44 @@ Partial Class FrmCMatrimonio
     Friend WithEvents Label10 As Label
     Friend WithEvents TabGeneral As Guna.UI2.WinForms.Guna2TabControl
     Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents DgvListado As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents Seleccionar As DataGridViewCheckBoxColumn
     Friend WithEvents ChkSeleccionar As Guna.UI2.WinForms.Guna2CheckBox
     Friend WithEvents BtnEliminar As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents BtnBuscar As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents TxtValor As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents LblTotal As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents TxtBa_AnotacionesTextuales As TextBox
+    Friend WithEvents TxtBa_Numero As TextBox
+    Friend WithEvents CboFoja As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents CboLibro As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents DateBa_FBautismo As Guna.UI2.WinForms.Guna2DateTimePicker
+    Friend WithEvents TxtBa_LBautismo As TextBox
+    Friend WithEvents TxtBa_NPadrino As TextBox
+    Friend WithEvents TxtBa_NMadre As TextBox
+    Friend WithEvents TxtBa_NPadre As TextBox
+    Friend WithEvents TxtBa_LNacimiento As TextBox
+    Friend WithEvents DateBa_FNacimiento As Guna.UI2.WinForms.Guna2DateTimePicker
+    Friend WithEvents TxtBa_Nombre As TextBox
+    Friend WithEvents CboSacerdote As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents CboParroquia As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents TxtId As TextBox
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
     Friend WithEvents BtnGuardar As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents BtnActualizar As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents BtnCancelar As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents ErrorIcono As ErrorProvider
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label16 As Label
-    Friend WithEvents Label17 As Label
-    Friend WithEvents Label18 As Label
-    Friend WithEvents DgvListado As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents Seleccionar As DataGridViewCheckBoxColumn
-    Friend WithEvents TxtId As TextBox
-    Friend WithEvents CboParroquia As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents CboSacerdote As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents TxtMa_NEsposo As TextBox
-    Friend WithEvents TxtMa_NEsposa As TextBox
-    Friend WithEvents DateMa_FNEsposo As Guna.UI2.WinForms.Guna2DateTimePicker
-    Friend WithEvents TxtMa_LEsposo As TextBox
-    Friend WithEvents DateMa_FNEsposa As Guna.UI2.WinForms.Guna2DateTimePicker
-    Friend WithEvents TxtMa_LEsposa As TextBox
-    Friend WithEvents TxtMa_NPadreEsposo As TextBox
-    Friend WithEvents TxtMa_NPadreEsposa As TextBox
-    Friend WithEvents TxtMa_NMadreEsposo As TextBox
-    Friend WithEvents TxtMa_NMadreEsposa As TextBox
-    Friend WithEvents TxtMa_NPadrino As TextBox
-    Friend WithEvents TxtMa_LMatrimonio As TextBox
-    Friend WithEvents DateMa_FMatrimonio As Guna.UI2.WinForms.Guna2DateTimePicker
-    Friend WithEvents CboLibro As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents CboFoja As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents TxtNumeroCasado As TextBox
-    Friend WithEvents TxtMa_AnotacionesTextuales As TextBox
 End Class
