@@ -39,6 +39,7 @@ Partial Class FrmHome
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.IconButton4 = New FontAwesome.Sharp.IconButton()
         Me.IconButton2 = New FontAwesome.Sharp.IconButton()
         Me.IconButton1 = New FontAwesome.Sharp.IconButton()
         Me.IconButton7 = New FontAwesome.Sharp.IconButton()
@@ -47,7 +48,7 @@ Partial Class FrmHome
         Me.IconButton6 = New FontAwesome.Sharp.IconButton()
         Me.PanelLogo = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.IconButton4 = New FontAwesome.Sharp.IconButton()
+        Me.IconButton5 = New FontAwesome.Sharp.IconButton()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.PanelMenu.SuspendLayout()
@@ -149,6 +150,7 @@ Partial Class FrmHome
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.PanelMenu.Controls.Add(Me.IconButton5)
         Me.PanelMenu.Controls.Add(Me.IconButton4)
         Me.PanelMenu.Controls.Add(Me.IconButton2)
         Me.PanelMenu.Controls.Add(Me.IconButton1)
@@ -162,6 +164,26 @@ Partial Class FrmHome
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(220, 640)
         Me.PanelMenu.TabIndex = 9
+        '
+        'IconButton4
+        '
+        Me.IconButton4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.IconButton4.FlatAppearance.BorderSize = 0
+        Me.IconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton4.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconButton4.IconColor = System.Drawing.Color.Orange
+        Me.IconButton4.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton4.IconSize = 32
+        Me.IconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton4.Location = New System.Drawing.Point(0, 510)
+        Me.IconButton4.Name = "IconButton4"
+        Me.IconButton4.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.IconButton4.Size = New System.Drawing.Size(220, 60)
+        Me.IconButton4.TabIndex = 17
+        Me.IconButton4.Text = "Digitalizar Bautizados"
+        Me.IconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButton4.UseVisualStyleBackColor = True
         '
         'IconButton2
         '
@@ -302,25 +324,25 @@ Partial Class FrmHome
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'IconButton4
+        'IconButton5
         '
-        Me.IconButton4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton4.FlatAppearance.BorderSize = 0
-        Me.IconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton4.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconButton4.IconColor = System.Drawing.Color.Orange
-        Me.IconButton4.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton4.IconSize = 32
-        Me.IconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton4.Location = New System.Drawing.Point(0, 510)
-        Me.IconButton4.Name = "IconButton4"
-        Me.IconButton4.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
-        Me.IconButton4.Size = New System.Drawing.Size(220, 60)
-        Me.IconButton4.TabIndex = 17
-        Me.IconButton4.Text = "Digitalizar Bautizados"
-        Me.IconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButton4.UseVisualStyleBackColor = True
+        Me.IconButton5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.IconButton5.FlatAppearance.BorderSize = 0
+        Me.IconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton5.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconButton5.IconColor = System.Drawing.Color.Orange
+        Me.IconButton5.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton5.IconSize = 32
+        Me.IconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton5.Location = New System.Drawing.Point(0, 570)
+        Me.IconButton5.Name = "IconButton5"
+        Me.IconButton5.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.IconButton5.Size = New System.Drawing.Size(220, 60)
+        Me.IconButton5.TabIndex = 18
+        Me.IconButton5.Text = "USUARIOS"
+        Me.IconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButton5.UseVisualStyleBackColor = True
         '
         'FrmHome
         '
@@ -372,4 +394,5 @@ Partial Class FrmHome
     Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton4 As FontAwesome.Sharp.IconButton
+    Friend WithEvents IconButton5 As FontAwesome.Sharp.IconButton
 End Class
