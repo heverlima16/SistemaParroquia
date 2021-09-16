@@ -1,10 +1,8 @@
-﻿Public Class FrmSacerdote
-
-    Private Sub FrmSacerdote_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Public Class FrmPais
+    Private Sub FrmPais_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.listar()
-        Me.CargarParroquia()
-
     End Sub
+
     Private Sub Formato()
         DgvListado.Columns(0).Visible = False
         BtnEliminar.Visible = False
@@ -16,7 +14,7 @@
     End Sub
     Private Sub listar()
         Try
-            Dim Negocio As New Capa_Negocio.NSacerdote
+            Dim Negocio As New Capa_Negocio.NPais
             DgvListado.DataSource = Negocio.Listar()
             LblTotal.Text = "Total de registros: " & DgvListado.DataSource.Rows.Count
             Me.Formato()
@@ -26,9 +24,10 @@
         End Try
     End Sub
 
+
     Private Sub Buscar()
         Try
-            Dim Negocio As New Capa_Negocio.NSacerdote
+            Dim Negocio As New Capa_Negocio.NPais
             Dim Valor As String
             Valor = TxtValor.Text
             DgvListado.DataSource = Negocio.Buscar(Valor)
@@ -44,32 +43,20 @@
         BtnActualizar.Visible = False
         TxtValor.Text = ""
         TxtId.Text = ""
-        TxtNombre.Text = ""
+        TxtPais.Text = ""
     End Sub
-
-    Private Sub CargarParroquia()
-        Try
-            Dim Negocio As New Capa_Negocio.NParroquia
-            CboParroquia.DataSource = Negocio.Seleccionar
-            CboParroquia.ValueMember = "idparroquia"
-            CboParroquia.DisplayMember = "pa_nombre"
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-    End Sub
-
 
     Private Sub BtnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
         Me.Buscar()
     End Sub
 
     Private Sub BtnGuardar_Click(sender As Object, e As EventArgs) Handles BtnGuardar.Click
-        If Me.ValidateChildren = True And TxtNombre.Text <> "" Then
-            Dim obj As New Capa_Entidades.ESacerdote
-            Dim Negocio As New Capa_Negocio.NSacerdote
+        If Me.ValidateChildren = True And TxtPais.Text <> "" Then
+            Dim obj As New Capa_Entidades.EPais
+            Dim Negocio As New Capa_Negocio.NPais
             'recibe datos
-            obj.IdParroquia = CboParroquia.SelectedValue
-            obj.Sacerdote_Nombre = TxtNombre.Text
+            obj.Pa_Nombre = TxtPais.Text
+
 
 
             If (Negocio.Insertar(obj)) Then
@@ -80,9 +67,9 @@
 
             End If
             TabGeneral.SelectedIndex = 0
+
         Else
             MsgBox("Rellene todo los campos obligatorios (*)", vbOKOnly + vbCritical, "Falta rellenar datos")
-
         End If
     End Sub
 
@@ -91,9 +78,7 @@
         TabGeneral.SelectedIndex = 0
     End Sub
 
-
-
-    Private Sub TxtNombre_Validating_1(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles TxtNombre.Validating
+    Private Sub TxtNombre_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles TxtPais.Validating
         If DirectCast(sender, TextBox).Text.Length > 0 Then
             Me.ErrorIcono.SetError(sender, "")
         Else
@@ -103,20 +88,19 @@
 
     Private Sub DgvListado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DgvListado.CellDoubleClick
         TxtId.Text = DgvListado.SelectedCells.Item(1).Value
-        TxtNombre.Text = DgvListado.SelectedCells.Item(2).Value
+        TxtPais.Text = DgvListado.SelectedCells.Item(2).Value
         BtnGuardar.Visible = False
         BtnActualizar.Visible = True
         TabGeneral.SelectedIndex = 1
     End Sub
 
     Private Sub BtnActualizar_Click(sender As Object, e As EventArgs) Handles BtnActualizar.Click
-        If Me.ValidateChildren = True And TxtNombre.Text <> "" And TxtId.Text <> "" Then
-            Dim obj As New Capa_Entidades.ESacerdote
-            Dim Negocio As New Capa_Negocio.NSacerdote
+        If Me.ValidateChildren = True And TxtPais.Text <> "" And TxtId.Text <> "" Then
+            Dim obj As New Capa_Entidades.EPais
+            Dim Negocio As New Capa_Negocio.NPais
             'recibe datos
-            obj.IdSacerdote = TxtId.Text
-            obj.IdParroquia = CboParroquia.SelectedValue
-            obj.Sacerdote_Nombre = TxtNombre.Text
+            obj.IdPais = TxtId.Text
+            obj.Pa_Nombre = TxtPais.Text
 
 
             If (Negocio.Actualizar(obj)) Then
@@ -134,16 +118,14 @@
         End If
     End Sub
 
-
-
     Private Sub BtnEliminar_Click(sender As Object, e As EventArgs) Handles BtnEliminar.Click
         If (MsgBox("Desea eliminar los registros seleccionados?", vbYesNo + vbQuestion, "Eliminar registros") = vbYes) Then
             Try
-                Dim Neg As New Capa_Negocio.NSacerdote
+                Dim Neg As New Capa_Negocio.NPais
                 For Each row As DataGridViewRow In DgvListado.Rows
                     Dim marcado As Boolean = Convert.ToBoolean(row.Cells("Seleccionar").Value)
                     If marcado Then
-                        Dim OneKey As Integer = Convert.ToInt32(row.Cells("Id_Sacerdote").Value)
+                        Dim OneKey As Integer = Convert.ToInt32(row.Cells("idpais").Value)
                         Neg.Eliminar(OneKey)
                     End If
                 Next

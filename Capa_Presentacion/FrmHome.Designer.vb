@@ -31,6 +31,7 @@ Partial Class FrmHome
         Me.RegistrarLugaresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegistrarNumeroLibroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegistrarNumeroFajoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegistrarSacerdoteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuUsuarios = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosParroquiaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NombreDelUsuarioSegunSuRolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -38,15 +39,15 @@ Partial Class FrmHome
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.PanelMenu = New System.Windows.Forms.Panel()
-        Me.IconButtonCerrarSesion = New FontAwesome.Sharp.IconButton()
-        Me.IconButton6 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton5 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton4 = New FontAwesome.Sharp.IconButton()
         Me.IconButton2 = New FontAwesome.Sharp.IconButton()
         Me.IconButton1 = New FontAwesome.Sharp.IconButton()
+        Me.IconButton7 = New FontAwesome.Sharp.IconButton()
+        Me.IconButton3 = New FontAwesome.Sharp.IconButton()
+        Me.IconButtonCerrarSesion = New FontAwesome.Sharp.IconButton()
+        Me.IconButton6 = New FontAwesome.Sharp.IconButton()
         Me.PanelLogo = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.RegistrarSacerdoteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IconButton4 = New FontAwesome.Sharp.IconButton()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.PanelMenu.SuspendLayout()
@@ -97,6 +98,12 @@ Partial Class FrmHome
         Me.RegistrarNumeroFajoToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
         Me.RegistrarNumeroFajoToolStripMenuItem.Text = "Registrar Numero Fajo"
         '
+        'RegistrarSacerdoteToolStripMenuItem
+        '
+        Me.RegistrarSacerdoteToolStripMenuItem.Name = "RegistrarSacerdoteToolStripMenuItem"
+        Me.RegistrarSacerdoteToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
+        Me.RegistrarSacerdoteToolStripMenuItem.Text = "Registrar Sacerdote"
+        '
         'MenuUsuarios
         '
         Me.MenuUsuarios.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosParroquiaToolStripMenuItem})
@@ -142,18 +149,99 @@ Partial Class FrmHome
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
-        Me.PanelMenu.Controls.Add(Me.IconButtonCerrarSesion)
-        Me.PanelMenu.Controls.Add(Me.IconButton6)
-        Me.PanelMenu.Controls.Add(Me.IconButton5)
         Me.PanelMenu.Controls.Add(Me.IconButton4)
         Me.PanelMenu.Controls.Add(Me.IconButton2)
         Me.PanelMenu.Controls.Add(Me.IconButton1)
+        Me.PanelMenu.Controls.Add(Me.IconButton7)
+        Me.PanelMenu.Controls.Add(Me.IconButton3)
+        Me.PanelMenu.Controls.Add(Me.IconButtonCerrarSesion)
+        Me.PanelMenu.Controls.Add(Me.IconButton6)
         Me.PanelMenu.Controls.Add(Me.PanelLogo)
         Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelMenu.Location = New System.Drawing.Point(0, 31)
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(220, 640)
         Me.PanelMenu.TabIndex = 9
+        '
+        'IconButton2
+        '
+        Me.IconButton2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.IconButton2.FlatAppearance.BorderSize = 0
+        Me.IconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconButton2.IconColor = System.Drawing.Color.Orange
+        Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton2.IconSize = 32
+        Me.IconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton2.Location = New System.Drawing.Point(0, 450)
+        Me.IconButton2.Name = "IconButton2"
+        Me.IconButton2.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.IconButton2.Size = New System.Drawing.Size(220, 60)
+        Me.IconButton2.TabIndex = 16
+        Me.IconButton2.Text = "foja"
+        Me.IconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButton2.UseVisualStyleBackColor = True
+        '
+        'IconButton1
+        '
+        Me.IconButton1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.IconButton1.FlatAppearance.BorderSize = 0
+        Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconButton1.IconColor = System.Drawing.Color.Orange
+        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton1.IconSize = 32
+        Me.IconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton1.Location = New System.Drawing.Point(0, 390)
+        Me.IconButton1.Name = "IconButton1"
+        Me.IconButton1.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.IconButton1.Size = New System.Drawing.Size(220, 60)
+        Me.IconButton1.TabIndex = 15
+        Me.IconButton1.Text = "Libro"
+        Me.IconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButton1.UseVisualStyleBackColor = True
+        '
+        'IconButton7
+        '
+        Me.IconButton7.Dock = System.Windows.Forms.DockStyle.Top
+        Me.IconButton7.FlatAppearance.BorderSize = 0
+        Me.IconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton7.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconButton7.IconColor = System.Drawing.Color.Orange
+        Me.IconButton7.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton7.IconSize = 32
+        Me.IconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton7.Location = New System.Drawing.Point(0, 330)
+        Me.IconButton7.Name = "IconButton7"
+        Me.IconButton7.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.IconButton7.Size = New System.Drawing.Size(220, 60)
+        Me.IconButton7.TabIndex = 14
+        Me.IconButton7.Text = "Parroquia"
+        Me.IconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButton7.UseVisualStyleBackColor = True
+        '
+        'IconButton3
+        '
+        Me.IconButton3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.IconButton3.FlatAppearance.BorderSize = 0
+        Me.IconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton3.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconButton3.IconColor = System.Drawing.Color.Orange
+        Me.IconButton3.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton3.IconSize = 32
+        Me.IconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton3.Location = New System.Drawing.Point(0, 270)
+        Me.IconButton3.Name = "IconButton3"
+        Me.IconButton3.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.IconButton3.Size = New System.Drawing.Size(220, 60)
+        Me.IconButton3.TabIndex = 13
+        Me.IconButton3.Text = "Sacerdote"
+        Me.IconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButton3.UseVisualStyleBackColor = True
         '
         'IconButtonCerrarSesion
         '
@@ -165,7 +253,7 @@ Partial Class FrmHome
         Me.IconButtonCerrarSesion.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButtonCerrarSesion.IconSize = 32
         Me.IconButtonCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButtonCerrarSesion.Location = New System.Drawing.Point(0, 450)
+        Me.IconButtonCerrarSesion.Location = New System.Drawing.Point(0, 210)
         Me.IconButtonCerrarSesion.Name = "IconButtonCerrarSesion"
         Me.IconButtonCerrarSesion.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
         Me.IconButtonCerrarSesion.Size = New System.Drawing.Size(220, 60)
@@ -185,7 +273,7 @@ Partial Class FrmHome
         Me.IconButton6.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton6.IconSize = 32
         Me.IconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton6.Location = New System.Drawing.Point(0, 390)
+        Me.IconButton6.Location = New System.Drawing.Point(0, 150)
         Me.IconButton6.Name = "IconButton6"
         Me.IconButton6.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
         Me.IconButton6.Size = New System.Drawing.Size(220, 60)
@@ -194,86 +282,6 @@ Partial Class FrmHome
         Me.IconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.IconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButton6.UseVisualStyleBackColor = True
-        '
-        'IconButton5
-        '
-        Me.IconButton5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton5.FlatAppearance.BorderSize = 0
-        Me.IconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton5.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconButton5.IconColor = System.Drawing.Color.Orange
-        Me.IconButton5.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton5.IconSize = 32
-        Me.IconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton5.Location = New System.Drawing.Point(0, 330)
-        Me.IconButton5.Name = "IconButton5"
-        Me.IconButton5.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
-        Me.IconButton5.Size = New System.Drawing.Size(220, 60)
-        Me.IconButton5.TabIndex = 10
-        Me.IconButton5.Text = "Digitalizar Bautizados"
-        Me.IconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButton5.UseVisualStyleBackColor = True
-        '
-        'IconButton4
-        '
-        Me.IconButton4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton4.FlatAppearance.BorderSize = 0
-        Me.IconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton4.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconButton4.IconColor = System.Drawing.Color.Orange
-        Me.IconButton4.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton4.IconSize = 32
-        Me.IconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton4.Location = New System.Drawing.Point(0, 270)
-        Me.IconButton4.Name = "IconButton4"
-        Me.IconButton4.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
-        Me.IconButton4.Size = New System.Drawing.Size(220, 60)
-        Me.IconButton4.TabIndex = 9
-        Me.IconButton4.Text = "------"
-        Me.IconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButton4.UseVisualStyleBackColor = True
-        '
-        'IconButton2
-        '
-        Me.IconButton2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton2.FlatAppearance.BorderSize = 0
-        Me.IconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconButton2.IconColor = System.Drawing.Color.Orange
-        Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton2.IconSize = 32
-        Me.IconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton2.Location = New System.Drawing.Point(0, 210)
-        Me.IconButton2.Name = "IconButton2"
-        Me.IconButton2.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
-        Me.IconButton2.Size = New System.Drawing.Size(220, 60)
-        Me.IconButton2.TabIndex = 7
-        Me.IconButton2.Text = "Entregar Partida Matrimonio"
-        Me.IconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButton2.UseVisualStyleBackColor = True
-        '
-        'IconButton1
-        '
-        Me.IconButton1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton1.FlatAppearance.BorderSize = 0
-        Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconButton1.IconColor = System.Drawing.Color.Orange
-        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton1.IconSize = 32
-        Me.IconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton1.Location = New System.Drawing.Point(0, 150)
-        Me.IconButton1.Name = "IconButton1"
-        Me.IconButton1.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
-        Me.IconButton1.Size = New System.Drawing.Size(220, 60)
-        Me.IconButton1.TabIndex = 1
-        Me.IconButton1.Text = "Entregar Partida Bautismo"
-        Me.IconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButton1.UseVisualStyleBackColor = True
         '
         'PanelLogo
         '
@@ -294,11 +302,25 @@ Partial Class FrmHome
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'RegistrarSacerdoteToolStripMenuItem
+        'IconButton4
         '
-        Me.RegistrarSacerdoteToolStripMenuItem.Name = "RegistrarSacerdoteToolStripMenuItem"
-        Me.RegistrarSacerdoteToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
-        Me.RegistrarSacerdoteToolStripMenuItem.Text = "Registrar Sacerdote"
+        Me.IconButton4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.IconButton4.FlatAppearance.BorderSize = 0
+        Me.IconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton4.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconButton4.IconColor = System.Drawing.Color.Orange
+        Me.IconButton4.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton4.IconSize = 32
+        Me.IconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton4.Location = New System.Drawing.Point(0, 510)
+        Me.IconButton4.Name = "IconButton4"
+        Me.IconButton4.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+        Me.IconButton4.Size = New System.Drawing.Size(220, 60)
+        Me.IconButton4.TabIndex = 17
+        Me.IconButton4.Text = "Digitalizar Bautizados"
+        Me.IconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.IconButton4.UseVisualStyleBackColor = True
         '
         'FrmHome
         '
@@ -341,12 +363,13 @@ Partial Class FrmHome
     Friend WithEvents PanelMenu As Panel
     Friend WithEvents PanelLogo As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton4 As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
     Friend WithEvents RegistrarNumeroFajoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents IconButtonCerrarSesion As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton6 As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton5 As FontAwesome.Sharp.IconButton
     Friend WithEvents RegistrarSacerdoteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents IconButton3 As FontAwesome.Sharp.IconButton
+    Friend WithEvents IconButton7 As FontAwesome.Sharp.IconButton
+    Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
+    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
+    Friend WithEvents IconButton4 As FontAwesome.Sharp.IconButton
 End Class

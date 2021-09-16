@@ -1,14 +1,13 @@
 ﻿Imports Capa_Entidades
 Imports System.Data.SqlClient
-Public Class DSacerdote
-
+Public Class DDistrito
     Inherits conexion
 
     Public Function Listar() As DataTable
         Try
             Dim Resultado As SqlDataReader
             Dim Tabla As New DataTable
-            Dim Comando As New SqlCommand("sacerdote_listar", MyBase.conn)
+            Dim Comando As New SqlCommand("distrito_listar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
             MyBase.conn.Open()
             Resultado = Comando.ExecuteReader()
@@ -24,7 +23,7 @@ Public Class DSacerdote
         Try
             Dim Resultado As SqlDataReader
             Dim Tabla As New DataTable
-            Dim Comando As New SqlCommand("sacerdote_buscar", MyBase.conn)
+            Dim Comando As New SqlCommand("distrito_buscar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
             Comando.Parameters.Add("@valor", SqlDbType.VarChar).Value = Valor
             MyBase.conn.Open()
@@ -38,12 +37,12 @@ Public Class DSacerdote
     End Function
 
 
-    Public Sub Insertar(Obj As ESacerdote)
+    Public Sub Insertar(Obj As EDistrito)
         Try
-            Dim Comando As New SqlCommand("sacerdote_insertar", MyBase.conn)
+            Dim Comando As New SqlCommand("distrito_insertar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
-            Comando.Parameters.Add("@idparroquia", SqlDbType.Int).Value = Obj.IdParroquia
-            Comando.Parameters.Add("@sa_nombre", SqlDbType.VarChar).Value = Obj.Sacerdote_Nombre
+            Comando.Parameters.Add("@idprovincia", SqlDbType.Int).Value = Obj.IdProvincia
+            Comando.Parameters.Add("@di_nombre", SqlDbType.VarChar).Value = Obj.Di_Nombre
             MyBase.conn.Open()
             Comando.ExecuteReader()
             MyBase.conn.Close()
@@ -52,13 +51,13 @@ Public Class DSacerdote
         End Try
     End Sub
 
-    Public Sub Actualizar(Obj As ESacerdote)
+    Public Sub Actualizar(Obj As EDistrito)
         Try
-            Dim Comando As New SqlCommand("sacerdote_actualizar", MyBase.conn)
+            Dim Comando As New SqlCommand("distrito_actualizar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
-            Comando.Parameters.Add("@idsacerdote", SqlDbType.Int).Value = Obj.IdSacerdote
-            Comando.Parameters.Add("@idparroquia", SqlDbType.Int).Value = Obj.IdParroquia
-            Comando.Parameters.Add("@sa_nombre", SqlDbType.VarChar).Value = Obj.Sacerdote_Nombre
+            Comando.Parameters.Add("@iddistrito", SqlDbType.Int).Value = Obj.IdDistrito
+            Comando.Parameters.Add("@idprovincia", SqlDbType.Int).Value = Obj.IdProvincia
+            Comando.Parameters.Add("@di_nombre", SqlDbType.VarChar).Value = Obj.Di_Nombre
             MyBase.conn.Open()
             Comando.ExecuteReader()
             MyBase.conn.Close()
@@ -69,9 +68,9 @@ Public Class DSacerdote
 
     Public Sub Eliminar(Id As Integer)
         Try
-            Dim Comando As New SqlCommand("sacerdote_eliminar", MyBase.conn)
+            Dim Comando As New SqlCommand("distrito_eliminar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
-            Comando.Parameters.Add("@idsacerdote", SqlDbType.Int).Value = Id
+            Comando.Parameters.Add("@iddistrito", SqlDbType.Int).Value = Id
             MyBase.conn.Open()
             Comando.ExecuteReader()
             MyBase.conn.Close()
@@ -84,7 +83,7 @@ Public Class DSacerdote
         Try
             Dim Resultado As SqlDataReader
             Dim Tabla As New DataTable
-            Dim Comando As New SqlCommand("sacerdote_seleccionar", MyBase.conn)
+            Dim Comando As New SqlCommand("distrito_seleccionar", MyBase.conn)
             Comando.CommandType = CommandType.StoredProcedure
             MyBase.conn.Open()
             Resultado = Comando.ExecuteReader()
@@ -95,5 +94,4 @@ Public Class DSacerdote
             Throw ex
         End Try
     End Function
-
 End Class

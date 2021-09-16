@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class FrmLibro
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class FrmProvincia
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,12 @@ Partial Class FrmLibro
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TabGeneral = New Guna.UI2.WinForms.Guna2TabControl()
@@ -38,11 +38,13 @@ Partial Class FrmLibro
         Me.DgvListado = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Seleccionar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TxtAnotaciones = New System.Windows.Forms.TextBox()
+        Me.CboDepartamento = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.CboPais = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.BtnGuardar = New Guna.UI2.WinForms.Guna2Button()
         Me.BtnActualizar = New Guna.UI2.WinForms.Guna2Button()
-        Me.TxtNumero = New System.Windows.Forms.TextBox()
+        Me.TxtProvincia = New System.Windows.Forms.TextBox()
         Me.TxtId = New System.Windows.Forms.TextBox()
         Me.BtnCancelar = New Guna.UI2.WinForms.Guna2Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -65,12 +67,12 @@ Partial Class FrmLibro
         Me.Guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.Guna2ControlBox1.HoverState.Parent = Me.Guna2ControlBox1
         Me.Guna2ControlBox1.IconColor = System.Drawing.Color.Red
-        Me.Guna2ControlBox1.Location = New System.Drawing.Point(1038, 0)
+        Me.Guna2ControlBox1.Location = New System.Drawing.Point(751, 0)
         Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
         Me.Guna2ControlBox1.PressedColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.Guna2ControlBox1.ShadowDecoration.Parent = Me.Guna2ControlBox1
         Me.Guna2ControlBox1.Size = New System.Drawing.Size(73, 44)
-        Me.Guna2ControlBox1.TabIndex = 48
+        Me.Guna2ControlBox1.TabIndex = 52
         '
         'Label10
         '
@@ -81,9 +83,9 @@ Partial Class FrmLibro
         Me.Label10.Location = New System.Drawing.Point(0, 0)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(1111, 44)
-        Me.Label10.TabIndex = 47
-        Me.Label10.Text = "LIBROS"
+        Me.Label10.Size = New System.Drawing.Size(824, 44)
+        Me.Label10.TabIndex = 51
+        Me.Label10.Text = "Provincia"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TabGeneral
@@ -92,10 +94,10 @@ Partial Class FrmLibro
         Me.TabGeneral.Controls.Add(Me.TabPage1)
         Me.TabGeneral.Controls.Add(Me.TabPage2)
         Me.TabGeneral.ItemSize = New System.Drawing.Size(180, 40)
-        Me.TabGeneral.Location = New System.Drawing.Point(32, 104)
+        Me.TabGeneral.Location = New System.Drawing.Point(13, 51)
         Me.TabGeneral.Name = "TabGeneral"
         Me.TabGeneral.SelectedIndex = 0
-        Me.TabGeneral.Size = New System.Drawing.Size(1067, 496)
+        Me.TabGeneral.Size = New System.Drawing.Size(799, 496)
         Me.TabGeneral.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty
         Me.TabGeneral.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.TabGeneral.TabButtonHoverState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
@@ -112,7 +114,7 @@ Partial Class FrmLibro
         Me.TabGeneral.TabButtonSelectedState.ForeColor = System.Drawing.Color.White
         Me.TabGeneral.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TabGeneral.TabButtonSize = New System.Drawing.Size(180, 40)
-        Me.TabGeneral.TabIndex = 49
+        Me.TabGeneral.TabIndex = 53
         Me.TabGeneral.TabMenuBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
         '
         'TabPage1
@@ -126,7 +128,7 @@ Partial Class FrmLibro
         Me.TabPage1.Controls.Add(Me.DgvListado)
         Me.TabPage1.Location = New System.Drawing.Point(184, 4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(879, 488)
+        Me.TabPage1.Size = New System.Drawing.Size(611, 488)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Listado"
         '
@@ -178,7 +180,7 @@ Partial Class FrmLibro
         Me.BtnBuscar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnBuscar.ForeColor = System.Drawing.Color.White
         Me.BtnBuscar.HoverState.Parent = Me.BtnBuscar
-        Me.BtnBuscar.Location = New System.Drawing.Point(725, 14)
+        Me.BtnBuscar.Location = New System.Drawing.Point(453, 14)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.ShadowDecoration.Parent = Me.BtnBuscar
         Me.BtnBuscar.Size = New System.Drawing.Size(129, 36)
@@ -205,13 +207,13 @@ Partial Class FrmLibro
         Me.TxtValor.PlaceholderText = ""
         Me.TxtValor.SelectedText = ""
         Me.TxtValor.ShadowDecoration.Parent = Me.TxtValor
-        Me.TxtValor.Size = New System.Drawing.Size(702, 36)
+        Me.TxtValor.Size = New System.Drawing.Size(431, 36)
         Me.TxtValor.TabIndex = 45
         '
         'LblTotal
         '
         Me.LblTotal.BackColor = System.Drawing.Color.Transparent
-        Me.LblTotal.Location = New System.Drawing.Point(697, 391)
+        Me.LblTotal.Location = New System.Drawing.Point(317, 409)
         Me.LblTotal.Name = "LblTotal"
         Me.LblTotal.Size = New System.Drawing.Size(37, 18)
         Me.LblTotal.TabIndex = 1
@@ -222,41 +224,41 @@ Partial Class FrmLibro
         Me.DgvListado.AllowUserToAddRows = False
         Me.DgvListado.AllowUserToDeleteRows = False
         Me.DgvListado.AllowUserToOrderColumns = True
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         Me.DgvListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DgvListado.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.DgvListado.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DgvListado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DgvListado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.DgvListado.ColumnHeadersHeight = 27
         Me.DgvListado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Seleccionar})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle6
         Me.DgvListado.EnableHeadersVisualStyles = False
         Me.DgvListado.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.DgvListado.Location = New System.Drawing.Point(16, 73)
+        Me.DgvListado.Location = New System.Drawing.Point(16, 105)
         Me.DgvListado.Name = "DgvListado"
         Me.DgvListado.ReadOnly = True
         Me.DgvListado.RowHeadersVisible = False
         Me.DgvListado.RowHeadersWidth = 51
         Me.DgvListado.RowTemplate.Height = 24
         Me.DgvListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DgvListado.Size = New System.Drawing.Size(838, 264)
+        Me.DgvListado.Size = New System.Drawing.Size(566, 264)
         Me.DgvListado.TabIndex = 0
         Me.DgvListado.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.DgvListado.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -290,37 +292,79 @@ Partial Class FrmLibro
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
-        Me.TabPage2.Controls.Add(Me.TxtAnotaciones)
+        Me.TabPage2.Controls.Add(Me.CboDepartamento)
+        Me.TabPage2.Controls.Add(Me.CboPais)
         Me.TabPage2.Controls.Add(Me.Label2)
+        Me.TabPage2.Controls.Add(Me.Label3)
         Me.TabPage2.Controls.Add(Me.BtnGuardar)
         Me.TabPage2.Controls.Add(Me.BtnActualizar)
-        Me.TabPage2.Controls.Add(Me.TxtNumero)
+        Me.TabPage2.Controls.Add(Me.TxtProvincia)
         Me.TabPage2.Controls.Add(Me.TxtId)
         Me.TabPage2.Controls.Add(Me.BtnCancelar)
         Me.TabPage2.Controls.Add(Me.Label1)
         Me.TabPage2.Location = New System.Drawing.Point(184, 4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Size = New System.Drawing.Size(879, 488)
+        Me.TabPage2.Size = New System.Drawing.Size(611, 488)
         Me.TabPage2.TabIndex = 0
         Me.TabPage2.Text = "Registrar"
         '
-        'TxtAnotaciones
+        'CboDepartamento
         '
-        Me.TxtAnotaciones.Location = New System.Drawing.Point(212, 196)
-        Me.TxtAnotaciones.Multiline = True
-        Me.TxtAnotaciones.Name = "TxtAnotaciones"
-        Me.TxtAnotaciones.Size = New System.Drawing.Size(448, 39)
-        Me.TxtAnotaciones.TabIndex = 9
+        Me.CboDepartamento.BackColor = System.Drawing.Color.Transparent
+        Me.CboDepartamento.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CboDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CboDepartamento.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CboDepartamento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CboDepartamento.FocusedState.Parent = Me.CboDepartamento
+        Me.CboDepartamento.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CboDepartamento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CboDepartamento.HoverState.Parent = Me.CboDepartamento
+        Me.CboDepartamento.ItemHeight = 30
+        Me.CboDepartamento.ItemsAppearance.Parent = Me.CboDepartamento
+        Me.CboDepartamento.Location = New System.Drawing.Point(83, 226)
+        Me.CboDepartamento.Name = "CboDepartamento"
+        Me.CboDepartamento.ShadowDecoration.Parent = Me.CboDepartamento
+        Me.CboDepartamento.Size = New System.Drawing.Size(444, 36)
+        Me.CboDepartamento.TabIndex = 13
+        '
+        'CboPais
+        '
+        Me.CboPais.BackColor = System.Drawing.Color.Transparent
+        Me.CboPais.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CboPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CboPais.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CboPais.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CboPais.FocusedState.Parent = Me.CboPais
+        Me.CboPais.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CboPais.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CboPais.HoverState.Parent = Me.CboPais
+        Me.CboPais.ItemHeight = 30
+        Me.CboPais.ItemsAppearance.Parent = Me.CboPais
+        Me.CboPais.Location = New System.Drawing.Point(82, 139)
+        Me.CboPais.Name = "CboPais"
+        Me.CboPais.ShadowDecoration.Parent = Me.CboPais
+        Me.CboPais.Size = New System.Drawing.Size(444, 36)
+        Me.CboPais.TabIndex = 12
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(209, 176)
+        Me.Label2.Location = New System.Drawing.Point(79, 193)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(122, 17)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "Anotaciones Libro"
+        Me.Label2.Size = New System.Drawing.Size(171, 17)
+        Me.Label2.TabIndex = 11
+        Me.Label2.Text = "Nombre Departamento (*)"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(79, 107)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(108, 17)
+        Me.Label3.TabIndex = 10
+        Me.Label3.Text = "Nombre Pais (*)"
         '
         'BtnGuardar
         '
@@ -334,7 +378,7 @@ Partial Class FrmLibro
         Me.BtnGuardar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
         Me.BtnGuardar.HoverState.Parent = Me.BtnGuardar
-        Me.BtnGuardar.Location = New System.Drawing.Point(212, 344)
+        Me.BtnGuardar.Location = New System.Drawing.Point(83, 429)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.ShadowDecoration.Parent = Me.BtnGuardar
         Me.BtnGuardar.Size = New System.Drawing.Size(195, 45)
@@ -353,24 +397,24 @@ Partial Class FrmLibro
         Me.BtnActualizar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnActualizar.ForeColor = System.Drawing.Color.White
         Me.BtnActualizar.HoverState.Parent = Me.BtnActualizar
-        Me.BtnActualizar.Location = New System.Drawing.Point(212, 344)
+        Me.BtnActualizar.Location = New System.Drawing.Point(82, 406)
         Me.BtnActualizar.Name = "BtnActualizar"
         Me.BtnActualizar.ShadowDecoration.Parent = Me.BtnActualizar
         Me.BtnActualizar.Size = New System.Drawing.Size(195, 45)
         Me.BtnActualizar.TabIndex = 7
         Me.BtnActualizar.Text = "Actualizar"
         '
-        'TxtNumero
+        'TxtProvincia
         '
-        Me.TxtNumero.Location = New System.Drawing.Point(212, 123)
-        Me.TxtNumero.Multiline = True
-        Me.TxtNumero.Name = "TxtNumero"
-        Me.TxtNumero.Size = New System.Drawing.Size(448, 38)
-        Me.TxtNumero.TabIndex = 6
+        Me.TxtProvincia.Location = New System.Drawing.Point(82, 318)
+        Me.TxtProvincia.Multiline = True
+        Me.TxtProvincia.Name = "TxtProvincia"
+        Me.TxtProvincia.Size = New System.Drawing.Size(444, 38)
+        Me.TxtProvincia.TabIndex = 6
         '
         'TxtId
         '
-        Me.TxtId.Location = New System.Drawing.Point(750, 18)
+        Me.TxtId.Location = New System.Drawing.Point(427, 67)
         Me.TxtId.Name = "TxtId"
         Me.TxtId.Size = New System.Drawing.Size(100, 22)
         Me.TxtId.TabIndex = 5
@@ -387,7 +431,7 @@ Partial Class FrmLibro
         Me.BtnCancelar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnCancelar.ForeColor = System.Drawing.Color.White
         Me.BtnCancelar.HoverState.Parent = Me.BtnCancelar
-        Me.BtnCancelar.Location = New System.Drawing.Point(441, 344)
+        Me.BtnCancelar.Location = New System.Drawing.Point(307, 406)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.ShadowDecoration.Parent = Me.BtnCancelar
         Me.BtnCancelar.Size = New System.Drawing.Size(219, 45)
@@ -398,29 +442,29 @@ Partial Class FrmLibro
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(209, 91)
+        Me.Label1.Location = New System.Drawing.Point(79, 282)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(113, 17)
+        Me.Label1.Size = New System.Drawing.Size(139, 17)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Número Libro (*)"
+        Me.Label1.Text = "Nombre Provincia (*)"
         '
         'ErrorIcono
         '
         Me.ErrorIcono.ContainerControl = Me
         '
-        'FrmLibro
+        'FrmProvincia
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1111, 705)
+        Me.ClientSize = New System.Drawing.Size(824, 598)
         Me.Controls.Add(Me.TabGeneral)
         Me.Controls.Add(Me.Guna2ControlBox1)
         Me.Controls.Add(Me.Label10)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "FrmLibro"
+        Me.Name = "FrmProvincia"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FrmLibro"
+        Me.Text = "FrmProvincia"
         Me.TabGeneral.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
@@ -444,13 +488,15 @@ Partial Class FrmLibro
     Friend WithEvents DgvListado As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents Seleccionar As DataGridViewCheckBoxColumn
     Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents TxtAnotaciones As TextBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents BtnGuardar As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents BtnActualizar As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents TxtNumero As TextBox
+    Friend WithEvents TxtProvincia As TextBox
     Friend WithEvents TxtId As TextBox
     Friend WithEvents BtnCancelar As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label1 As Label
     Friend WithEvents ErrorIcono As ErrorProvider
+    Friend WithEvents CboDepartamento As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents CboPais As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
 End Class

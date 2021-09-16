@@ -1,6 +1,5 @@
 ﻿Public Class ELibro
     Private _IdLibro As Integer
-    Private _IdFoja As Integer
     Private _li_Numero As Integer
     Private _li_Anotaciones As String
 
@@ -10,15 +9,6 @@
         End Get
         Set(value As Integer)
             _IdLibro = value
-        End Set
-    End Property
-
-    Public Property IdFoja As Integer
-        Get
-            Return _IdFoja
-        End Get
-        Set(value As Integer)
-            _IdFoja = value
         End Set
     End Property
 

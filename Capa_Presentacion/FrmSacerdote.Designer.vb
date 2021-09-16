@@ -36,6 +36,8 @@ Partial Class FrmSacerdote
         Me.DgvListado = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Seleccionar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.CboParroquia = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.BtnGuardar = New Guna.UI2.WinForms.Guna2Button()
         Me.BtnActualizar = New Guna.UI2.WinForms.Guna2Button()
         Me.TxtNombre = New System.Windows.Forms.TextBox()
@@ -257,6 +259,8 @@ Partial Class FrmSacerdote
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.TabPage2.Controls.Add(Me.CboParroquia)
+        Me.TabPage2.Controls.Add(Me.Label12)
         Me.TabPage2.Controls.Add(Me.BtnGuardar)
         Me.TabPage2.Controls.Add(Me.BtnActualizar)
         Me.TabPage2.Controls.Add(Me.TxtNombre)
@@ -265,9 +269,39 @@ Partial Class FrmSacerdote
         Me.TabPage2.Controls.Add(Me.Label1)
         Me.TabPage2.Location = New System.Drawing.Point(184, 4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Size = New System.Drawing.Size(879, 538)
+        Me.TabPage2.Size = New System.Drawing.Size(879, 488)
         Me.TabPage2.TabIndex = 0
         Me.TabPage2.Text = "Registrar"
+        '
+        'CboParroquia
+        '
+        Me.CboParroquia.BackColor = System.Drawing.Color.Transparent
+        Me.CboParroquia.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CboParroquia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CboParroquia.FillColor = System.Drawing.Color.Beige
+        Me.CboParroquia.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CboParroquia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CboParroquia.FocusedState.Parent = Me.CboParroquia
+        Me.CboParroquia.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CboParroquia.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CboParroquia.HoverState.Parent = Me.CboParroquia
+        Me.CboParroquia.ItemHeight = 30
+        Me.CboParroquia.ItemsAppearance.Parent = Me.CboParroquia
+        Me.CboParroquia.Location = New System.Drawing.Point(210, 205)
+        Me.CboParroquia.Name = "CboParroquia"
+        Me.CboParroquia.ShadowDecoration.Parent = Me.CboParroquia
+        Me.CboParroquia.Size = New System.Drawing.Size(448, 36)
+        Me.CboParroquia.TabIndex = 58
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(207, 170)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(166, 17)
+        Me.Label12.TabIndex = 57
+        Me.Label12.Text = "Nombre del Parroquia (*)"
         '
         'BtnGuardar
         '
@@ -281,7 +315,7 @@ Partial Class FrmSacerdote
         Me.BtnGuardar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
         Me.BtnGuardar.HoverState.Parent = Me.BtnGuardar
-        Me.BtnGuardar.Location = New System.Drawing.Point(212, 244)
+        Me.BtnGuardar.Location = New System.Drawing.Point(210, 366)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.ShadowDecoration.Parent = Me.BtnGuardar
         Me.BtnGuardar.Size = New System.Drawing.Size(195, 45)
@@ -300,7 +334,7 @@ Partial Class FrmSacerdote
         Me.BtnActualizar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnActualizar.ForeColor = System.Drawing.Color.White
         Me.BtnActualizar.HoverState.Parent = Me.BtnActualizar
-        Me.BtnActualizar.Location = New System.Drawing.Point(212, 244)
+        Me.BtnActualizar.Location = New System.Drawing.Point(210, 366)
         Me.BtnActualizar.Name = "BtnActualizar"
         Me.BtnActualizar.ShadowDecoration.Parent = Me.BtnActualizar
         Me.BtnActualizar.Size = New System.Drawing.Size(195, 45)
@@ -309,7 +343,7 @@ Partial Class FrmSacerdote
         '
         'TxtNombre
         '
-        Me.TxtNombre.Location = New System.Drawing.Point(212, 186)
+        Me.TxtNombre.Location = New System.Drawing.Point(210, 308)
         Me.TxtNombre.Multiline = True
         Me.TxtNombre.Name = "TxtNombre"
         Me.TxtNombre.Size = New System.Drawing.Size(448, 38)
@@ -317,7 +351,7 @@ Partial Class FrmSacerdote
         '
         'TxtId
         '
-        Me.TxtId.Location = New System.Drawing.Point(560, 136)
+        Me.TxtId.Location = New System.Drawing.Point(558, 124)
         Me.TxtId.Name = "TxtId"
         Me.TxtId.Size = New System.Drawing.Size(100, 22)
         Me.TxtId.TabIndex = 5
@@ -334,7 +368,7 @@ Partial Class FrmSacerdote
         Me.BtnCancelar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnCancelar.ForeColor = System.Drawing.Color.White
         Me.BtnCancelar.HoverState.Parent = Me.BtnCancelar
-        Me.BtnCancelar.Location = New System.Drawing.Point(441, 244)
+        Me.BtnCancelar.Location = New System.Drawing.Point(439, 366)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.ShadowDecoration.Parent = Me.BtnCancelar
         Me.BtnCancelar.Size = New System.Drawing.Size(219, 45)
@@ -345,7 +379,7 @@ Partial Class FrmSacerdote
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(209, 141)
+        Me.Label1.Location = New System.Drawing.Point(207, 263)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(239, 17)
         Me.Label1.TabIndex = 0
@@ -367,7 +401,7 @@ Partial Class FrmSacerdote
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(1066, 44)
         Me.Label10.TabIndex = 43
-        Me.Label10.Text = "REGISTRO DE USUARIOS DE LA PARROQUIA SAN PEDRO DE PAMPAS"
+        Me.Label10.Text = "SACERDOTES"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2ControlBox1
@@ -436,4 +470,6 @@ Partial Class FrmSacerdote
     Friend WithEvents BtnActualizar As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents ChkSeleccionar As Guna.UI2.WinForms.Guna2CheckBox
     Friend WithEvents BtnEliminar As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents CboParroquia As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Label12 As Label
 End Class

@@ -153,11 +153,48 @@ Public Class FrmHome
         End If
     End Sub
 
+<<<<<<< HEAD
     Private Sub IconButton4_Click(sender As Object, e As EventArgs) Handles IconButton4.Click
         Dim frm As New FrmGivePartBautis
+=======
+
+    Private Sub IconButton6_Click(sender As Object, e As EventArgs) Handles IconButton6.Click
+        Dim frm As New FrmCMatrimonio
         frm.MdiParent = Me
         frm.Show()
     End Sub
+
+    Private Sub IconButton3_Click(sender As Object, e As EventArgs) Handles IconButton3.Click
+        Dim frm As New FrmSacerdote
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
+
+    Private Sub IconButton7_Click(sender As Object, e As EventArgs) Handles IconButton7.Click
+        Dim frm As New FrmParroquia
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
+
+    Private Sub IconButton1_Click_1(sender As Object, e As EventArgs) Handles IconButton1.Click
+        Dim frm As New FrmLibro
+>>>>>>> 40f4e230ce0878a4402a79b54a4403c5e7119372
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
+
+    Private Sub IconButton2_Click(sender As Object, e As EventArgs) Handles IconButton2.Click
+        Dim frm As New FrmFoja
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
+
+    Private Sub IconButton4_Click(sender As Object, e As EventArgs) Handles IconButton4.Click
+        Dim frm As New FrmCBautismo
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
+
 
 
     'fin de login '

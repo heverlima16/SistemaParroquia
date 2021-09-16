@@ -39,6 +39,8 @@ Partial Class FrmFoja
         Me.DgvListado = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Seleccionar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.CboLibro = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.TxtAnotaciones = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.BtnGuardar = New Guna.UI2.WinForms.Guna2Button()
@@ -304,6 +306,8 @@ Partial Class FrmFoja
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.TabPage2.Controls.Add(Me.CboLibro)
+        Me.TabPage2.Controls.Add(Me.Label3)
         Me.TabPage2.Controls.Add(Me.TxtAnotaciones)
         Me.TabPage2.Controls.Add(Me.Label2)
         Me.TabPage2.Controls.Add(Me.BtnGuardar)
@@ -318,6 +322,35 @@ Partial Class FrmFoja
         Me.TabPage2.Size = New System.Drawing.Size(612, 395)
         Me.TabPage2.TabIndex = 0
         Me.TabPage2.Text = "Registrar"
+        '
+        'CboLibro
+        '
+        Me.CboLibro.BackColor = System.Drawing.Color.Transparent
+        Me.CboLibro.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CboLibro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CboLibro.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CboLibro.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CboLibro.FocusedState.Parent = Me.CboLibro
+        Me.CboLibro.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CboLibro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CboLibro.HoverState.Parent = Me.CboLibro
+        Me.CboLibro.ItemHeight = 30
+        Me.CboLibro.ItemsAppearance.Parent = Me.CboLibro
+        Me.CboLibro.Location = New System.Drawing.Point(212, 123)
+        Me.CboLibro.Name = "CboLibro"
+        Me.CboLibro.ShadowDecoration.Parent = Me.CboLibro
+        Me.CboLibro.Size = New System.Drawing.Size(187, 36)
+        Me.CboLibro.TabIndex = 14
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(209, 91)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(113, 17)
+        Me.Label3.TabIndex = 13
+        Me.Label3.Text = "Número Libro (*)"
         '
         'TxtAnotaciones
         '
@@ -351,8 +384,12 @@ Partial Class FrmFoja
         Me.BtnGuardar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
         Me.BtnGuardar.HoverState.Parent = Me.BtnGuardar
+<<<<<<< HEAD
         Me.BtnGuardar.Location = New System.Drawing.Point(159, 280)
         Me.BtnGuardar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+        Me.BtnGuardar.Location = New System.Drawing.Point(212, 395)
+>>>>>>> 40f4e230ce0878a4402a79b54a4403c5e7119372
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.ShadowDecoration.Parent = Me.BtnGuardar
         Me.BtnGuardar.Size = New System.Drawing.Size(146, 37)
@@ -381,17 +418,28 @@ Partial Class FrmFoja
         '
         'TxtNumero
         '
+<<<<<<< HEAD
         Me.TxtNumero.Location = New System.Drawing.Point(159, 100)
         Me.TxtNumero.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtNumero.Multiline = True
         Me.TxtNumero.Name = "TxtNumero"
         Me.TxtNumero.Size = New System.Drawing.Size(337, 32)
+=======
+        Me.TxtNumero.Location = New System.Drawing.Point(405, 123)
+        Me.TxtNumero.Multiline = True
+        Me.TxtNumero.Name = "TxtNumero"
+        Me.TxtNumero.Size = New System.Drawing.Size(255, 38)
+>>>>>>> 40f4e230ce0878a4402a79b54a4403c5e7119372
         Me.TxtNumero.TabIndex = 6
         '
         'TxtId
         '
+<<<<<<< HEAD
         Me.TxtId.Location = New System.Drawing.Point(420, 59)
         Me.TxtId.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+        Me.TxtId.Location = New System.Drawing.Point(730, 19)
+>>>>>>> 40f4e230ce0878a4402a79b54a4403c5e7119372
         Me.TxtId.Name = "TxtId"
         Me.TxtId.Size = New System.Drawing.Size(76, 20)
         Me.TxtId.TabIndex = 5
@@ -420,8 +468,12 @@ Partial Class FrmFoja
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.White
+<<<<<<< HEAD
         Me.Label1.Location = New System.Drawing.Point(157, 63)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+=======
+        Me.Label1.Location = New System.Drawing.Point(402, 91)
+>>>>>>> 40f4e230ce0878a4402a79b54a4403c5e7119372
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(80, 13)
         Me.Label1.TabIndex = 0
@@ -478,4 +530,6 @@ Partial Class FrmFoja
     Friend WithEvents ErrorIcono As ErrorProvider
     Friend WithEvents TxtAnotaciones As TextBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents CboLibro As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Label3 As Label
 End Class
