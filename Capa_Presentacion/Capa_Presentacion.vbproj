@@ -236,6 +236,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ico.ico" />
+    <None Include="Resources\lupa.png" />
     <None Include="Resources\usuario.png" />
     <None Include="Resources\candado.png" />
     <None Include="Resources\editar.png" />

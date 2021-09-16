@@ -159,6 +159,10 @@
         End If
     End Sub
 
+    Private Sub TxtValor_TextChanged(sender As Object, e As EventArgs) Handles TxtValor.TextChanged
+
+    End Sub
+
     '' evitar duplicados
 
 
