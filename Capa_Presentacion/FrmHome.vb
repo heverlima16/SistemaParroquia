@@ -2,9 +2,7 @@
 
 Public Class FrmHome
 
-    'muestra el roly y nombre
     Private Sub FrmHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ''  Handles MyBase.MouseMove '' aca puedes agregar mas controles que quieras usar para mover el formulario ej: label1.MouseMove
 
 
         'mostrara el menu principal de estado habitaciones
@@ -25,9 +23,7 @@ Public Class FrmHome
             MenuUsuarios.Enabled = False
         End If
     End Sub
-    ' Fin mostrar el roly y nombre
 
-    'desabilitar el boton cerrar de form'
     Dim _enabledCerrar As Boolean = False
     <System.ComponentModel.DefaultValue(False), System.ComponentModel.Description("Define si se habilita el botón cerrar en el formulario")>
     Public Property EnabledCerrar() As Boolean
@@ -50,6 +46,8 @@ Public Class FrmHome
             Return cp
         End Get
     End Property
+
+
     'fin   desabilitar el boton cerrar de form'
     Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs) Handles UsuariosParroquiaToolStripMenuItem.Click
         Dim frm As New FrmUsuario
@@ -107,7 +105,7 @@ Public Class FrmHome
     Private _IdRol As String
     Private _Rol As String
     Private _Nombre As String
-
+    Private _Nick As String
     Public Property IdUsuario As String
         Get
             Return _IdUsuario
@@ -143,6 +141,16 @@ Public Class FrmHome
             _Nombre = value
         End Set
     End Property
+
+    Public Property Nick As String
+        Get
+            Return _Nick
+        End Get
+        Set(value As String)
+            _Nick = value
+        End Set
+    End Property
+
 
 
 

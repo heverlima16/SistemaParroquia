@@ -74,6 +74,7 @@
     <Compile Include="DPais.vb" />
     <Compile Include="DParroquia.vb" />
     <Compile Include="DProvincia.vb" />
+    <Compile Include="DRol.vb" />
     <Compile Include="DSacerdote.vb" />
     <Compile Include="DUsuario.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

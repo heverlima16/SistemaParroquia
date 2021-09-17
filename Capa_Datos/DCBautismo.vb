@@ -46,6 +46,7 @@ Public Class DCBautismo
             Comando.Parameters.Add("@IdFoja", SqlDbType.Int).Value = Obj.IdFoja
             Comando.Parameters.Add("@Ba_Numero", SqlDbType.Int).Value = Obj.Ba_Numero
             Comando.Parameters.Add("@Ba_Nombre", SqlDbType.VarChar).Value = Obj.Ba_Nombre
+            Comando.Parameters.Add("@Ba_Apellido", SqlDbType.VarChar).Value = Obj.Ba_Apellido
             Comando.Parameters.Add("@Ba_LNacimiento", SqlDbType.VarChar).Value = Obj.Ba_LNacimiento
             Comando.Parameters.Add("@Ba_FNacimiento", SqlDbType.Date).Value = Obj.Ba_FNacimiento
             Comando.Parameters.Add("@idsacerdote", SqlDbType.Int).Value = Obj.Idsacerdote
@@ -74,6 +75,7 @@ Public Class DCBautismo
             Comando.Parameters.Add("@IdPBautismo", SqlDbType.Int).Value = Obj.IdPBautismo
             Comando.Parameters.Add("@Ba_Numero", SqlDbType.Int).Value = Obj.Ba_Numero
             Comando.Parameters.Add("@Ba_Nombre", SqlDbType.VarChar).Value = Obj.Ba_Nombre
+            Comando.Parameters.Add("@Ba_Apellido", SqlDbType.VarChar).Value = Obj.Ba_Apellido
             Comando.Parameters.Add("@Ba_LNacimiento", SqlDbType.VarChar).Value = Obj.Ba_LNacimiento
             Comando.Parameters.Add("@Ba_FNacimiento", SqlDbType.Date).Value = Obj.Ba_FNacimiento
             Comando.Parameters.Add("@Ba_NPadre ", SqlDbType.VarChar).Value = Obj.Ba_NPadre

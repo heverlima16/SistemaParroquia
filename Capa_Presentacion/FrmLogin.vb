@@ -12,7 +12,7 @@
             Clave = Txt_Clave.Text.Trim()
             Obj = Neg.Login(Usuario, Clave)
             If (Obj Is Nothing) Then
-                MsgBox("No existe un usuario con ese email o clave", vbOKOnly + vbCritical, "Datos incorrectos")
+                MsgBox("No existe un usuario con ese Nick o clave", vbOKOnly + vbCritical, "Datos incorrectos")
             Else
                 Me.Hide()
                 FrmHome.IdUsuario = Obj.IdUsuario

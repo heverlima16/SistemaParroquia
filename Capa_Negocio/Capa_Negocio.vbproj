@@ -88,6 +88,7 @@
     <Compile Include="NPais.vb" />
     <Compile Include="NParroquia.vb" />
     <Compile Include="NProvincia.vb" />
+    <Compile Include="NRol.vb" />
     <Compile Include="NSacerdote.vb" />
     <Compile Include="NUsuario.vb" />
   </ItemGroup>

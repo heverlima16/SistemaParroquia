@@ -17,13 +17,15 @@
         DgvListado.Columns(2).Visible = True
         DgvListado.Columns(3).Visible = True
         DgvListado.Columns(4).Visible = True
-        DgvListado.Columns(5).Visible = False
+        DgvListado.Columns(5).Visible = True
         DgvListado.Columns(6).Visible = False
         DgvListado.Columns(7).Visible = False
         DgvListado.Columns(8).Visible = False
         DgvListado.Columns(9).Visible = False
         DgvListado.Columns(10).Visible = False
         DgvListado.Columns(11).Visible = False
+        DgvListado.Columns(12).Visible = False
+
 
 
 
@@ -80,6 +82,8 @@
 
         TxtBa_Numero.Text = ""
         TxtBa_Nombre.Text = ""
+        TxtBa_Apellido.Text = ""
+
         TxtBa_LNacimiento.Text = ""
         DateBa_FNacimiento.Text = ""
         CboSacerdote.Text = ""
@@ -99,14 +103,16 @@
         TxtId.Text = DgvListado.SelectedCells.Item(1).Value
         DateBa_FBautismo.Text = DgvListado.SelectedCells.Item(2).Value
         TxtBa_Nombre.Text = DgvListado.SelectedCells.Item(3).Value
-        TxtBa_NPadrino.Text = DgvListado.SelectedCells.Item(4).Value
-        TxtBa_Numero.Text = DgvListado.SelectedCells.Item(5).Value
-        TxtBa_LNacimiento.Text = DgvListado.SelectedCells.Item(6).Value
-        DateBa_FNacimiento.Text = DgvListado.SelectedCells.Item(7).Value
-        TxtBa_NPadre.Text = DgvListado.SelectedCells.Item(8).Value
-        TxtBa_NMadre.Text = DgvListado.SelectedCells.Item(9).Value
-        TxtBa_LBautismo.Text = DgvListado.SelectedCells.Item(10).Value
-        TxtBa_AnotacionesTextuales.Text = DgvListado.SelectedCells.Item(11).Value
+        TxtBa_Apellido.Text = DgvListado.SelectedCells.Item(4).Value
+
+        TxtBa_NPadrino.Text = DgvListado.SelectedCells.Item(5).Value
+        TxtBa_Numero.Text = DgvListado.SelectedCells.Item(6).Value
+        TxtBa_LNacimiento.Text = DgvListado.SelectedCells.Item(7).Value
+        DateBa_FNacimiento.Text = DgvListado.SelectedCells.Item(8).Value
+        TxtBa_NPadre.Text = DgvListado.SelectedCells.Item(9).Value
+        TxtBa_NMadre.Text = DgvListado.SelectedCells.Item(10).Value
+        TxtBa_LBautismo.Text = DgvListado.SelectedCells.Item(11).Value
+        TxtBa_AnotacionesTextuales.Text = DgvListado.SelectedCells.Item(12).Value
 
 
 
@@ -182,6 +188,7 @@
             obj.IdLibro = CboLibro.SelectedValue
             obj.Ba_Numero = TxtBa_Numero.Text
             obj.Ba_Nombre = TxtBa_Nombre.Text
+            obj.Ba_Apellido = TxtBa_Apellido.Text
             obj.Ba_LNacimiento = TxtBa_LNacimiento.Text
             obj.Ba_FNacimiento = DateBa_FNacimiento.Text
             obj.Idsacerdote = CboSacerdote.SelectedValue
@@ -230,6 +237,8 @@
 
             obj.Ba_Numero = TxtBa_Numero.Text
             obj.Ba_Nombre = TxtBa_Nombre.Text
+            obj.Ba_Apellido = TxtBa_Apellido.Text
+
             obj.Ba_LNacimiento = TxtBa_LNacimiento.Text
             obj.Ba_FNacimiento = DateBa_FNacimiento.Text
 

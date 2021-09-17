@@ -5,6 +5,7 @@
     Private _IdFoja As Integer
     Private _Ba_Numero As Integer
     Private _Ba_Nombre As String
+    Private _Ba_Apellido As String
     Private _Ba_LNacimiento As String
     Private _Ba_FNacimiento As Date
     Private _idsacerdote As Integer
@@ -58,6 +59,15 @@
         End Get
         Set(value As String)
             _Ba_Nombre = value
+        End Set
+    End Property
+
+    Public Property Ba_Apellido As String
+        Get
+            Return _Ba_Apellido
+        End Get
+        Set(value As String)
+            _Ba_Apellido = value
         End Set
     End Property
 
