@@ -183,6 +183,14 @@
         End If
     End Sub
 
+    '<<<<<<< HEAD
+    Private Sub TxtValor_TextChanged(sender As Object, e As EventArgs) Handles TxtValor.TextChanged
+
+    End Sub
 
 
+
+    '' evitar duplicados
+    '=======
+    '>>>>>>> 40f4e230ce0878a4402a79b54a4403c5e7119372
 End Class

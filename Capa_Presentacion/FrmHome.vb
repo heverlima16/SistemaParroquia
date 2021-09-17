@@ -161,6 +161,10 @@ Public Class FrmHome
         End If
     End Sub
 
+    '<<<<<<< HEAD
+
+    Dim frm As New FrmGivePartBautis
+    '=======
 
     Private Sub IconButton6_Click(sender As Object, e As EventArgs) Handles IconButton6.Click
         Dim frm As New FrmCMatrimonio
@@ -182,6 +186,7 @@ Public Class FrmHome
 
     Private Sub IconButton1_Click_1(sender As Object, e As EventArgs) Handles IconButton1.Click
         Dim frm As New FrmLibro
+        '>>>>>>> 40f4e230ce0878a4402a79b54a4403c5e7119372
         frm.MdiParent = Me
         frm.Show()
     End Sub
@@ -200,6 +205,13 @@ Public Class FrmHome
 
     Private Sub IconButton5_Click(sender As Object, e As EventArgs) Handles IconButton5.Click
         Dim frm As New FrmUsuario
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
+
+    Private Sub IconButton8_Click(sender As Object, e As EventArgs) Handles IconButton8.Click
+        'here ga
+        Dim frm As New FrmGivePartBautis
         frm.MdiParent = Me
         frm.Show()
     End Sub
