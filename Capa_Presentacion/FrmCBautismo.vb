@@ -162,6 +162,8 @@
             MsgBox(ex.Message)
         End Try
     End Sub
+
+
     Private Sub CargarLibro()
         Try
             Dim Negocio As New Capa_Negocio.NLibro

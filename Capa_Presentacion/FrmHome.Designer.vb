@@ -32,6 +32,7 @@ Partial Class FrmHome
         Me.RegistrarNumeroLibroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegistrarNumeroFajoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegistrarSacerdoteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GenerarRerpoteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuUsuarios = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosParroquiaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NombreDelUsuarioSegunSuRolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -41,7 +42,6 @@ Partial Class FrmHome
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.IconButton8 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton5 = New FontAwesome.Sharp.IconButton()
         Me.IconButton4 = New FontAwesome.Sharp.IconButton()
         Me.IconButton2 = New FontAwesome.Sharp.IconButton()
         Me.IconButton1 = New FontAwesome.Sharp.IconButton()
@@ -51,7 +51,6 @@ Partial Class FrmHome
         Me.IconButton6 = New FontAwesome.Sharp.IconButton()
         Me.PanelLogo = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.GenerarRerpoteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.PanelMenu.SuspendLayout()
@@ -109,6 +108,12 @@ Partial Class FrmHome
         Me.RegistrarSacerdoteToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
         Me.RegistrarSacerdoteToolStripMenuItem.Text = "Registrar Sacerdote"
         '
+        'GenerarRerpoteToolStripMenuItem
+        '
+        Me.GenerarRerpoteToolStripMenuItem.Name = "GenerarRerpoteToolStripMenuItem"
+        Me.GenerarRerpoteToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
+        Me.GenerarRerpoteToolStripMenuItem.Text = "generar rerpote"
+        '
         'MenuUsuarios
         '
         Me.MenuUsuarios.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosParroquiaToolStripMenuItem})
@@ -161,7 +166,6 @@ Partial Class FrmHome
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.PanelMenu.Controls.Add(Me.IconButton8)
-        Me.PanelMenu.Controls.Add(Me.IconButton5)
         Me.PanelMenu.Controls.Add(Me.IconButton4)
         Me.PanelMenu.Controls.Add(Me.IconButton2)
         Me.PanelMenu.Controls.Add(Me.IconButton1)
@@ -187,37 +191,16 @@ Partial Class FrmHome
         Me.IconButton8.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton8.IconSize = 32
         Me.IconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton8.Location = New System.Drawing.Point(0, 630)
+        Me.IconButton8.Location = New System.Drawing.Point(0, 570)
         Me.IconButton8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.IconButton8.Name = "IconButton8"
         Me.IconButton8.Padding = New System.Windows.Forms.Padding(11, 0, 11, 0)
         Me.IconButton8.Size = New System.Drawing.Size(220, 60)
         Me.IconButton8.TabIndex = 19
-        Me.IconButton8.Text = "Partida de Bautismo"
+        Me.IconButton8.Text = "Generar Partida de Bautismo"
         Me.IconButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.IconButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButton8.UseVisualStyleBackColor = True
-        '
-        'IconButton5
-        '
-        Me.IconButton5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton5.FlatAppearance.BorderSize = 0
-        Me.IconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton5.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconButton5.IconColor = System.Drawing.Color.Orange
-        Me.IconButton5.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton5.IconSize = 32
-        Me.IconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton5.Location = New System.Drawing.Point(0, 570)
-        Me.IconButton5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.IconButton5.Name = "IconButton5"
-        Me.IconButton5.Padding = New System.Windows.Forms.Padding(11, 0, 11, 0)
-        Me.IconButton5.Size = New System.Drawing.Size(220, 60)
-        Me.IconButton5.TabIndex = 18
-        Me.IconButton5.Text = "USUARIOS"
-        Me.IconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButton5.UseVisualStyleBackColor = True
         '
         'IconButton4
         '
@@ -387,12 +370,6 @@ Partial Class FrmHome
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'GenerarRerpoteToolStripMenuItem
-        '
-        Me.GenerarRerpoteToolStripMenuItem.Name = "GenerarRerpoteToolStripMenuItem"
-        Me.GenerarRerpoteToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
-        Me.GenerarRerpoteToolStripMenuItem.Text = "generar rerpote"
-        '
         'FrmHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -405,7 +382,7 @@ Partial Class FrmHome
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmHome"
         Me.Text = "SISTEMA  - PARROQUIA SAN PEDRO DE PAMPAS"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -443,7 +420,6 @@ Partial Class FrmHome
     Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton4 As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton5 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton8 As FontAwesome.Sharp.IconButton
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
     Friend WithEvents GenerarRerpoteToolStripMenuItem As ToolStripMenuItem
