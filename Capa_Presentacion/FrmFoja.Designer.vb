@@ -384,12 +384,12 @@ Partial Class FrmFoja
         Me.BtnGuardar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
         Me.BtnGuardar.HoverState.Parent = Me.BtnGuardar
-<<<<<<< HEAD
+        '<<<<<<< HEAD
         Me.BtnGuardar.Location = New System.Drawing.Point(159, 280)
         Me.BtnGuardar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-=======
+        '=======
         Me.BtnGuardar.Location = New System.Drawing.Point(212, 395)
->>>>>>> 40f4e230ce0878a4402a79b54a4403c5e7119372
+        '>>>>>>> 40f4e230ce0878a4402a79b54a4403c5e7119372
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.ShadowDecoration.Parent = Me.BtnGuardar
         Me.BtnGuardar.Size = New System.Drawing.Size(146, 37)
@@ -418,28 +418,28 @@ Partial Class FrmFoja
         '
         'TxtNumero
         '
-<<<<<<< HEAD
+        '<<<<<<< HEAD
         Me.TxtNumero.Location = New System.Drawing.Point(159, 100)
         Me.TxtNumero.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtNumero.Multiline = True
         Me.TxtNumero.Name = "TxtNumero"
         Me.TxtNumero.Size = New System.Drawing.Size(337, 32)
-=======
+        '=======
         Me.TxtNumero.Location = New System.Drawing.Point(405, 123)
         Me.TxtNumero.Multiline = True
         Me.TxtNumero.Name = "TxtNumero"
         Me.TxtNumero.Size = New System.Drawing.Size(255, 38)
->>>>>>> 40f4e230ce0878a4402a79b54a4403c5e7119372
+        '>>>>>>> 40f4e230ce0878a4402a79b54a4403c5e7119372
         Me.TxtNumero.TabIndex = 6
         '
         'TxtId
         '
-<<<<<<< HEAD
+        '<<<<<<< HEAD
         Me.TxtId.Location = New System.Drawing.Point(420, 59)
         Me.TxtId.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-=======
+        '=======
         Me.TxtId.Location = New System.Drawing.Point(730, 19)
->>>>>>> 40f4e230ce0878a4402a79b54a4403c5e7119372
+        '>>>>>>> 40f4e230ce0878a4402a79b54a4403c5e7119372
         Me.TxtId.Name = "TxtId"
         Me.TxtId.Size = New System.Drawing.Size(76, 20)
         Me.TxtId.TabIndex = 5
@@ -468,12 +468,12 @@ Partial Class FrmFoja
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.White
-<<<<<<< HEAD
+        '<<<<<<< HEAD
         Me.Label1.Location = New System.Drawing.Point(157, 63)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-=======
+        '=======
         Me.Label1.Location = New System.Drawing.Point(402, 91)
->>>>>>> 40f4e230ce0878a4402a79b54a4403c5e7119372
+        '>>>>>>> 40f4e230ce0878a4402a79b54a4403c5e7119372
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(80, 13)
         Me.Label1.TabIndex = 0
