@@ -312,7 +312,7 @@ Partial Class FrmParroquia
         Me.BtnGuardar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
         Me.BtnGuardar.HoverState.Parent = Me.BtnGuardar
-        Me.BtnGuardar.Location = New System.Drawing.Point(82, 366)
+        Me.BtnGuardar.Location = New System.Drawing.Point(82, 315)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.ShadowDecoration.Parent = Me.BtnGuardar
         Me.BtnGuardar.Size = New System.Drawing.Size(195, 45)
@@ -352,6 +352,7 @@ Partial Class FrmParroquia
         Me.TxtId.Name = "TxtId"
         Me.TxtId.Size = New System.Drawing.Size(100, 22)
         Me.TxtId.TabIndex = 5
+        Me.TxtId.Visible = False
         '
         'BtnCancelar
         '

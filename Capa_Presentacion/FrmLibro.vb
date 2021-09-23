@@ -163,5 +163,15 @@
         End If
     End Sub
 
+    Private Sub TxtNumero_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtNumero.KeyPress
+        If InStr(1, "0123456789" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
 
+    Private Sub TxtAnotaciones_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtAnotaciones.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
 End Class

@@ -337,5 +337,81 @@ Public Class FrmCMatrimonio
         End If
     End Sub
 
+    Private Sub TxtMa_NEsposo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_NEsposo.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
 
+    Private Sub TxtMa_NEsposa_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_NEsposa.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_LEsposo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_LEsposo.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_LEsposa_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_LEsposa.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_NPadreEsposo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_NPadreEsposo.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_NPadreEsposa_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_NPadreEsposa.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_NMadreEsposo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_NMadreEsposo.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_NMadreEsposa_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_NMadreEsposa.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_NPadrino_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_NPadrino.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_LMatrimonio_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_LMatrimonio.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_AnotacionesTextuales_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_AnotacionesTextuales.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ.1234567890" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_NFoja_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_NFoja.KeyPress
+        If InStr(1, "0123456789" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtNumeroCasado_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtNumeroCasado.KeyPress
+        If InStr(1, "0123456789" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
 End Class
