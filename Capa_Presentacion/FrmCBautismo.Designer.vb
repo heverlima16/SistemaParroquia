@@ -23,9 +23,9 @@ Partial Class FrmCBautismo
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TabGeneral = New Guna.UI2.WinForms.Guna2TabControl()
@@ -38,12 +38,12 @@ Partial Class FrmCBautismo
         Me.TxtValor = New Guna.UI2.WinForms.Guna2TextBox()
         Me.LblTotal = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.TxtBa_Foja = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TxtBa_Apellido = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TxtBa_AnotacionesTextuales = New System.Windows.Forms.TextBox()
         Me.TxtBa_Numero = New System.Windows.Forms.TextBox()
-        Me.CboFoja = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.CboLibro = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.DateBa_FBautismo = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.TxtBa_LBautismo = New System.Windows.Forms.TextBox()
@@ -161,31 +161,31 @@ Partial Class FrmCBautismo
         Me.DgvListado.AllowUserToAddRows = False
         Me.DgvListado.AllowUserToDeleteRows = False
         Me.DgvListado.AllowUserToOrderColumns = True
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle16.BackColor = System.Drawing.Color.White
+        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle16
         Me.DgvListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DgvListado.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.DgvListado.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DgvListado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DgvListado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle17.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle17.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle17
         Me.DgvListado.ColumnHeadersHeight = 27
         Me.DgvListado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Seleccionar})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle18.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle18
         Me.DgvListado.EnableHeadersVisualStyles = False
         Me.DgvListado.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DgvListado.Location = New System.Drawing.Point(6, 108)
@@ -317,12 +317,12 @@ Partial Class FrmCBautismo
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.TabPage2.Controls.Add(Me.TxtBa_Foja)
         Me.TabPage2.Controls.Add(Me.Label2)
         Me.TabPage2.Controls.Add(Me.TxtBa_Apellido)
         Me.TabPage2.Controls.Add(Me.Label1)
         Me.TabPage2.Controls.Add(Me.TxtBa_AnotacionesTextuales)
         Me.TabPage2.Controls.Add(Me.TxtBa_Numero)
-        Me.TabPage2.Controls.Add(Me.CboFoja)
         Me.TabPage2.Controls.Add(Me.CboLibro)
         Me.TabPage2.Controls.Add(Me.DateBa_FBautismo)
         Me.TabPage2.Controls.Add(Me.TxtBa_LBautismo)
@@ -357,11 +357,20 @@ Partial Class FrmCBautismo
         Me.TabPage2.TabIndex = 0
         Me.TabPage2.Text = "Registrar"
         '
+        'TxtBa_Foja
+        '
+        Me.TxtBa_Foja.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBa_Foja.Location = New System.Drawing.Point(145, 629)
+        Me.TxtBa_Foja.Multiline = True
+        Me.TxtBa_Foja.Name = "TxtBa_Foja"
+        Me.TxtBa_Foja.Size = New System.Drawing.Size(99, 36)
+        Me.TxtBa_Foja.TabIndex = 84
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(50, 192)
+        Me.Label2.Location = New System.Drawing.Point(517, 129)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(151, 17)
         Me.Label2.TabIndex = 83
@@ -369,7 +378,7 @@ Partial Class FrmCBautismo
         '
         'TxtBa_Apellido
         '
-        Me.TxtBa_Apellido.Location = New System.Drawing.Point(53, 212)
+        Me.TxtBa_Apellido.Location = New System.Drawing.Point(520, 149)
         Me.TxtBa_Apellido.Multiline = True
         Me.TxtBa_Apellido.Name = "TxtBa_Apellido"
         Me.TxtBa_Apellido.Size = New System.Drawing.Size(427, 26)
@@ -379,7 +388,7 @@ Partial Class FrmCBautismo
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(725, 281)
+        Me.Label1.Location = New System.Drawing.Point(730, 204)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(158, 17)
         Me.Label1.TabIndex = 81
@@ -395,30 +404,12 @@ Partial Class FrmCBautismo
         '
         'TxtBa_Numero
         '
-        Me.TxtBa_Numero.Location = New System.Drawing.Point(265, 627)
+        Me.TxtBa_Numero.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold)
+        Me.TxtBa_Numero.Location = New System.Drawing.Point(265, 629)
         Me.TxtBa_Numero.Multiline = True
         Me.TxtBa_Numero.Name = "TxtBa_Numero"
-        Me.TxtBa_Numero.Size = New System.Drawing.Size(92, 36)
+        Me.TxtBa_Numero.Size = New System.Drawing.Size(102, 36)
         Me.TxtBa_Numero.TabIndex = 79
-        '
-        'CboFoja
-        '
-        Me.CboFoja.BackColor = System.Drawing.Color.Transparent
-        Me.CboFoja.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.CboFoja.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CboFoja.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CboFoja.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CboFoja.FocusedState.Parent = Me.CboFoja
-        Me.CboFoja.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.CboFoja.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.CboFoja.HoverState.Parent = Me.CboFoja
-        Me.CboFoja.ItemHeight = 30
-        Me.CboFoja.ItemsAppearance.Parent = Me.CboFoja
-        Me.CboFoja.Location = New System.Drawing.Point(148, 627)
-        Me.CboFoja.Name = "CboFoja"
-        Me.CboFoja.ShadowDecoration.Parent = Me.CboFoja
-        Me.CboFoja.Size = New System.Drawing.Size(93, 36)
-        Me.CboFoja.TabIndex = 78
         '
         'CboLibro
         '
@@ -428,12 +419,12 @@ Partial Class FrmCBautismo
         Me.CboLibro.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.CboLibro.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.CboLibro.FocusedState.Parent = Me.CboLibro
-        Me.CboLibro.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CboLibro.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold)
         Me.CboLibro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.CboLibro.HoverState.Parent = Me.CboLibro
         Me.CboLibro.ItemHeight = 30
         Me.CboLibro.ItemsAppearance.Parent = Me.CboLibro
-        Me.CboLibro.Location = New System.Drawing.Point(46, 627)
+        Me.CboLibro.Location = New System.Drawing.Point(46, 629)
         Me.CboLibro.Name = "CboLibro"
         Me.CboLibro.ShadowDecoration.Parent = Me.CboLibro
         Me.CboLibro.Size = New System.Drawing.Size(93, 36)
@@ -445,7 +436,7 @@ Partial Class FrmCBautismo
         Me.DateBa_FBautismo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.DateBa_FBautismo.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.DateBa_FBautismo.HoverState.Parent = Me.DateBa_FBautismo
-        Me.DateBa_FBautismo.Location = New System.Drawing.Point(47, 552)
+        Me.DateBa_FBautismo.Location = New System.Drawing.Point(47, 554)
         Me.DateBa_FBautismo.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.DateBa_FBautismo.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.DateBa_FBautismo.Name = "DateBa_FBautismo"
@@ -489,10 +480,10 @@ Partial Class FrmCBautismo
         '
         'TxtBa_LNacimiento
         '
-        Me.TxtBa_LNacimiento.Location = New System.Drawing.Point(728, 301)
+        Me.TxtBa_LNacimiento.Location = New System.Drawing.Point(733, 234)
         Me.TxtBa_LNacimiento.Multiline = True
         Me.TxtBa_LNacimiento.Name = "TxtBa_LNacimiento"
-        Me.TxtBa_LNacimiento.Size = New System.Drawing.Size(241, 36)
+        Me.TxtBa_LNacimiento.Size = New System.Drawing.Size(214, 36)
         Me.TxtBa_LNacimiento.TabIndex = 67
         '
         'DateBa_FNacimiento
@@ -501,12 +492,12 @@ Partial Class FrmCBautismo
         Me.DateBa_FNacimiento.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.DateBa_FNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateBa_FNacimiento.HoverState.Parent = Me.DateBa_FNacimiento
-        Me.DateBa_FNacimiento.Location = New System.Drawing.Point(545, 301)
+        Me.DateBa_FNacimiento.Location = New System.Drawing.Point(520, 234)
         Me.DateBa_FNacimiento.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.DateBa_FNacimiento.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.DateBa_FNacimiento.Name = "DateBa_FNacimiento"
         Me.DateBa_FNacimiento.ShadowDecoration.Parent = Me.DateBa_FNacimiento
-        Me.DateBa_FNacimiento.Size = New System.Drawing.Size(157, 36)
+        Me.DateBa_FNacimiento.Size = New System.Drawing.Size(202, 36)
         Me.DateBa_FNacimiento.TabIndex = 66
         Me.DateBa_FNacimiento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.DateBa_FNacimiento.Value = New Date(2021, 9, 8, 15, 36, 24, 541)
@@ -581,7 +572,7 @@ Partial Class FrmCBautismo
         '
         Me.Label17.AutoSize = True
         Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(541, 281)
+        Me.Label17.Location = New System.Drawing.Point(522, 204)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(160, 17)
         Me.Label17.TabIndex = 58
@@ -631,7 +622,7 @@ Partial Class FrmCBautismo
         '
         Me.Label13.AutoSize = True
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(46, 271)
+        Me.Label13.Location = New System.Drawing.Point(48, 281)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(155, 17)
         Me.Label13.TabIndex = 35
@@ -661,7 +652,7 @@ Partial Class FrmCBautismo
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(47, 133)
+        Me.Label8.Location = New System.Drawing.Point(47, 129)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(144, 17)
         Me.Label8.TabIndex = 26
@@ -796,7 +787,6 @@ Partial Class FrmCBautismo
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents TxtBa_AnotacionesTextuales As TextBox
     Friend WithEvents TxtBa_Numero As TextBox
-    Friend WithEvents CboFoja As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents CboLibro As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents DateBa_FBautismo As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents TxtBa_LBautismo As TextBox
@@ -829,4 +819,5 @@ Partial Class FrmCBautismo
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents TxtBa_Apellido As TextBox
+    Friend WithEvents TxtBa_Foja As TextBox
 End Class

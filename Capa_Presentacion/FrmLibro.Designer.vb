@@ -362,6 +362,7 @@ Partial Class FrmLibro
         '
         'TxtNumero
         '
+        Me.TxtNumero.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold)
         Me.TxtNumero.Location = New System.Drawing.Point(212, 123)
         Me.TxtNumero.Multiline = True
         Me.TxtNumero.Name = "TxtNumero"

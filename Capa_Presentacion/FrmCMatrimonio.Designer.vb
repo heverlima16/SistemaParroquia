@@ -23,9 +23,9 @@ Partial Class FrmCMatrimonio
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TabGeneral = New Guna.UI2.WinForms.Guna2TabControl()
@@ -38,9 +38,9 @@ Partial Class FrmCMatrimonio
         Me.TxtValor = New Guna.UI2.WinForms.Guna2TextBox()
         Me.LblTotal = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.TxtMa_NFoja = New System.Windows.Forms.TextBox()
         Me.TxtMa_AnotacionesTextuales = New System.Windows.Forms.TextBox()
         Me.TxtNumeroCasado = New System.Windows.Forms.TextBox()
-        Me.CboFoja = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.CboLibro = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.DateMa_FMatrimonio = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.TxtMa_LMatrimonio = New System.Windows.Forms.TextBox()
@@ -167,31 +167,31 @@ Partial Class FrmCMatrimonio
         Me.DgvListado.AllowUserToAddRows = False
         Me.DgvListado.AllowUserToDeleteRows = False
         Me.DgvListado.AllowUserToOrderColumns = True
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.White
-        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
+        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
         Me.DgvListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DgvListado.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.DgvListado.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DgvListado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DgvListado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
         Me.DgvListado.ColumnHeadersHeight = 27
         Me.DgvListado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Seleccionar})
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle15
         Me.DgvListado.EnableHeadersVisualStyles = False
         Me.DgvListado.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DgvListado.Location = New System.Drawing.Point(6, 108)
@@ -323,9 +323,9 @@ Partial Class FrmCMatrimonio
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.TabPage2.Controls.Add(Me.TxtMa_NFoja)
         Me.TabPage2.Controls.Add(Me.TxtMa_AnotacionesTextuales)
         Me.TabPage2.Controls.Add(Me.TxtNumeroCasado)
-        Me.TabPage2.Controls.Add(Me.CboFoja)
         Me.TabPage2.Controls.Add(Me.CboLibro)
         Me.TabPage2.Controls.Add(Me.DateMa_FMatrimonio)
         Me.TabPage2.Controls.Add(Me.TxtMa_LMatrimonio)
@@ -369,6 +369,15 @@ Partial Class FrmCMatrimonio
         Me.TabPage2.TabIndex = 0
         Me.TabPage2.Text = "Registrar"
         '
+        'TxtMa_NFoja
+        '
+        Me.TxtMa_NFoja.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold)
+        Me.TxtMa_NFoja.Location = New System.Drawing.Point(145, 627)
+        Me.TxtMa_NFoja.Multiline = True
+        Me.TxtMa_NFoja.Name = "TxtMa_NFoja"
+        Me.TxtMa_NFoja.Size = New System.Drawing.Size(92, 36)
+        Me.TxtMa_NFoja.TabIndex = 81
+        '
         'TxtMa_AnotacionesTextuales
         '
         Me.TxtMa_AnotacionesTextuales.Location = New System.Drawing.Point(520, 513)
@@ -379,30 +388,12 @@ Partial Class FrmCMatrimonio
         '
         'TxtNumeroCasado
         '
+        Me.TxtNumeroCasado.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold)
         Me.TxtNumeroCasado.Location = New System.Drawing.Point(265, 627)
         Me.TxtNumeroCasado.Multiline = True
         Me.TxtNumeroCasado.Name = "TxtNumeroCasado"
-        Me.TxtNumeroCasado.Size = New System.Drawing.Size(92, 36)
+        Me.TxtNumeroCasado.Size = New System.Drawing.Size(109, 36)
         Me.TxtNumeroCasado.TabIndex = 79
-        '
-        'CboFoja
-        '
-        Me.CboFoja.BackColor = System.Drawing.Color.Transparent
-        Me.CboFoja.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.CboFoja.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CboFoja.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CboFoja.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CboFoja.FocusedState.Parent = Me.CboFoja
-        Me.CboFoja.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.CboFoja.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.CboFoja.HoverState.Parent = Me.CboFoja
-        Me.CboFoja.ItemHeight = 30
-        Me.CboFoja.ItemsAppearance.Parent = Me.CboFoja
-        Me.CboFoja.Location = New System.Drawing.Point(148, 627)
-        Me.CboFoja.Name = "CboFoja"
-        Me.CboFoja.ShadowDecoration.Parent = Me.CboFoja
-        Me.CboFoja.Size = New System.Drawing.Size(105, 36)
-        Me.CboFoja.TabIndex = 78
         '
         'CboLibro
         '
@@ -412,7 +403,7 @@ Partial Class FrmCMatrimonio
         Me.CboLibro.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.CboLibro.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.CboLibro.FocusedState.Parent = Me.CboLibro
-        Me.CboLibro.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CboLibro.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold)
         Me.CboLibro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.CboLibro.HoverState.Parent = Me.CboLibro
         Me.CboLibro.ItemHeight = 30
@@ -904,7 +895,7 @@ Partial Class FrmCMatrimonio
     Friend WithEvents TxtMa_LMatrimonio As TextBox
     Friend WithEvents DateMa_FMatrimonio As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents CboLibro As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents CboFoja As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents TxtNumeroCasado As TextBox
     Friend WithEvents TxtMa_AnotacionesTextuales As TextBox
+    Friend WithEvents TxtMa_NFoja As TextBox
 End Class

@@ -44,7 +44,7 @@ Public Class DCMatrimonio
             Comando.CommandType = CommandType.StoredProcedure
 
             Comando.Parameters.Add("@IdLibro", SqlDbType.Int).Value = Obj.IdLibro
-            Comando.Parameters.Add("@IdFoja", SqlDbType.Int).Value = Obj.IdFoja
+            Comando.Parameters.Add("@Ma_NFoja", SqlDbType.Int).Value = Obj.Ma_NFoja
             Comando.Parameters.Add("@Ma_Numero", SqlDbType.Int).Value = Obj.Ma_Numero
             Comando.Parameters.Add("@Ma_NEsposo", SqlDbType.VarChar).Value = Obj.Ma_NEsposo
             Comando.Parameters.Add("@Ma_LEsposo", SqlDbType.VarChar).Value = Obj.Ma_LEsposo
@@ -78,6 +78,7 @@ Public Class DCMatrimonio
             Comando.CommandType = CommandType.StoredProcedure
 
             Comando.Parameters.Add("@IdPMatrimonio", SqlDbType.Int).Value = Obj.IdPMatrimonio
+            Comando.Parameters.Add("@Ma_NFoja", SqlDbType.Int).Value = Obj.Ma_NFoja
 
             Comando.Parameters.Add("@Ma_Numero", SqlDbType.Int).Value = Obj.Ma_Numero
             Comando.Parameters.Add("@Ma_NEsposo", SqlDbType.VarChar).Value = Obj.Ma_NEsposo

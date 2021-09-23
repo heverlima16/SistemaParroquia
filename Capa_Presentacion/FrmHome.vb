@@ -154,12 +154,6 @@ Public Class FrmHome
 
 
 
-    Private Sub IconButtonCerrarSesion_Click(sender As Object, e As EventArgs) Handles IconButtonCerrarSesion.Click
-        If (MsgBox("CERRAR SESIÓN", vbYesNo + vbExclamation, "Cerrar Sistema Parroquia") = vbYes) Then
-            Me.Close()
-            End
-        End If
-    End Sub
 
     '<<<<<<< HEAD
 
@@ -172,25 +166,25 @@ Public Class FrmHome
         frm.Show()
     End Sub
 
-    Private Sub IconButton3_Click(sender As Object, e As EventArgs) Handles IconButton3.Click
+    Private Sub IconButton3_Click(sender As Object, e As EventArgs)
         Dim frm As New FrmSacerdote
         frm.MdiParent = Me
         frm.Show()
     End Sub
 
-    Private Sub IconButton7_Click(sender As Object, e As EventArgs) Handles IconButton7.Click
+    Private Sub IconButton7_Click(sender As Object, e As EventArgs)
         Dim frm As New FrmParroquia
         frm.MdiParent = Me
         frm.Show()
     End Sub
 
-    Private Sub IconButton1_Click_1(sender As Object, e As EventArgs) Handles IconButton1.Click
+    Private Sub IconButton1_Click_1(sender As Object, e As EventArgs)
         Dim frm As New FrmLibro
         frm.MdiParent = Me
         frm.Show()
     End Sub
 
-    Private Sub IconButton2_Click(sender As Object, e As EventArgs) Handles IconButton2.Click
+    Private Sub IconButton2_Click(sender As Object, e As EventArgs)
         Dim frm As New FrmFoja
         frm.MdiParent = Me
         frm.Show()
@@ -205,7 +199,7 @@ Public Class FrmHome
 
 
 
-    Private Sub GenerarRerpoteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GenerarRerpoteToolStripMenuItem.Click
+    Private Sub GenerarRerpoteToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Dim frm As New FrmGivePartBautis
         frm.MdiParent = Me
         frm.Show()
@@ -218,4 +212,33 @@ Public Class FrmHome
     End Sub
 
 
+    Private Sub IconButton3_Click_1(sender As Object, e As EventArgs) Handles IconButton3.Click
+        If (MsgBox("CERRAR SESIÓN", vbYesNo + vbExclamation, "Cerrar Sistema Parroquia") = vbYes) Then
+            Me.Close()
+            End
+        End If
+    End Sub
+
+    Private Sub IconButton8_Click(sender As Object, e As EventArgs) Handles IconButton8.Click
+
+        Dim frm As New FrmGivePartBautis
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
+
+    Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
+        '' aki va matrimonio 
+    End Sub
+
+    Private Sub RegistrarNumeroLibroToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistrarNumeroLibroToolStripMenuItem.Click
+        Dim frm As New FrmLibro
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
+
+    Private Sub RegistrarSacerdoteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistrarSacerdoteToolStripMenuItem.Click
+        Dim frm As New FrmSacerdote
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
 End Class
