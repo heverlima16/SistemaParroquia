@@ -180,7 +180,7 @@ Partial Class FrmHome
         Me.IconButton1.Dock = System.Windows.Forms.DockStyle.Top
         Me.IconButton1.FlatAppearance.BorderSize = 0
         Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Print
         Me.IconButton1.IconColor = System.Drawing.Color.Orange
         Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton1.IconSize = 32
@@ -201,8 +201,8 @@ Partial Class FrmHome
         Me.IconButton8.Dock = System.Windows.Forms.DockStyle.Top
         Me.IconButton8.FlatAppearance.BorderSize = 0
         Me.IconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton8.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconButton8.IconColor = System.Drawing.Color.Orange
+        Me.IconButton8.IconChar = FontAwesome.Sharp.IconChar.Print
+        Me.IconButton8.IconColor = System.Drawing.Color.Gold
         Me.IconButton8.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton8.IconSize = 32
         Me.IconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -222,8 +222,8 @@ Partial Class FrmHome
         Me.IconButton4.Dock = System.Windows.Forms.DockStyle.Top
         Me.IconButton4.FlatAppearance.BorderSize = 0
         Me.IconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton4.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconButton4.IconColor = System.Drawing.Color.Orange
+        Me.IconButton4.IconChar = FontAwesome.Sharp.IconChar.Keyboard
+        Me.IconButton4.IconColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.IconButton4.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton4.IconSize = 32
         Me.IconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -243,8 +243,8 @@ Partial Class FrmHome
         Me.IconButton6.Dock = System.Windows.Forms.DockStyle.Top
         Me.IconButton6.FlatAppearance.BorderSize = 0
         Me.IconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton6.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconButton6.IconColor = System.Drawing.Color.Orange
+        Me.IconButton6.IconChar = FontAwesome.Sharp.IconChar.Keyboard
+        Me.IconButton6.IconColor = System.Drawing.Color.Lime
         Me.IconButton6.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton6.IconSize = 32
         Me.IconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -254,7 +254,7 @@ Partial Class FrmHome
         Me.IconButton6.Padding = New System.Windows.Forms.Padding(11, 0, 11, 0)
         Me.IconButton6.Size = New System.Drawing.Size(283, 60)
         Me.IconButton6.TabIndex = 11
-        Me.IconButton6.Text = "Digitalizar Casados"
+        Me.IconButton6.Text = "Digitalizar Matrimonio"
         Me.IconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.IconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.IconButton6.UseVisualStyleBackColor = True

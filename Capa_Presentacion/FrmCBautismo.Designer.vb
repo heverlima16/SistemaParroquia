@@ -23,9 +23,9 @@ Partial Class FrmCBautismo
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TabGeneral = New Guna.UI2.WinForms.Guna2TabControl()
@@ -161,31 +161,31 @@ Partial Class FrmCBautismo
         Me.DgvListado.AllowUserToAddRows = False
         Me.DgvListado.AllowUserToDeleteRows = False
         Me.DgvListado.AllowUserToOrderColumns = True
-        DataGridViewCellStyle31.BackColor = System.Drawing.Color.White
-        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle31
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DgvListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DgvListado.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.DgvListado.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DgvListado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DgvListado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle32.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle32.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle32
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DgvListado.ColumnHeadersHeight = 27
         Me.DgvListado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Seleccionar})
-        DataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle33.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle33.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle33
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle3
         Me.DgvListado.EnableHeadersVisualStyles = False
         Me.DgvListado.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DgvListado.Location = New System.Drawing.Point(6, 108)
@@ -233,6 +233,7 @@ Partial Class FrmCBautismo
         Me.ChkSeleccionar.CheckedState.BorderRadius = 0
         Me.ChkSeleccionar.CheckedState.BorderThickness = 0
         Me.ChkSeleccionar.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ChkSeleccionar.ForeColor = System.Drawing.Color.White
         Me.ChkSeleccionar.Location = New System.Drawing.Point(39, 625)
         Me.ChkSeleccionar.Name = "ChkSeleccionar"
         Me.ChkSeleccionar.Size = New System.Drawing.Size(104, 21)
@@ -308,6 +309,7 @@ Partial Class FrmCBautismo
         'LblTotal
         '
         Me.LblTotal.BackColor = System.Drawing.Color.Transparent
+        Me.LblTotal.ForeColor = System.Drawing.Color.White
         Me.LblTotal.Location = New System.Drawing.Point(843, 625)
         Me.LblTotal.Name = "LblTotal"
         Me.LblTotal.Size = New System.Drawing.Size(37, 18)
@@ -360,17 +362,17 @@ Partial Class FrmCBautismo
         'TxtBa_Foja
         '
         Me.TxtBa_Foja.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBa_Foja.Location = New System.Drawing.Point(145, 629)
+        Me.TxtBa_Foja.Location = New System.Drawing.Point(175, 564)
         Me.TxtBa_Foja.Multiline = True
         Me.TxtBa_Foja.Name = "TxtBa_Foja"
-        Me.TxtBa_Foja.Size = New System.Drawing.Size(99, 36)
+        Me.TxtBa_Foja.Size = New System.Drawing.Size(144, 36)
         Me.TxtBa_Foja.TabIndex = 84
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(517, 129)
+        Me.Label2.Location = New System.Drawing.Point(46, 188)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(151, 17)
         Me.Label2.TabIndex = 83
@@ -378,7 +380,7 @@ Partial Class FrmCBautismo
         '
         'TxtBa_Apellido
         '
-        Me.TxtBa_Apellido.Location = New System.Drawing.Point(520, 149)
+        Me.TxtBa_Apellido.Location = New System.Drawing.Point(47, 213)
         Me.TxtBa_Apellido.Multiline = True
         Me.TxtBa_Apellido.Name = "TxtBa_Apellido"
         Me.TxtBa_Apellido.Size = New System.Drawing.Size(427, 26)
@@ -388,7 +390,7 @@ Partial Class FrmCBautismo
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(730, 204)
+        Me.Label1.Location = New System.Drawing.Point(725, 155)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(158, 17)
         Me.Label1.TabIndex = 81
@@ -396,19 +398,19 @@ Partial Class FrmCBautismo
         '
         'TxtBa_AnotacionesTextuales
         '
-        Me.TxtBa_AnotacionesTextuales.Location = New System.Drawing.Point(520, 513)
+        Me.TxtBa_AnotacionesTextuales.Location = New System.Drawing.Point(520, 496)
         Me.TxtBa_AnotacionesTextuales.Multiline = True
         Me.TxtBa_AnotacionesTextuales.Name = "TxtBa_AnotacionesTextuales"
-        Me.TxtBa_AnotacionesTextuales.Size = New System.Drawing.Size(427, 94)
+        Me.TxtBa_AnotacionesTextuales.Size = New System.Drawing.Size(427, 110)
         Me.TxtBa_AnotacionesTextuales.TabIndex = 80
         '
         'TxtBa_Numero
         '
         Me.TxtBa_Numero.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold)
-        Me.TxtBa_Numero.Location = New System.Drawing.Point(265, 629)
+        Me.TxtBa_Numero.Location = New System.Drawing.Point(325, 564)
         Me.TxtBa_Numero.Multiline = True
         Me.TxtBa_Numero.Name = "TxtBa_Numero"
-        Me.TxtBa_Numero.Size = New System.Drawing.Size(102, 36)
+        Me.TxtBa_Numero.Size = New System.Drawing.Size(154, 36)
         Me.TxtBa_Numero.TabIndex = 79
         '
         'CboLibro
@@ -424,10 +426,10 @@ Partial Class FrmCBautismo
         Me.CboLibro.HoverState.Parent = Me.CboLibro
         Me.CboLibro.ItemHeight = 30
         Me.CboLibro.ItemsAppearance.Parent = Me.CboLibro
-        Me.CboLibro.Location = New System.Drawing.Point(46, 629)
+        Me.CboLibro.Location = New System.Drawing.Point(45, 564)
         Me.CboLibro.Name = "CboLibro"
         Me.CboLibro.ShadowDecoration.Parent = Me.CboLibro
-        Me.CboLibro.Size = New System.Drawing.Size(93, 36)
+        Me.CboLibro.Size = New System.Drawing.Size(124, 36)
         Me.CboLibro.TabIndex = 77
         '
         'DateBa_FBautismo
@@ -436,19 +438,19 @@ Partial Class FrmCBautismo
         Me.DateBa_FBautismo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.DateBa_FBautismo.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.DateBa_FBautismo.HoverState.Parent = Me.DateBa_FBautismo
-        Me.DateBa_FBautismo.Location = New System.Drawing.Point(47, 554)
+        Me.DateBa_FBautismo.Location = New System.Drawing.Point(45, 476)
         Me.DateBa_FBautismo.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.DateBa_FBautismo.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.DateBa_FBautismo.Name = "DateBa_FBautismo"
         Me.DateBa_FBautismo.ShadowDecoration.Parent = Me.DateBa_FBautismo
-        Me.DateBa_FBautismo.Size = New System.Drawing.Size(310, 36)
+        Me.DateBa_FBautismo.Size = New System.Drawing.Size(433, 36)
         Me.DateBa_FBautismo.TabIndex = 76
         Me.DateBa_FBautismo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.DateBa_FBautismo.Value = New Date(2021, 9, 8, 15, 36, 24, 541)
         '
         'TxtBa_LBautismo
         '
-        Me.TxtBa_LBautismo.Location = New System.Drawing.Point(209, 485)
+        Me.TxtBa_LBautismo.Location = New System.Drawing.Point(680, 387)
         Me.TxtBa_LBautismo.Multiline = True
         Me.TxtBa_LBautismo.Name = "TxtBa_LBautismo"
         Me.TxtBa_LBautismo.Size = New System.Drawing.Size(271, 26)
@@ -456,15 +458,15 @@ Partial Class FrmCBautismo
         '
         'TxtBa_NPadrino
         '
-        Me.TxtBa_NPadrino.Location = New System.Drawing.Point(50, 446)
+        Me.TxtBa_NPadrino.Location = New System.Drawing.Point(45, 387)
         Me.TxtBa_NPadrino.Multiline = True
         Me.TxtBa_NPadrino.Name = "TxtBa_NPadrino"
-        Me.TxtBa_NPadrino.Size = New System.Drawing.Size(427, 26)
+        Me.TxtBa_NPadrino.Size = New System.Drawing.Size(435, 26)
         Me.TxtBa_NPadrino.TabIndex = 74
         '
         'TxtBa_NMadre
         '
-        Me.TxtBa_NMadre.Location = New System.Drawing.Point(50, 387)
+        Me.TxtBa_NMadre.Location = New System.Drawing.Point(524, 310)
         Me.TxtBa_NMadre.Multiline = True
         Me.TxtBa_NMadre.Name = "TxtBa_NMadre"
         Me.TxtBa_NMadre.Size = New System.Drawing.Size(427, 26)
@@ -472,15 +474,15 @@ Partial Class FrmCBautismo
         '
         'TxtBa_NPadre
         '
-        Me.TxtBa_NPadre.Location = New System.Drawing.Point(47, 307)
+        Me.TxtBa_NPadre.Location = New System.Drawing.Point(45, 310)
         Me.TxtBa_NPadre.Multiline = True
         Me.TxtBa_NPadre.Name = "TxtBa_NPadre"
-        Me.TxtBa_NPadre.Size = New System.Drawing.Size(427, 26)
+        Me.TxtBa_NPadre.Size = New System.Drawing.Size(433, 26)
         Me.TxtBa_NPadre.TabIndex = 70
         '
         'TxtBa_LNacimiento
         '
-        Me.TxtBa_LNacimiento.Location = New System.Drawing.Point(733, 234)
+        Me.TxtBa_LNacimiento.Location = New System.Drawing.Point(728, 185)
         Me.TxtBa_LNacimiento.Multiline = True
         Me.TxtBa_LNacimiento.Name = "TxtBa_LNacimiento"
         Me.TxtBa_LNacimiento.Size = New System.Drawing.Size(214, 36)
@@ -492,7 +494,7 @@ Partial Class FrmCBautismo
         Me.DateBa_FNacimiento.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.DateBa_FNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateBa_FNacimiento.HoverState.Parent = Me.DateBa_FNacimiento
-        Me.DateBa_FNacimiento.Location = New System.Drawing.Point(520, 234)
+        Me.DateBa_FNacimiento.Location = New System.Drawing.Point(520, 185)
         Me.DateBa_FNacimiento.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.DateBa_FNacimiento.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.DateBa_FNacimiento.Name = "DateBa_FNacimiento"
@@ -504,10 +506,10 @@ Partial Class FrmCBautismo
         '
         'TxtBa_Nombre
         '
-        Me.TxtBa_Nombre.Location = New System.Drawing.Point(47, 153)
+        Me.TxtBa_Nombre.Location = New System.Drawing.Point(47, 155)
         Me.TxtBa_Nombre.Multiline = True
         Me.TxtBa_Nombre.Name = "TxtBa_Nombre"
-        Me.TxtBa_Nombre.Size = New System.Drawing.Size(427, 26)
+        Me.TxtBa_Nombre.Size = New System.Drawing.Size(429, 26)
         Me.TxtBa_Nombre.TabIndex = 64
         '
         'CboSacerdote
@@ -562,7 +564,7 @@ Partial Class FrmCBautismo
         '
         Me.Label18.AutoSize = True
         Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(517, 476)
+        Me.Label18.Location = New System.Drawing.Point(517, 467)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(86, 17)
         Me.Label18.TabIndex = 60
@@ -572,7 +574,7 @@ Partial Class FrmCBautismo
         '
         Me.Label17.AutoSize = True
         Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(522, 204)
+        Me.Label17.Location = New System.Drawing.Point(517, 155)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(160, 17)
         Me.Label17.TabIndex = 58
@@ -582,7 +584,7 @@ Partial Class FrmCBautismo
         '
         Me.Label15.AutoSize = True
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(47, 532)
+        Me.Label15.Location = New System.Drawing.Point(44, 433)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(148, 17)
         Me.Label15.TabIndex = 54
@@ -592,7 +594,7 @@ Partial Class FrmCBautismo
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(46, 488)
+        Me.Label4.Location = New System.Drawing.Point(520, 390)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(146, 17)
         Me.Label4.TabIndex = 51
@@ -602,7 +604,7 @@ Partial Class FrmCBautismo
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(46, 416)
+        Me.Label3.Location = New System.Drawing.Point(44, 356)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(76, 17)
         Me.Label3.TabIndex = 48
@@ -612,7 +614,7 @@ Partial Class FrmCBautismo
         '
         Me.Label14.AutoSize = True
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(46, 349)
+        Me.Label14.Location = New System.Drawing.Point(521, 281)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(157, 17)
         Me.Label14.TabIndex = 37
@@ -622,7 +624,7 @@ Partial Class FrmCBautismo
         '
         Me.Label13.AutoSize = True
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(48, 281)
+        Me.Label13.Location = New System.Drawing.Point(44, 281)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(155, 17)
         Me.Label13.TabIndex = 35
@@ -662,7 +664,7 @@ Partial Class FrmCBautismo
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(262, 603)
+        Me.Label7.Location = New System.Drawing.Point(322, 538)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(105, 17)
         Me.Label7.TabIndex = 24
@@ -672,7 +674,7 @@ Partial Class FrmCBautismo
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(145, 603)
+        Me.Label6.Location = New System.Drawing.Point(172, 538)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(74, 17)
         Me.Label6.TabIndex = 22
@@ -682,7 +684,7 @@ Partial Class FrmCBautismo
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(44, 603)
+        Me.Label5.Location = New System.Drawing.Point(43, 538)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(79, 17)
         Me.Label5.TabIndex = 20
