@@ -2,7 +2,7 @@
 
     Private _IdPBautismo As Integer
     Private _IdLibro As Integer
-    Private _IdFoja As Integer
+    Private _Ba_NFoja As Integer
     Private _Ba_Numero As Integer
     Private _Ba_Nombre As String
     Private _Ba_Apellido As String
@@ -35,12 +35,12 @@
         End Set
     End Property
 
-    Public Property IdFoja As Integer
+    Public Property Ba_NFoja As Integer
         Get
-            Return _IdFoja
+            Return _Ba_NFoja
         End Get
         Set(value As Integer)
-            _IdFoja = value
+            _Ba_NFoja = value
         End Set
     End Property
 

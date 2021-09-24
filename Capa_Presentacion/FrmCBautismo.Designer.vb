@@ -38,12 +38,12 @@ Partial Class FrmCBautismo
         Me.TxtValor = New Guna.UI2.WinForms.Guna2TextBox()
         Me.LblTotal = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.TxtBa_Foja = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TxtBa_Apellido = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TxtBa_AnotacionesTextuales = New System.Windows.Forms.TextBox()
         Me.TxtBa_Numero = New System.Windows.Forms.TextBox()
-        Me.CboFoja = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.CboLibro = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.DateBa_FBautismo = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.TxtBa_LBautismo = New System.Windows.Forms.TextBox()
@@ -233,6 +233,7 @@ Partial Class FrmCBautismo
         Me.ChkSeleccionar.CheckedState.BorderRadius = 0
         Me.ChkSeleccionar.CheckedState.BorderThickness = 0
         Me.ChkSeleccionar.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ChkSeleccionar.ForeColor = System.Drawing.Color.White
         Me.ChkSeleccionar.Location = New System.Drawing.Point(39, 625)
         Me.ChkSeleccionar.Name = "ChkSeleccionar"
         Me.ChkSeleccionar.Size = New System.Drawing.Size(104, 21)
@@ -308,6 +309,7 @@ Partial Class FrmCBautismo
         'LblTotal
         '
         Me.LblTotal.BackColor = System.Drawing.Color.Transparent
+        Me.LblTotal.ForeColor = System.Drawing.Color.White
         Me.LblTotal.Location = New System.Drawing.Point(843, 625)
         Me.LblTotal.Name = "LblTotal"
         Me.LblTotal.Size = New System.Drawing.Size(37, 18)
@@ -317,12 +319,12 @@ Partial Class FrmCBautismo
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.TabPage2.Controls.Add(Me.TxtBa_Foja)
         Me.TabPage2.Controls.Add(Me.Label2)
         Me.TabPage2.Controls.Add(Me.TxtBa_Apellido)
         Me.TabPage2.Controls.Add(Me.Label1)
         Me.TabPage2.Controls.Add(Me.TxtBa_AnotacionesTextuales)
         Me.TabPage2.Controls.Add(Me.TxtBa_Numero)
-        Me.TabPage2.Controls.Add(Me.CboFoja)
         Me.TabPage2.Controls.Add(Me.CboLibro)
         Me.TabPage2.Controls.Add(Me.DateBa_FBautismo)
         Me.TabPage2.Controls.Add(Me.TxtBa_LBautismo)
@@ -357,11 +359,20 @@ Partial Class FrmCBautismo
         Me.TabPage2.TabIndex = 0
         Me.TabPage2.Text = "Registrar"
         '
+        'TxtBa_Foja
+        '
+        Me.TxtBa_Foja.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBa_Foja.Location = New System.Drawing.Point(175, 564)
+        Me.TxtBa_Foja.Multiline = True
+        Me.TxtBa_Foja.Name = "TxtBa_Foja"
+        Me.TxtBa_Foja.Size = New System.Drawing.Size(144, 36)
+        Me.TxtBa_Foja.TabIndex = 84
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(50, 192)
+        Me.Label2.Location = New System.Drawing.Point(46, 188)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(151, 17)
         Me.Label2.TabIndex = 83
@@ -369,7 +380,7 @@ Partial Class FrmCBautismo
         '
         'TxtBa_Apellido
         '
-        Me.TxtBa_Apellido.Location = New System.Drawing.Point(53, 212)
+        Me.TxtBa_Apellido.Location = New System.Drawing.Point(47, 213)
         Me.TxtBa_Apellido.Multiline = True
         Me.TxtBa_Apellido.Name = "TxtBa_Apellido"
         Me.TxtBa_Apellido.Size = New System.Drawing.Size(427, 26)
@@ -379,7 +390,7 @@ Partial Class FrmCBautismo
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(725, 281)
+        Me.Label1.Location = New System.Drawing.Point(725, 155)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(158, 17)
         Me.Label1.TabIndex = 81
@@ -387,38 +398,20 @@ Partial Class FrmCBautismo
         '
         'TxtBa_AnotacionesTextuales
         '
-        Me.TxtBa_AnotacionesTextuales.Location = New System.Drawing.Point(520, 513)
+        Me.TxtBa_AnotacionesTextuales.Location = New System.Drawing.Point(520, 496)
         Me.TxtBa_AnotacionesTextuales.Multiline = True
         Me.TxtBa_AnotacionesTextuales.Name = "TxtBa_AnotacionesTextuales"
-        Me.TxtBa_AnotacionesTextuales.Size = New System.Drawing.Size(427, 94)
+        Me.TxtBa_AnotacionesTextuales.Size = New System.Drawing.Size(427, 110)
         Me.TxtBa_AnotacionesTextuales.TabIndex = 80
         '
         'TxtBa_Numero
         '
-        Me.TxtBa_Numero.Location = New System.Drawing.Point(265, 627)
+        Me.TxtBa_Numero.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold)
+        Me.TxtBa_Numero.Location = New System.Drawing.Point(325, 564)
         Me.TxtBa_Numero.Multiline = True
         Me.TxtBa_Numero.Name = "TxtBa_Numero"
-        Me.TxtBa_Numero.Size = New System.Drawing.Size(92, 36)
+        Me.TxtBa_Numero.Size = New System.Drawing.Size(154, 36)
         Me.TxtBa_Numero.TabIndex = 79
-        '
-        'CboFoja
-        '
-        Me.CboFoja.BackColor = System.Drawing.Color.Transparent
-        Me.CboFoja.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.CboFoja.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CboFoja.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CboFoja.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CboFoja.FocusedState.Parent = Me.CboFoja
-        Me.CboFoja.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.CboFoja.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.CboFoja.HoverState.Parent = Me.CboFoja
-        Me.CboFoja.ItemHeight = 30
-        Me.CboFoja.ItemsAppearance.Parent = Me.CboFoja
-        Me.CboFoja.Location = New System.Drawing.Point(148, 627)
-        Me.CboFoja.Name = "CboFoja"
-        Me.CboFoja.ShadowDecoration.Parent = Me.CboFoja
-        Me.CboFoja.Size = New System.Drawing.Size(93, 36)
-        Me.CboFoja.TabIndex = 78
         '
         'CboLibro
         '
@@ -428,15 +421,15 @@ Partial Class FrmCBautismo
         Me.CboLibro.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.CboLibro.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.CboLibro.FocusedState.Parent = Me.CboLibro
-        Me.CboLibro.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CboLibro.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold)
         Me.CboLibro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.CboLibro.HoverState.Parent = Me.CboLibro
         Me.CboLibro.ItemHeight = 30
         Me.CboLibro.ItemsAppearance.Parent = Me.CboLibro
-        Me.CboLibro.Location = New System.Drawing.Point(46, 627)
+        Me.CboLibro.Location = New System.Drawing.Point(45, 564)
         Me.CboLibro.Name = "CboLibro"
         Me.CboLibro.ShadowDecoration.Parent = Me.CboLibro
-        Me.CboLibro.Size = New System.Drawing.Size(93, 36)
+        Me.CboLibro.Size = New System.Drawing.Size(124, 36)
         Me.CboLibro.TabIndex = 77
         '
         'DateBa_FBautismo
@@ -445,19 +438,19 @@ Partial Class FrmCBautismo
         Me.DateBa_FBautismo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.DateBa_FBautismo.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.DateBa_FBautismo.HoverState.Parent = Me.DateBa_FBautismo
-        Me.DateBa_FBautismo.Location = New System.Drawing.Point(47, 552)
+        Me.DateBa_FBautismo.Location = New System.Drawing.Point(45, 476)
         Me.DateBa_FBautismo.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.DateBa_FBautismo.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.DateBa_FBautismo.Name = "DateBa_FBautismo"
         Me.DateBa_FBautismo.ShadowDecoration.Parent = Me.DateBa_FBautismo
-        Me.DateBa_FBautismo.Size = New System.Drawing.Size(310, 36)
+        Me.DateBa_FBautismo.Size = New System.Drawing.Size(433, 36)
         Me.DateBa_FBautismo.TabIndex = 76
         Me.DateBa_FBautismo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.DateBa_FBautismo.Value = New Date(2021, 9, 8, 15, 36, 24, 541)
         '
         'TxtBa_LBautismo
         '
-        Me.TxtBa_LBautismo.Location = New System.Drawing.Point(209, 485)
+        Me.TxtBa_LBautismo.Location = New System.Drawing.Point(680, 387)
         Me.TxtBa_LBautismo.Multiline = True
         Me.TxtBa_LBautismo.Name = "TxtBa_LBautismo"
         Me.TxtBa_LBautismo.Size = New System.Drawing.Size(271, 26)
@@ -465,15 +458,15 @@ Partial Class FrmCBautismo
         '
         'TxtBa_NPadrino
         '
-        Me.TxtBa_NPadrino.Location = New System.Drawing.Point(50, 446)
+        Me.TxtBa_NPadrino.Location = New System.Drawing.Point(45, 387)
         Me.TxtBa_NPadrino.Multiline = True
         Me.TxtBa_NPadrino.Name = "TxtBa_NPadrino"
-        Me.TxtBa_NPadrino.Size = New System.Drawing.Size(427, 26)
+        Me.TxtBa_NPadrino.Size = New System.Drawing.Size(435, 26)
         Me.TxtBa_NPadrino.TabIndex = 74
         '
         'TxtBa_NMadre
         '
-        Me.TxtBa_NMadre.Location = New System.Drawing.Point(50, 387)
+        Me.TxtBa_NMadre.Location = New System.Drawing.Point(524, 310)
         Me.TxtBa_NMadre.Multiline = True
         Me.TxtBa_NMadre.Name = "TxtBa_NMadre"
         Me.TxtBa_NMadre.Size = New System.Drawing.Size(427, 26)
@@ -481,18 +474,18 @@ Partial Class FrmCBautismo
         '
         'TxtBa_NPadre
         '
-        Me.TxtBa_NPadre.Location = New System.Drawing.Point(47, 307)
+        Me.TxtBa_NPadre.Location = New System.Drawing.Point(45, 310)
         Me.TxtBa_NPadre.Multiline = True
         Me.TxtBa_NPadre.Name = "TxtBa_NPadre"
-        Me.TxtBa_NPadre.Size = New System.Drawing.Size(427, 26)
+        Me.TxtBa_NPadre.Size = New System.Drawing.Size(433, 26)
         Me.TxtBa_NPadre.TabIndex = 70
         '
         'TxtBa_LNacimiento
         '
-        Me.TxtBa_LNacimiento.Location = New System.Drawing.Point(728, 301)
+        Me.TxtBa_LNacimiento.Location = New System.Drawing.Point(728, 185)
         Me.TxtBa_LNacimiento.Multiline = True
         Me.TxtBa_LNacimiento.Name = "TxtBa_LNacimiento"
-        Me.TxtBa_LNacimiento.Size = New System.Drawing.Size(241, 36)
+        Me.TxtBa_LNacimiento.Size = New System.Drawing.Size(214, 36)
         Me.TxtBa_LNacimiento.TabIndex = 67
         '
         'DateBa_FNacimiento
@@ -501,22 +494,22 @@ Partial Class FrmCBautismo
         Me.DateBa_FNacimiento.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.DateBa_FNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateBa_FNacimiento.HoverState.Parent = Me.DateBa_FNacimiento
-        Me.DateBa_FNacimiento.Location = New System.Drawing.Point(545, 301)
+        Me.DateBa_FNacimiento.Location = New System.Drawing.Point(520, 185)
         Me.DateBa_FNacimiento.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.DateBa_FNacimiento.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.DateBa_FNacimiento.Name = "DateBa_FNacimiento"
         Me.DateBa_FNacimiento.ShadowDecoration.Parent = Me.DateBa_FNacimiento
-        Me.DateBa_FNacimiento.Size = New System.Drawing.Size(157, 36)
+        Me.DateBa_FNacimiento.Size = New System.Drawing.Size(202, 36)
         Me.DateBa_FNacimiento.TabIndex = 66
         Me.DateBa_FNacimiento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.DateBa_FNacimiento.Value = New Date(2021, 9, 8, 15, 36, 24, 541)
         '
         'TxtBa_Nombre
         '
-        Me.TxtBa_Nombre.Location = New System.Drawing.Point(47, 153)
+        Me.TxtBa_Nombre.Location = New System.Drawing.Point(47, 155)
         Me.TxtBa_Nombre.Multiline = True
         Me.TxtBa_Nombre.Name = "TxtBa_Nombre"
-        Me.TxtBa_Nombre.Size = New System.Drawing.Size(427, 26)
+        Me.TxtBa_Nombre.Size = New System.Drawing.Size(429, 26)
         Me.TxtBa_Nombre.TabIndex = 64
         '
         'CboSacerdote
@@ -571,7 +564,7 @@ Partial Class FrmCBautismo
         '
         Me.Label18.AutoSize = True
         Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(517, 476)
+        Me.Label18.Location = New System.Drawing.Point(517, 467)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(86, 17)
         Me.Label18.TabIndex = 60
@@ -581,7 +574,7 @@ Partial Class FrmCBautismo
         '
         Me.Label17.AutoSize = True
         Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(541, 281)
+        Me.Label17.Location = New System.Drawing.Point(517, 155)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(160, 17)
         Me.Label17.TabIndex = 58
@@ -591,7 +584,7 @@ Partial Class FrmCBautismo
         '
         Me.Label15.AutoSize = True
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(47, 532)
+        Me.Label15.Location = New System.Drawing.Point(44, 433)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(148, 17)
         Me.Label15.TabIndex = 54
@@ -601,7 +594,7 @@ Partial Class FrmCBautismo
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(46, 488)
+        Me.Label4.Location = New System.Drawing.Point(520, 390)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(146, 17)
         Me.Label4.TabIndex = 51
@@ -611,7 +604,7 @@ Partial Class FrmCBautismo
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(46, 416)
+        Me.Label3.Location = New System.Drawing.Point(44, 356)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(76, 17)
         Me.Label3.TabIndex = 48
@@ -621,7 +614,7 @@ Partial Class FrmCBautismo
         '
         Me.Label14.AutoSize = True
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(46, 349)
+        Me.Label14.Location = New System.Drawing.Point(521, 281)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(157, 17)
         Me.Label14.TabIndex = 37
@@ -631,7 +624,7 @@ Partial Class FrmCBautismo
         '
         Me.Label13.AutoSize = True
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(46, 271)
+        Me.Label13.Location = New System.Drawing.Point(44, 281)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(155, 17)
         Me.Label13.TabIndex = 35
@@ -661,7 +654,7 @@ Partial Class FrmCBautismo
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(47, 133)
+        Me.Label8.Location = New System.Drawing.Point(47, 129)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(144, 17)
         Me.Label8.TabIndex = 26
@@ -671,7 +664,7 @@ Partial Class FrmCBautismo
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(262, 603)
+        Me.Label7.Location = New System.Drawing.Point(322, 538)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(105, 17)
         Me.Label7.TabIndex = 24
@@ -681,7 +674,7 @@ Partial Class FrmCBautismo
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(145, 603)
+        Me.Label6.Location = New System.Drawing.Point(172, 538)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(74, 17)
         Me.Label6.TabIndex = 22
@@ -691,7 +684,7 @@ Partial Class FrmCBautismo
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(44, 603)
+        Me.Label5.Location = New System.Drawing.Point(43, 538)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(79, 17)
         Me.Label5.TabIndex = 20
@@ -796,7 +789,6 @@ Partial Class FrmCBautismo
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents TxtBa_AnotacionesTextuales As TextBox
     Friend WithEvents TxtBa_Numero As TextBox
-    Friend WithEvents CboFoja As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents CboLibro As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents DateBa_FBautismo As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents TxtBa_LBautismo As TextBox
@@ -829,4 +821,5 @@ Partial Class FrmCBautismo
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents TxtBa_Apellido As TextBox
+    Friend WithEvents TxtBa_Foja As TextBox
 End Class

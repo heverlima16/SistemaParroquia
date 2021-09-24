@@ -6,7 +6,7 @@ Public Class FrmCMatrimonio
         Me.listar()
         Me.CargarParroquia()
         Me.CargarSacerdote()
-        Me.CargarFoja()
+
         Me.CargarLibro()
 
     End Sub
@@ -37,6 +37,8 @@ Public Class FrmCMatrimonio
         DgvListado.Columns(16).Visible = False
         DgvListado.Columns(17).Visible = False
         DgvListado.Columns(18).Visible = False
+        DgvListado.Columns(19).Visible = False
+
 
 
 
@@ -88,7 +90,7 @@ Public Class FrmCMatrimonio
         TxtValor.Text = ""
 
         TxtId.Text = ""
-        CboFoja.Text = ""
+        TxtMa_NFoja.Text = ""
         CboLibro.Text = ""
         TxtNumeroCasado.Text = ""
         TxtMa_NEsposo.Text = ""
@@ -119,8 +121,6 @@ Public Class FrmCMatrimonio
         TxtMa_LMatrimonio.Text = DgvListado.SelectedCells.Item(5).Value
         TxtNumeroCasado.Text = DgvListado.SelectedCells.Item(6).Value
 
-
-
         DateMa_FNEsposo.Text = DgvListado.SelectedCells.Item(7).Value
         TxtMa_LEsposo.Text = DgvListado.SelectedCells.Item(8).Value
         DateMa_FNEsposa.Text = DgvListado.SelectedCells.Item(9).Value
@@ -136,6 +136,7 @@ Public Class FrmCMatrimonio
         TxtMa_NPadreEsposa.Text = DgvListado.SelectedCells.Item(16).Value
         TxtMa_NMadreEsposa.Text = DgvListado.SelectedCells.Item(17).Value
         TxtMa_AnotacionesTextuales.Text = DgvListado.SelectedCells.Item(18).Value
+        TxtMa_NFoja.Text = DgvListado.SelectedCells.Item(19).Value
 
 
 
@@ -145,13 +146,11 @@ Public Class FrmCMatrimonio
         CboParroquia.Visible = False
         CboSacerdote.Visible = False
         CboLibro.Visible = False
-        CboFoja.Visible = False
+
         Label12.Visible = False
-        TxtNumeroCasado.Visible = False
         Label11.Visible = False
         Label5.Visible = False
-        Label6.Visible = False
-        Label7.Visible = False
+
         TxtId.Visible = False
         BtnGuardar.Visible = False
         BtnActualizar.Visible = True
@@ -179,16 +178,6 @@ Public Class FrmCMatrimonio
         End Try
     End Sub
 
-    Private Sub CargarFoja()
-        Try
-            Dim Negocio As New Capa_Negocio.NFoja
-            CboFoja.DataSource = Negocio.Seleccionar
-            CboFoja.ValueMember = "idfoja"
-            CboFoja.DisplayMember = "fo_numero"
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-    End Sub
     Private Sub CargarLibro()
         Try
             Dim Negocio As New Capa_Negocio.NLibro
@@ -213,7 +202,7 @@ Public Class FrmCMatrimonio
             'recibe datos
 
 
-            obj.IdFoja = CboFoja.SelectedValue
+            obj.Ma_NFoja = TxtMa_NFoja.Text
             obj.IdLibro = CboLibro.SelectedValue
             obj.Ma_Numero = TxtNumeroCasado.Text
             obj.Ma_NEsposo = TxtMa_NEsposo.Text
@@ -271,7 +260,7 @@ Public Class FrmCMatrimonio
             Dim Negocio As New Capa_Negocio.NCMatrimonio
 
             obj.IdPMatrimonio = TxtId.Text
-            obj.IdFoja = CboFoja.SelectedValue
+            obj.Ma_NFoja = TxtMa_NFoja.Text
             obj.IdLibro = CboLibro.SelectedValue
             obj.Ma_Numero = TxtNumeroCasado.Text
             obj.Ma_NEsposo = TxtMa_NEsposo.Text
@@ -348,5 +337,81 @@ Public Class FrmCMatrimonio
         End If
     End Sub
 
+    Private Sub TxtMa_NEsposo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_NEsposo.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
 
+    Private Sub TxtMa_NEsposa_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_NEsposa.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_LEsposo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_LEsposo.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_LEsposa_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_LEsposa.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_NPadreEsposo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_NPadreEsposo.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_NPadreEsposa_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_NPadreEsposa.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_NMadreEsposo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_NMadreEsposo.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_NMadreEsposa_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_NMadreEsposa.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_NPadrino_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_NPadrino.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_LMatrimonio_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_LMatrimonio.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_AnotacionesTextuales_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_AnotacionesTextuales.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ.1234567890" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtMa_NFoja_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtMa_NFoja.KeyPress
+        If InStr(1, "0123456789" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtNumeroCasado_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtNumeroCasado.KeyPress
+        If InStr(1, "0123456789" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
 End Class

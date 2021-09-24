@@ -3,7 +3,7 @@
         Me.listar()
         Me.CargarParroquia()
         Me.CargarSacerdote()
-        Me.CargarFoja()
+
         Me.CargarLibro()
     End Sub
 
@@ -25,6 +25,7 @@
         DgvListado.Columns(10).Visible = False
         DgvListado.Columns(11).Visible = False
         DgvListado.Columns(12).Visible = False
+        DgvListado.Columns(13).Visible = False
 
 
 
@@ -104,7 +105,6 @@
         DateBa_FBautismo.Text = DgvListado.SelectedCells.Item(2).Value
         TxtBa_Nombre.Text = DgvListado.SelectedCells.Item(3).Value
         TxtBa_Apellido.Text = DgvListado.SelectedCells.Item(4).Value
-
         TxtBa_NPadrino.Text = DgvListado.SelectedCells.Item(5).Value
         TxtBa_Numero.Text = DgvListado.SelectedCells.Item(6).Value
         TxtBa_LNacimiento.Text = DgvListado.SelectedCells.Item(7).Value
@@ -113,17 +113,16 @@
         TxtBa_NMadre.Text = DgvListado.SelectedCells.Item(10).Value
         TxtBa_LBautismo.Text = DgvListado.SelectedCells.Item(11).Value
         TxtBa_AnotacionesTextuales.Text = DgvListado.SelectedCells.Item(12).Value
+        TxtBa_Foja.Text = DgvListado.SelectedCells.Item(13).Value
 
 
 
         CboParroquia.Visible = False
         Label11.Visible = False
         CboLibro.Visible = False
-        CboFoja.Visible = False
-        TxtBa_Numero.Visible = False
+
         Label5.Visible = False
-        Label6.Visible = False
-        Label7.Visible = False
+
         CboSacerdote.Visible = False
         Label12.Visible = False
         BtnGuardar.Visible = False
@@ -152,16 +151,7 @@
         End Try
     End Sub
 
-    Private Sub CargarFoja()
-        Try
-            Dim Negocio As New Capa_Negocio.NFoja
-            CboFoja.DataSource = Negocio.Seleccionar
-            CboFoja.ValueMember = "idfoja"
-            CboFoja.DisplayMember = "fo_numero"
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-    End Sub
+
 
 
     Private Sub CargarLibro()
@@ -185,9 +175,8 @@
             Dim Negocio As New Capa_Negocio.NCBautismo
             'recibe datos
 
-
-            obj.IdFoja = CboFoja.SelectedValue
             obj.IdLibro = CboLibro.SelectedValue
+            obj.Ba_NFoja = TxtBa_Foja.Text
             obj.Ba_Numero = TxtBa_Numero.Text
             obj.Ba_Nombre = TxtBa_Nombre.Text
             obj.Ba_Apellido = TxtBa_Apellido.Text
@@ -236,7 +225,7 @@
             Dim Negocio As New Capa_Negocio.NCBautismo
 
             obj.IdPBautismo = TxtId.Text
-
+            obj.Ba_NFoja = TxtBa_Foja.Text
             obj.Ba_Numero = TxtBa_Numero.Text
             obj.Ba_Nombre = TxtBa_Nombre.Text
             obj.Ba_Apellido = TxtBa_Apellido.Text
@@ -273,7 +262,7 @@
                 For Each row As DataGridViewRow In DgvListado.Rows
                     Dim marcado As Boolean = Convert.ToBoolean(row.Cells("Seleccionar").Value)
                     If marcado Then
-                        Dim OneKey As Integer = Convert.ToInt32(row.Cells("idPMatrimonio").Value)
+                        Dim OneKey As Integer = Convert.ToInt32(row.Cells("IdPBautismo").Value)
                         Neg.Eliminar(OneKey)
                     End If
                 Next
@@ -309,5 +298,63 @@
         End If
     End Sub
 
+    Private Sub TxtBa_Nombre_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBa_Nombre.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
 
+    Private Sub TxtBa_Apellido_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBa_Apellido.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtBa_NPadre_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBa_NPadre.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtBa_NMadre_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBa_NMadre.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtBa_NPadrino_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBa_NPadrino.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtBa_LBautismo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBa_LBautismo.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtBa_AnotacionesTextuales_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBa_AnotacionesTextuales.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ.1234567890" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtBa_LNacimiento_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBa_LNacimiento.KeyPress
+        If InStr(1, "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUWVXYZ" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtBa_Foja_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBa_Foja.KeyPress
+        If InStr(1, "0123456789" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
+
+    Private Sub TxtBa_Numero_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBa_Numero.KeyPress
+        If InStr(1, "0123456789" & Chr(8), e.KeyChar) = 0 Then
+            e.KeyChar = ""
+        End If
+    End Sub
 End Class

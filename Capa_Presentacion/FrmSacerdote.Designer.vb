@@ -355,6 +355,7 @@ Partial Class FrmSacerdote
         Me.TxtId.Name = "TxtId"
         Me.TxtId.Size = New System.Drawing.Size(100, 22)
         Me.TxtId.TabIndex = 5
+        Me.TxtId.Visible = False
         '
         'BtnCancelar
         '

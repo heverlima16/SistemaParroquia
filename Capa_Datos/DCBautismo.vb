@@ -43,7 +43,7 @@ Public Class DCBautismo
             Comando.CommandType = CommandType.StoredProcedure
 
             Comando.Parameters.Add("@IdLibro", SqlDbType.Int).Value = Obj.IdLibro
-            Comando.Parameters.Add("@IdFoja", SqlDbType.Int).Value = Obj.IdFoja
+            Comando.Parameters.Add("@Ba_NFoja", SqlDbType.Int).Value = Obj.Ba_NFoja
             Comando.Parameters.Add("@Ba_Numero", SqlDbType.Int).Value = Obj.Ba_Numero
             Comando.Parameters.Add("@Ba_Nombre", SqlDbType.VarChar).Value = Obj.Ba_Nombre
             Comando.Parameters.Add("@Ba_Apellido", SqlDbType.VarChar).Value = Obj.Ba_Apellido
@@ -73,6 +73,7 @@ Public Class DCBautismo
             Comando.CommandType = CommandType.StoredProcedure
 
             Comando.Parameters.Add("@IdPBautismo", SqlDbType.Int).Value = Obj.IdPBautismo
+            Comando.Parameters.Add("@Ba_NFoja", SqlDbType.Int).Value = Obj.Ba_NFoja
             Comando.Parameters.Add("@Ba_Numero", SqlDbType.Int).Value = Obj.Ba_Numero
             Comando.Parameters.Add("@Ba_Nombre", SqlDbType.VarChar).Value = Obj.Ba_Nombre
             Comando.Parameters.Add("@Ba_Apellido", SqlDbType.VarChar).Value = Obj.Ba_Apellido

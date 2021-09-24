@@ -430,7 +430,7 @@ Partial Class FrmUsuario
         Me.BtnGuardar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
         Me.BtnGuardar.HoverState.Parent = Me.BtnGuardar
-        Me.BtnGuardar.Location = New System.Drawing.Point(532, 421)
+        Me.BtnGuardar.Location = New System.Drawing.Point(392, 421)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.ShadowDecoration.Parent = Me.BtnGuardar
         Me.BtnGuardar.Size = New System.Drawing.Size(205, 45)
@@ -449,10 +449,10 @@ Partial Class FrmUsuario
         Me.BtnActualizar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnActualizar.ForeColor = System.Drawing.Color.White
         Me.BtnActualizar.HoverState.Parent = Me.BtnActualizar
-        Me.BtnActualizar.Location = New System.Drawing.Point(287, 421)
+        Me.BtnActualizar.Location = New System.Drawing.Point(392, 421)
         Me.BtnActualizar.Name = "BtnActualizar"
         Me.BtnActualizar.ShadowDecoration.Parent = Me.BtnActualizar
-        Me.BtnActualizar.Size = New System.Drawing.Size(195, 45)
+        Me.BtnActualizar.Size = New System.Drawing.Size(205, 45)
         Me.BtnActualizar.TabIndex = 7
         Me.BtnActualizar.Text = "Actualizar"
         '
@@ -468,7 +468,7 @@ Partial Class FrmUsuario
         Me.BtnCancelar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnCancelar.ForeColor = System.Drawing.Color.White
         Me.BtnCancelar.HoverState.Parent = Me.BtnCancelar
-        Me.BtnCancelar.Location = New System.Drawing.Point(26, 421)
+        Me.BtnCancelar.Location = New System.Drawing.Point(102, 421)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.ShadowDecoration.Parent = Me.BtnCancelar
         Me.BtnCancelar.Size = New System.Drawing.Size(219, 45)
