@@ -22,6 +22,7 @@ Partial Class FrmGivePartBautis
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TxtDNI = New System.Windows.Forms.TextBox()
         Me.BtnSearchUser = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -38,10 +39,9 @@ Partial Class FrmGivePartBautis
         '
         'TxtDNI
         '
-        Me.TxtDNI.Location = New System.Drawing.Point(188, 295)
-        Me.TxtDNI.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtDNI.Location = New System.Drawing.Point(124, 240)
         Me.TxtDNI.Name = "TxtDNI"
-        Me.TxtDNI.Size = New System.Drawing.Size(281, 22)
+        Me.TxtDNI.Size = New System.Drawing.Size(229, 20)
         Me.TxtDNI.TabIndex = 2
         '
         'BtnSearchUser
@@ -51,11 +51,10 @@ Partial Class FrmGivePartBautis
         Me.BtnSearchUser.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.BtnSearchUser.BackgroundImage = Global.Capa_Presentacion.My.Resources.Resources.lupa
         Me.BtnSearchUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BtnSearchUser.Location = New System.Drawing.Point(499, 283)
-        Me.BtnSearchUser.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnSearchUser.Location = New System.Drawing.Point(374, 230)
         Me.BtnSearchUser.Name = "BtnSearchUser"
         Me.BtnSearchUser.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BtnSearchUser.Size = New System.Drawing.Size(52, 47)
+        Me.BtnSearchUser.Size = New System.Drawing.Size(39, 38)
         Me.BtnSearchUser.TabIndex = 3
         Me.BtnSearchUser.UseVisualStyleBackColor = False
         '
@@ -63,40 +62,43 @@ Partial Class FrmGivePartBautis
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(223, 266)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(121, 211)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(163, 20)
+        Me.Label1.Size = New System.Drawing.Size(232, 17)
         Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Ingrese el N° DNI:"
+        Me.Label1.Text = "Ingrese Nombre del Interesado"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(183, 223)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(137, 181)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(341, 23)
+        Me.Label2.Size = New System.Drawing.Size(276, 19)
         Me.Label2.TabIndex = 5
-        Me.Label2.Text = "GENERAR PARTDIA DE BAUTISMO"
+        Me.Label2.Text = "GENERAR PARTIDA DE BAUTISMO"
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.InactiveCaption
+        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(65, 352)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView1.Location = New System.Drawing.Point(62, 286)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.Size = New System.Drawing.Size(485, 185)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Maroon
+        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.DataGridView1.Size = New System.Drawing.Size(351, 150)
         Me.DataGridView1.TabIndex = 6
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(336, 583)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button1.Location = New System.Drawing.Point(252, 474)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(215, 43)
+        Me.Button1.Size = New System.Drawing.Size(161, 35)
         Me.Button1.TabIndex = 7
         Me.Button1.Text = "ABRIR FOLDER"
         Me.Button1.UseVisualStyleBackColor = True
@@ -104,10 +106,9 @@ Partial Class FrmGivePartBautis
         'Label3
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(575, 288)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(431, 234)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(416, 21)
+        Me.Label3.Size = New System.Drawing.Size(312, 17)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Pasos para  Generar el Documento:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -115,10 +116,9 @@ Partial Class FrmGivePartBautis
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(628, 321)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(471, 261)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(265, 60)
+        Me.Label4.Size = New System.Drawing.Size(231, 51)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "1. Ingrese el nombre a buscar." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "2. As click en el icono buscar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "3. Seleccione al " &
     "usuario."
@@ -126,10 +126,9 @@ Partial Class FrmGivePartBautis
         'Label5
         '
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(575, 415)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(431, 337)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(361, 80)
+        Me.Label5.Size = New System.Drawing.Size(271, 65)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Nota: Al Seleccionar, va salir un mensaje con la cual esta confirmando que se gen" &
     "ero satisfactoriamente!!." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
@@ -145,11 +144,12 @@ Partial Class FrmGivePartBautis
         Me.Guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.Guna2ControlBox1.HoverState.Parent = Me.Guna2ControlBox1
         Me.Guna2ControlBox1.IconColor = System.Drawing.Color.Red
-        Me.Guna2ControlBox1.Location = New System.Drawing.Point(906, 0)
+        Me.Guna2ControlBox1.Location = New System.Drawing.Point(680, 0)
+        Me.Guna2ControlBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
         Me.Guna2ControlBox1.PressedColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.Guna2ControlBox1.ShadowDecoration.Parent = Me.Guna2ControlBox1
-        Me.Guna2ControlBox1.Size = New System.Drawing.Size(73, 44)
+        Me.Guna2ControlBox1.Size = New System.Drawing.Size(55, 36)
         Me.Guna2ControlBox1.TabIndex = 54
         '
         'Label10
@@ -159,19 +159,18 @@ Partial Class FrmGivePartBautis
         Me.Label10.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
         Me.Label10.ForeColor = System.Drawing.Color.White
         Me.Label10.Location = New System.Drawing.Point(0, 0)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(979, 44)
+        Me.Label10.Size = New System.Drawing.Size(734, 36)
         Me.Label10.TabIndex = 53
         Me.Label10.Text = "Generar Partida de Bautismo"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'FrmGivePartBautis
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(979, 702)
+        Me.ClientSize = New System.Drawing.Size(734, 570)
         Me.Controls.Add(Me.Guna2ControlBox1)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label5)
@@ -184,7 +183,6 @@ Partial Class FrmGivePartBautis
         Me.Controls.Add(Me.BtnSearchUser)
         Me.Controls.Add(Me.TxtDNI)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FrmGivePartBautis"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmGivePartBautis"
