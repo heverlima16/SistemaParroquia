@@ -199,17 +199,14 @@ Public Class FrmHome
 
 
 
-<<<<<<< HEAD
     Private Sub GenerarRerpoteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GenerarRerpoteToolStripMenuItem.Click
         ' Dim frm As New FrmGivePartBautis
-        'frm.MdiParent = Me
-        'frm.Show()
-=======
+    'frm.MdiParent = Me
+    'frm.Show()
     Private Sub GenerarRerpoteToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Dim frm As New FrmGivePartBautis
         frm.MdiParent = Me
         frm.Show()
->>>>>>> 2e3b44f580a020111be6f5108824f2bd914a2261
     End Sub
 
     Private Sub OptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OptionsToolStripMenuItem.Click
