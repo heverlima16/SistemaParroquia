@@ -8,6 +8,37 @@ Imports System.Threading
 Imports System.Data.SqlClient
 
 Public Class FrmGivePartBautis
+
+
+    Private Sub Formato()
+        DataGridView1.Columns(0).Visible = True
+        DataGridView1.Columns(1).Visible = True
+
+        DataGridView1.Columns(2).Visible = False
+        DataGridView1.Columns(3).Visible = False
+        DataGridView1.Columns(4).Visible = False
+        DataGridView1.Columns(5).Visible = False
+        DataGridView1.Columns(6).Visible = False
+        DataGridView1.Columns(7).Visible = False
+        DataGridView1.Columns(8).Visible = False
+        DataGridView1.Columns(9).Visible = False
+        DataGridView1.Columns(10).Visible = False
+        DataGridView1.Columns(11).Visible = False
+        DataGridView1.Columns(12).Visible = False
+        DataGridView1.Columns(13).Visible = False
+        DataGridView1.Columns(14).Visible = False
+        DataGridView1.Columns(15).Visible = False
+        DataGridView1.Columns(16).Visible = False
+
+
+        DataGridView1.Columns(0).Width = 250
+        DataGridView1.Columns(1).Width = 250
+
+
+
+    End Sub
+
+
     Dim connection As New SqlConnection("Server=PC-HEVER; Database = DB_Parroquia; Integrated Security = true")
     'declare my varible ::::::::::::: gaa
     Dim index As Integer
@@ -226,7 +257,7 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim location = "D:\"
-        Process.Start("explorer.exe", Location)
+        Process.Start("explorer.exe", location)
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick

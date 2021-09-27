@@ -8,6 +8,38 @@ Imports System.Threading
 Imports System.Data.SqlClient
 
 Public Class FrmMatrimonio
+
+
+
+    Private Sub Formato()
+        DataGridView1.Columns(0).Visible = True
+        DataGridView1.Columns(1).Visible = True
+
+        DataGridView1.Columns(2).Visible = False
+        DataGridView1.Columns(3).Visible = False
+        DataGridView1.Columns(4).Visible = False
+        DataGridView1.Columns(5).Visible = False
+        DataGridView1.Columns(6).Visible = False
+        DataGridView1.Columns(7).Visible = False
+        DataGridView1.Columns(8).Visible = False
+        DataGridView1.Columns(9).Visible = False
+        DataGridView1.Columns(10).Visible = False
+        DataGridView1.Columns(11).Visible = False
+        DataGridView1.Columns(12).Visible = False
+        DataGridView1.Columns(13).Visible = False
+        DataGridView1.Columns(14).Visible = False
+        DataGridView1.Columns(15).Visible = False
+        DataGridView1.Columns(16).Visible = False
+
+
+        DataGridView1.Columns(0).Width = 250
+        DataGridView1.Columns(1).Width = 250
+
+
+
+    End Sub
+
+
     Dim connection As New SqlConnection("Server=PC-HEVER; Database = DB_Parroquia; Integrated Security = true")
     'declare my varible ::::::::::::: gaa
     Dim index As Integer
@@ -18,6 +50,8 @@ Public Class FrmMatrimonio
 
 
     Public Sub FilterData(valueToSearch As String)
+
+
         'SELECT * From Users WHERE CONCAT(fname, lname, age) like '%F%'
         Dim searchQuery As String = "Select 
  pma.Ma_NEsposo as Esposo,pma.Ma_NEsposa as Esposa, pma.Ma_LEsposo, pma.Ma_FNEsposo,pma.Ma_NPadreEsposo,pma.Ma_LEsposa, pma.Ma_FNEsposa, pma.Ma_NMadreEsposa,
@@ -97,41 +131,38 @@ WHERE pma.Ma_NEsposo like  '%" & valueToSearch & "%'   or pma.Ma_NEsposa like  '
             '::::::::::::::Esposo
 
             Dim lastname = dni.Cells(0).Value.ToString()
-            Dim pLastName = New Paragraph()
+            Dim pLastName = New Paragraph().SetTextAlignment(TextAlignment.CENTER)
             'lugar nacimiento+n fecha
             Dim lugar = dni.Cells(2).Value.ToString()
             pLastName.Add(New Text(lastname))
-            pLastName.Add(New Text(" " + lugar))
+            pLastName.Add(New Text("                                             " + lugar))
 
             'left
             pLastName.SetMargins(20, 0, 0, 80)
             document.Add(pLastName)
 
-
-
-
             '::::::::::::::Esposo fecha y padre name
 
             Dim fechaesposo = Convert.ToDateTime(dni.Cells(3).Value).ToString("yyyy-MM-dd")
-            Dim pfechaesposo = New Paragraph()
+            Dim pfechaesposo = New Paragraph().SetTextAlignment(TextAlignment.LEFT)
             'lugar nacimiento+n fecha
             Dim padreesposo = dni.Cells(4).Value.ToString()
             pfechaesposo.Add(New Text(fechaesposo))
-            pfechaesposo.Add(New Text(" " + padreesposo))
+            pfechaesposo.Add(New Text("                    " + padreesposo))
 
             'left
-            pfechaesposo.SetMargins(22, 0, 0, 80)
+            pfechaesposo.SetMargins(22, 0, 0, 30)
             document.Add(pfechaesposo)
 
 
             '::::::::::::::Esposa
 
             Dim nombreesposa = dni.Cells(1).Value.ToString()
-            Dim pnombreesposa = New Paragraph()
+            Dim pnombreesposa = New Paragraph().SetTextAlignment(TextAlignment.CENTER)
             'lugar nacimiento+n fecha
             Dim lugaresposa = dni.Cells(5).Value.ToString()
             pnombreesposa.Add(New Text(nombreesposa))
-            pnombreesposa.Add(New Text(" " + lugaresposa))
+            pnombreesposa.Add(New Text("                                             " + lugaresposa))
 
             'left
             pnombreesposa.SetMargins(24, 0, 0, 80)
@@ -140,11 +171,11 @@ WHERE pma.Ma_NEsposo like  '%" & valueToSearch & "%'   or pma.Ma_NEsposa like  '
             '::::::::::::::Esposa fecha y padre name
 
             Dim fechaesposa = Convert.ToDateTime(dni.Cells(6).Value).ToString("yyyy-MM-dd")
-            Dim pfechaesposa = New Paragraph()
+            Dim pfechaesposa = New Paragraph().SetTextAlignment(TextAlignment.LEFT)
             'lugar nacimiento+n fecha
             Dim madreesposa = dni.Cells(7).Value.ToString()
             pfechaesposa.Add(New Text(fechaesposa))
-            pfechaesposa.Add(New Text(" " + madreesposa))
+            pfechaesposa.Add(New Text("                    " + madreesposa))
 
             'left
             pfechaesposa.SetMargins(26, 0, 0, 90)
@@ -243,7 +274,11 @@ WHERE pma.Ma_NEsposo like  '%" & valueToSearch & "%'   or pma.Ma_NEsposa like  '
 
     Private Sub BtnSearchUser_Click(sender As Object, e As EventArgs) Handles BtnSearchUser.Click
 
+
+
         If (TxtDNI.Text.Length > 1 And Not IsNumeric(TxtDNI.Text)) Then
+
+
             'SearchUserBautismo()
             FilterData(TxtDNI.Text)
 
@@ -261,6 +296,7 @@ WHERE pma.Ma_NEsposo like  '%" & valueToSearch & "%'   or pma.Ma_NEsposa like  '
         If (Not IsNumeric(TxtDNI.Text)) Then
             'SearchUserBautismo()
             FilterData(TxtDNI.Text)
+            Me.Formato()
 
         Else
             MsgBox("Por favor Ingresa solo Caracteres", vbExclamation)
@@ -289,4 +325,6 @@ WHERE pma.Ma_NEsposo like  '%" & valueToSearch & "%'   or pma.Ma_NEsposa like  '
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
     End Sub
+
+
 End Class
