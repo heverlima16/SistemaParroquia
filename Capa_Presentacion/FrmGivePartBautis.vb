@@ -8,7 +8,7 @@ Imports System.Threading
 Imports System.Data.SqlClient
 
 Public Class FrmGivePartBautis
-    Dim connection As New SqlConnection("Server= PC-HEVER; Database = DB_Parroquia; Integrated Security = true")
+    Dim connection As New SqlConnection("Server= LAPTOP-7HVTS7G6; Database = DB_Parroquia; Integrated Security = true")
     'declare my varible ::::::::::::: gaa
     Dim index As Integer
     '::::::::::::::::::::::::::folder location::::::::::::::::::::
@@ -238,6 +238,10 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
     End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
     End Sub
 End Class

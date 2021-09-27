@@ -199,10 +199,17 @@ Public Class FrmHome
 
 
 
+<<<<<<< HEAD
+    Private Sub GenerarRerpoteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GenerarRerpoteToolStripMenuItem.Click
+        ' Dim frm As New FrmGivePartBautis
+        'frm.MdiParent = Me
+        'frm.Show()
+=======
     Private Sub GenerarRerpoteToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Dim frm As New FrmGivePartBautis
         frm.MdiParent = Me
         frm.Show()
+>>>>>>> 2e3b44f580a020111be6f5108824f2bd914a2261
     End Sub
 
     Private Sub OptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OptionsToolStripMenuItem.Click
@@ -211,6 +218,9 @@ Public Class FrmHome
         frm.Show()
     End Sub
 
+<<<<<<< HEAD
+    Private Sub IconButton8_Click(sender As Object, e As EventArgs) Handles IconButton8.Click
+=======
 
     Private Sub IconButton3_Click_1(sender As Object, e As EventArgs) Handles IconButton3.Click
         If (MsgBox("CERRAR SESIÓN", vbYesNo + vbExclamation, "Cerrar Sistema Parroquia") = vbYes) Then
@@ -221,10 +231,13 @@ Public Class FrmHome
 
     Private Sub IconButton8_Click(sender As Object, e As EventArgs) Handles IconButton8.Click
 
+>>>>>>> 2e3b44f580a020111be6f5108824f2bd914a2261
         Dim frm As New FrmGivePartBautis
         frm.MdiParent = Me
         frm.Show()
     End Sub
+<<<<<<< HEAD
+=======
 
     Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
         '' aki va matrimonio 
@@ -241,4 +254,5 @@ Public Class FrmHome
         frm.MdiParent = Me
         frm.Show()
     End Sub
+>>>>>>> 2e3b44f580a020111be6f5108824f2bd914a2261
 End Class
