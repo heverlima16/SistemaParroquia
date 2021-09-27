@@ -173,6 +173,12 @@
     <Compile Include="FrmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmMatrimonio.Designer.vb">
+      <DependentUpon>FrmMatrimonio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMatrimonio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmPais.Designer.vb">
       <DependentUpon>FrmPais.vb</DependentUpon>
     </Compile>
@@ -248,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMatrimonio.resx">
+      <DependentUpon>FrmMatrimonio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPais.resx">
       <DependentUpon>FrmPais.vb</DependentUpon>

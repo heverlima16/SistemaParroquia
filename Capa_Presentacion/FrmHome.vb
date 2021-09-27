@@ -227,7 +227,9 @@ Public Class FrmHome
     End Sub
 
     Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
-        '' aki va matrimonio 
+        Dim frm As New FrmMatrimonio
+        frm.MdiParent = Me
+        frm.Show()
     End Sub
 
     Private Sub RegistrarNumeroLibroToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistrarNumeroLibroToolStripMenuItem.Click
