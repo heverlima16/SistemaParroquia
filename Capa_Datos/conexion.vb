@@ -72,4 +72,5 @@ Public Class conexion
         End If
         Return cadena
     End Function
+    ''lima
 End Class
