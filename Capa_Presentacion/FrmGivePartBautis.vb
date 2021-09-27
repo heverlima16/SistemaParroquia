@@ -8,7 +8,7 @@ Imports System.Threading
 Imports System.Data.SqlClient
 
 Public Class FrmGivePartBautis
-    Dim connection As New SqlConnection("Server=PC-HEVER; Database = DB_Parroquia; Integrated Security = true")
+    Dim connection As New SqlConnection("Server= PC-HEVER; Database = DB_Parroquia; Integrated Security = true")
     'declare my varible ::::::::::::: gaa
     Dim index As Integer
     '::::::::::::::::::::::::::folder location::::::::::::::::::::
