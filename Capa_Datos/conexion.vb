@@ -56,8 +56,8 @@ Public Class conexion
     Public Sub New()
         Me.Base = "DB_Parroquia"
         Me.Servidor = "PC-HEVER"
-        Me.Usuario = ""
-        Me.Clave = ""
+        Me.Usuario = "sa"
+        Me.Clave = "root"
         Me.conn = New SqlConnection(CrearCadena)
     End Sub
     Public Function CrearCadena() As String
@@ -72,5 +72,4 @@ Public Class conexion
         End If
         Return cadena
     End Function
-    ''lima
 End Class
