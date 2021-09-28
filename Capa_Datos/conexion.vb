@@ -55,7 +55,7 @@ Public Class conexion
 
     Public Sub New()
         Me.Base = "DB_Parroquia"
-        Me.Servidor = "PC-HEVER"
+        Me.Servidor = "DESKTOP-JA8D856\SQLEXPRESS"
         Me.Usuario = "sa"
         Me.Clave = "root"
         Me.conn = New SqlConnection(CrearCadena)

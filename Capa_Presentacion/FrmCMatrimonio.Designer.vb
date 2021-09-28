@@ -23,9 +23,9 @@ Partial Class FrmCMatrimonio
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle40 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle41 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle42 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TabGeneral = New Guna.UI2.WinForms.Guna2TabControl()
@@ -38,6 +38,8 @@ Partial Class FrmCMatrimonio
         Me.TxtValor = New Guna.UI2.WinForms.Guna2TextBox()
         Me.LblTotal = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
         Me.TxtMa_NFoja = New System.Windows.Forms.TextBox()
         Me.TxtMa_AnotacionesTextuales = New System.Windows.Forms.TextBox()
         Me.TxtNumeroCasado = New System.Windows.Forms.TextBox()
@@ -79,8 +81,6 @@ Partial Class FrmCMatrimonio
         Me.BtnActualizar = New Guna.UI2.WinForms.Guna2Button()
         Me.BtnCancelar = New Guna.UI2.WinForms.Guna2Button()
         Me.ErrorIcono = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
         Me.TabGeneral.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.DgvListado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -99,11 +99,12 @@ Partial Class FrmCMatrimonio
         Me.Guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.Guna2ControlBox1.HoverState.Parent = Me.Guna2ControlBox1
         Me.Guna2ControlBox1.IconColor = System.Drawing.Color.Red
-        Me.Guna2ControlBox1.Location = New System.Drawing.Point(1150, 0)
+        Me.Guna2ControlBox1.Location = New System.Drawing.Point(862, 0)
+        Me.Guna2ControlBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
         Me.Guna2ControlBox1.PressedColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.Guna2ControlBox1.ShadowDecoration.Parent = Me.Guna2ControlBox1
-        Me.Guna2ControlBox1.Size = New System.Drawing.Size(73, 44)
+        Me.Guna2ControlBox1.Size = New System.Drawing.Size(55, 36)
         Me.Guna2ControlBox1.TabIndex = 54
         '
         'Label10
@@ -113,9 +114,8 @@ Partial Class FrmCMatrimonio
         Me.Label10.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
         Me.Label10.ForeColor = System.Drawing.Color.White
         Me.Label10.Location = New System.Drawing.Point(0, 0)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(1223, 44)
+        Me.Label10.Size = New System.Drawing.Size(917, 36)
         Me.Label10.TabIndex = 53
         Me.Label10.Text = "DIGITALIZAR CARTA DE MATRIMONIO"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -126,10 +126,11 @@ Partial Class FrmCMatrimonio
         Me.TabGeneral.Controls.Add(Me.TabPage1)
         Me.TabGeneral.Controls.Add(Me.TabPage2)
         Me.TabGeneral.ItemSize = New System.Drawing.Size(180, 40)
-        Me.TabGeneral.Location = New System.Drawing.Point(12, 50)
+        Me.TabGeneral.Location = New System.Drawing.Point(9, 41)
+        Me.TabGeneral.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TabGeneral.Name = "TabGeneral"
         Me.TabGeneral.SelectedIndex = 0
-        Me.TabGeneral.Size = New System.Drawing.Size(1199, 705)
+        Me.TabGeneral.Size = New System.Drawing.Size(899, 573)
         Me.TabGeneral.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty
         Me.TabGeneral.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.TabGeneral.TabButtonHoverState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
@@ -159,8 +160,9 @@ Partial Class FrmCMatrimonio
         Me.TabPage1.Controls.Add(Me.TxtValor)
         Me.TabPage1.Controls.Add(Me.LblTotal)
         Me.TabPage1.Location = New System.Drawing.Point(184, 4)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(1011, 697)
+        Me.TabPage1.Size = New System.Drawing.Size(711, 565)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Listado"
         '
@@ -169,41 +171,42 @@ Partial Class FrmCMatrimonio
         Me.DgvListado.AllowUserToAddRows = False
         Me.DgvListado.AllowUserToDeleteRows = False
         Me.DgvListado.AllowUserToOrderColumns = True
-        DataGridViewCellStyle40.BackColor = System.Drawing.Color.White
-        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle40
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DgvListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DgvListado.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.DgvListado.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DgvListado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DgvListado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle41.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle41.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle41
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DgvListado.ColumnHeadersHeight = 27
         Me.DgvListado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Seleccionar})
-        DataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle42.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle42.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle42.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle42
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle3
         Me.DgvListado.EnableHeadersVisualStyles = False
         Me.DgvListado.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.DgvListado.Location = New System.Drawing.Point(6, 108)
+        Me.DgvListado.Location = New System.Drawing.Point(4, 88)
+        Me.DgvListado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DgvListado.Name = "DgvListado"
         Me.DgvListado.ReadOnly = True
         Me.DgvListado.RowHeadersVisible = False
         Me.DgvListado.RowHeadersWidth = 51
         Me.DgvListado.RowTemplate.Height = 24
         Me.DgvListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DgvListado.Size = New System.Drawing.Size(971, 476)
+        Me.DgvListado.Size = New System.Drawing.Size(728, 387)
         Me.DgvListado.TabIndex = 49
         Me.DgvListado.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.DgvListado.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -241,9 +244,10 @@ Partial Class FrmCMatrimonio
         Me.ChkSeleccionar.CheckedState.BorderRadius = 0
         Me.ChkSeleccionar.CheckedState.BorderThickness = 0
         Me.ChkSeleccionar.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ChkSeleccionar.Location = New System.Drawing.Point(39, 625)
+        Me.ChkSeleccionar.Location = New System.Drawing.Point(29, 508)
+        Me.ChkSeleccionar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ChkSeleccionar.Name = "ChkSeleccionar"
-        Me.ChkSeleccionar.Size = New System.Drawing.Size(104, 21)
+        Me.ChkSeleccionar.Size = New System.Drawing.Size(82, 17)
         Me.ChkSeleccionar.TabIndex = 48
         Me.ChkSeleccionar.Text = "Seleccionar"
         Me.ChkSeleccionar.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
@@ -263,10 +267,11 @@ Partial Class FrmCMatrimonio
         Me.BtnEliminar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnEliminar.ForeColor = System.Drawing.Color.White
         Me.BtnEliminar.HoverState.Parent = Me.BtnEliminar
-        Me.BtnEliminar.Location = New System.Drawing.Point(162, 625)
+        Me.BtnEliminar.Location = New System.Drawing.Point(122, 508)
+        Me.BtnEliminar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnEliminar.Name = "BtnEliminar"
         Me.BtnEliminar.ShadowDecoration.Parent = Me.BtnEliminar
-        Me.BtnEliminar.Size = New System.Drawing.Size(129, 36)
+        Me.BtnEliminar.Size = New System.Drawing.Size(97, 29)
         Me.BtnEliminar.TabIndex = 47
         Me.BtnEliminar.Text = "Eliminar"
         '
@@ -283,10 +288,11 @@ Partial Class FrmCMatrimonio
         Me.BtnBuscar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnBuscar.ForeColor = System.Drawing.Color.White
         Me.BtnBuscar.HoverState.Parent = Me.BtnBuscar
-        Me.BtnBuscar.Location = New System.Drawing.Point(632, 36)
+        Me.BtnBuscar.Location = New System.Drawing.Point(474, 29)
+        Me.BtnBuscar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.ShadowDecoration.Parent = Me.BtnBuscar
-        Me.BtnBuscar.Size = New System.Drawing.Size(345, 36)
+        Me.BtnBuscar.Size = New System.Drawing.Size(259, 29)
         Me.BtnBuscar.TabIndex = 46
         Me.BtnBuscar.Text = "Buscar"
         '
@@ -304,21 +310,23 @@ Partial Class FrmCMatrimonio
         Me.TxtValor.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TxtValor.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TxtValor.HoverState.Parent = Me.TxtValor
-        Me.TxtValor.Location = New System.Drawing.Point(6, 36)
+        Me.TxtValor.Location = New System.Drawing.Point(4, 29)
+        Me.TxtValor.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtValor.Name = "TxtValor"
         Me.TxtValor.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TxtValor.PlaceholderText = ""
         Me.TxtValor.SelectedText = ""
         Me.TxtValor.ShadowDecoration.Parent = Me.TxtValor
-        Me.TxtValor.Size = New System.Drawing.Size(620, 36)
+        Me.TxtValor.Size = New System.Drawing.Size(465, 29)
         Me.TxtValor.TabIndex = 45
         '
         'LblTotal
         '
         Me.LblTotal.BackColor = System.Drawing.Color.Transparent
-        Me.LblTotal.Location = New System.Drawing.Point(843, 625)
+        Me.LblTotal.Location = New System.Drawing.Point(632, 508)
+        Me.LblTotal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.LblTotal.Name = "LblTotal"
-        Me.LblTotal.Size = New System.Drawing.Size(37, 18)
+        Me.LblTotal.Size = New System.Drawing.Size(30, 15)
         Me.LblTotal.TabIndex = 1
         Me.LblTotal.Text = "Total: "
         '
@@ -368,35 +376,61 @@ Partial Class FrmCMatrimonio
         Me.TabPage2.Controls.Add(Me.BtnActualizar)
         Me.TabPage2.Controls.Add(Me.BtnCancelar)
         Me.TabPage2.Location = New System.Drawing.Point(184, 4)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Size = New System.Drawing.Size(1011, 697)
+        Me.TabPage2.Size = New System.Drawing.Size(711, 565)
         Me.TabPage2.TabIndex = 0
         Me.TabPage2.Text = "Registrar"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.ForeColor = System.Drawing.Color.White
+        Me.Label20.Location = New System.Drawing.Point(537, 160)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(118, 13)
+        Me.Label20.TabIndex = 83
+        Me.Label20.Text = "Lugar de Nacimiento (*)"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.ForeColor = System.Drawing.Color.White
+        Me.Label19.Location = New System.Drawing.Point(194, 160)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(118, 13)
+        Me.Label19.TabIndex = 82
+        Me.Label19.Text = "Lugar de Nacimiento (*)"
         '
         'TxtMa_NFoja
         '
         Me.TxtMa_NFoja.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold)
-        Me.TxtMa_NFoja.Location = New System.Drawing.Point(145, 627)
+        Me.TxtMa_NFoja.Location = New System.Drawing.Point(109, 509)
+        Me.TxtMa_NFoja.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtMa_NFoja.Multiline = True
         Me.TxtMa_NFoja.Name = "TxtMa_NFoja"
-        Me.TxtMa_NFoja.Size = New System.Drawing.Size(92, 36)
+        Me.TxtMa_NFoja.Size = New System.Drawing.Size(70, 30)
         Me.TxtMa_NFoja.TabIndex = 81
         '
         'TxtMa_AnotacionesTextuales
         '
-        Me.TxtMa_AnotacionesTextuales.Location = New System.Drawing.Point(520, 513)
+        Me.TxtMa_AnotacionesTextuales.Location = New System.Drawing.Point(390, 417)
+        Me.TxtMa_AnotacionesTextuales.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtMa_AnotacionesTextuales.Multiline = True
         Me.TxtMa_AnotacionesTextuales.Name = "TxtMa_AnotacionesTextuales"
-        Me.TxtMa_AnotacionesTextuales.Size = New System.Drawing.Size(427, 94)
+        Me.TxtMa_AnotacionesTextuales.Size = New System.Drawing.Size(321, 77)
         Me.TxtMa_AnotacionesTextuales.TabIndex = 80
         '
         'TxtNumeroCasado
         '
         Me.TxtNumeroCasado.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold)
-        Me.TxtNumeroCasado.Location = New System.Drawing.Point(265, 627)
+        Me.TxtNumeroCasado.Location = New System.Drawing.Point(199, 509)
+        Me.TxtNumeroCasado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtNumeroCasado.Multiline = True
         Me.TxtNumeroCasado.Name = "TxtNumeroCasado"
-        Me.TxtNumeroCasado.Size = New System.Drawing.Size(109, 36)
+        Me.TxtNumeroCasado.Size = New System.Drawing.Size(83, 30)
         Me.TxtNumeroCasado.TabIndex = 79
         '
         'CboLibro
@@ -412,10 +446,11 @@ Partial Class FrmCMatrimonio
         Me.CboLibro.HoverState.Parent = Me.CboLibro
         Me.CboLibro.ItemHeight = 30
         Me.CboLibro.ItemsAppearance.Parent = Me.CboLibro
-        Me.CboLibro.Location = New System.Drawing.Point(46, 627)
+        Me.CboLibro.Location = New System.Drawing.Point(34, 509)
+        Me.CboLibro.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.CboLibro.Name = "CboLibro"
         Me.CboLibro.ShadowDecoration.Parent = Me.CboLibro
-        Me.CboLibro.Size = New System.Drawing.Size(93, 36)
+        Me.CboLibro.Size = New System.Drawing.Size(71, 36)
         Me.CboLibro.TabIndex = 77
         '
         'DateMa_FMatrimonio
@@ -424,70 +459,78 @@ Partial Class FrmCMatrimonio
         Me.DateMa_FMatrimonio.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.DateMa_FMatrimonio.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.DateMa_FMatrimonio.HoverState.Parent = Me.DateMa_FMatrimonio
-        Me.DateMa_FMatrimonio.Location = New System.Drawing.Point(47, 552)
+        Me.DateMa_FMatrimonio.Location = New System.Drawing.Point(35, 448)
+        Me.DateMa_FMatrimonio.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DateMa_FMatrimonio.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.DateMa_FMatrimonio.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.DateMa_FMatrimonio.Name = "DateMa_FMatrimonio"
         Me.DateMa_FMatrimonio.ShadowDecoration.Parent = Me.DateMa_FMatrimonio
-        Me.DateMa_FMatrimonio.Size = New System.Drawing.Size(310, 36)
+        Me.DateMa_FMatrimonio.Size = New System.Drawing.Size(232, 29)
         Me.DateMa_FMatrimonio.TabIndex = 76
         Me.DateMa_FMatrimonio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.DateMa_FMatrimonio.Value = New Date(2021, 9, 8, 15, 36, 24, 541)
         '
         'TxtMa_LMatrimonio
         '
-        Me.TxtMa_LMatrimonio.Location = New System.Drawing.Point(209, 485)
+        Me.TxtMa_LMatrimonio.Location = New System.Drawing.Point(157, 394)
+        Me.TxtMa_LMatrimonio.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtMa_LMatrimonio.Multiline = True
         Me.TxtMa_LMatrimonio.Name = "TxtMa_LMatrimonio"
-        Me.TxtMa_LMatrimonio.Size = New System.Drawing.Size(271, 26)
+        Me.TxtMa_LMatrimonio.Size = New System.Drawing.Size(204, 22)
         Me.TxtMa_LMatrimonio.TabIndex = 75
         '
         'TxtMa_NPadrino
         '
-        Me.TxtMa_NPadrino.Location = New System.Drawing.Point(50, 446)
+        Me.TxtMa_NPadrino.Location = New System.Drawing.Point(38, 362)
+        Me.TxtMa_NPadrino.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtMa_NPadrino.Multiline = True
         Me.TxtMa_NPadrino.Name = "TxtMa_NPadrino"
-        Me.TxtMa_NPadrino.Size = New System.Drawing.Size(427, 26)
+        Me.TxtMa_NPadrino.Size = New System.Drawing.Size(321, 22)
         Me.TxtMa_NPadrino.TabIndex = 74
         '
         'TxtMa_NMadreEsposa
         '
-        Me.TxtMa_NMadreEsposa.Location = New System.Drawing.Point(520, 387)
+        Me.TxtMa_NMadreEsposa.Location = New System.Drawing.Point(390, 314)
+        Me.TxtMa_NMadreEsposa.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtMa_NMadreEsposa.Multiline = True
         Me.TxtMa_NMadreEsposa.Name = "TxtMa_NMadreEsposa"
-        Me.TxtMa_NMadreEsposa.Size = New System.Drawing.Size(427, 26)
+        Me.TxtMa_NMadreEsposa.Size = New System.Drawing.Size(321, 22)
         Me.TxtMa_NMadreEsposa.TabIndex = 73
         '
         'TxtMa_NMadreEsposo
         '
-        Me.TxtMa_NMadreEsposo.Location = New System.Drawing.Point(50, 387)
+        Me.TxtMa_NMadreEsposo.Location = New System.Drawing.Point(38, 314)
+        Me.TxtMa_NMadreEsposo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtMa_NMadreEsposo.Multiline = True
         Me.TxtMa_NMadreEsposo.Name = "TxtMa_NMadreEsposo"
-        Me.TxtMa_NMadreEsposo.Size = New System.Drawing.Size(427, 26)
+        Me.TxtMa_NMadreEsposo.Size = New System.Drawing.Size(321, 22)
         Me.TxtMa_NMadreEsposo.TabIndex = 72
         '
         'TxtMa_NPadreEsposa
         '
-        Me.TxtMa_NPadreEsposa.Location = New System.Drawing.Point(520, 307)
+        Me.TxtMa_NPadreEsposa.Location = New System.Drawing.Point(390, 249)
+        Me.TxtMa_NPadreEsposa.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtMa_NPadreEsposa.Multiline = True
         Me.TxtMa_NPadreEsposa.Name = "TxtMa_NPadreEsposa"
-        Me.TxtMa_NPadreEsposa.Size = New System.Drawing.Size(427, 26)
+        Me.TxtMa_NPadreEsposa.Size = New System.Drawing.Size(321, 22)
         Me.TxtMa_NPadreEsposa.TabIndex = 71
         '
         'TxtMa_NPadreEsposo
         '
-        Me.TxtMa_NPadreEsposo.Location = New System.Drawing.Point(47, 307)
+        Me.TxtMa_NPadreEsposo.Location = New System.Drawing.Point(35, 249)
+        Me.TxtMa_NPadreEsposo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtMa_NPadreEsposo.Multiline = True
         Me.TxtMa_NPadreEsposo.Name = "TxtMa_NPadreEsposo"
-        Me.TxtMa_NPadreEsposo.Size = New System.Drawing.Size(427, 26)
+        Me.TxtMa_NPadreEsposo.Size = New System.Drawing.Size(321, 22)
         Me.TxtMa_NPadreEsposo.TabIndex = 70
         '
         'TxtMa_LEsposa
         '
-        Me.TxtMa_LEsposa.Location = New System.Drawing.Point(719, 217)
+        Me.TxtMa_LEsposa.Location = New System.Drawing.Point(539, 176)
+        Me.TxtMa_LEsposa.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtMa_LEsposa.Multiline = True
         Me.TxtMa_LEsposa.Name = "TxtMa_LEsposa"
-        Me.TxtMa_LEsposa.Size = New System.Drawing.Size(228, 36)
+        Me.TxtMa_LEsposa.Size = New System.Drawing.Size(172, 30)
         Me.TxtMa_LEsposa.TabIndex = 69
         '
         'DateMa_FNEsposa
@@ -496,22 +539,24 @@ Partial Class FrmCMatrimonio
         Me.DateMa_FNEsposa.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.DateMa_FNEsposa.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateMa_FNEsposa.HoverState.Parent = Me.DateMa_FNEsposa
-        Me.DateMa_FNEsposa.Location = New System.Drawing.Point(520, 217)
+        Me.DateMa_FNEsposa.Location = New System.Drawing.Point(390, 176)
+        Me.DateMa_FNEsposa.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DateMa_FNEsposa.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.DateMa_FNEsposa.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.DateMa_FNEsposa.Name = "DateMa_FNEsposa"
         Me.DateMa_FNEsposa.ShadowDecoration.Parent = Me.DateMa_FNEsposa
-        Me.DateMa_FNEsposa.Size = New System.Drawing.Size(166, 36)
+        Me.DateMa_FNEsposa.Size = New System.Drawing.Size(124, 29)
         Me.DateMa_FNEsposa.TabIndex = 68
         Me.DateMa_FNEsposa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.DateMa_FNEsposa.Value = New Date(2021, 9, 8, 15, 36, 24, 541)
         '
         'TxtMa_LEsposo
         '
-        Me.TxtMa_LEsposo.Location = New System.Drawing.Point(262, 217)
+        Me.TxtMa_LEsposo.Location = New System.Drawing.Point(196, 176)
+        Me.TxtMa_LEsposo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtMa_LEsposo.Multiline = True
         Me.TxtMa_LEsposo.Name = "TxtMa_LEsposo"
-        Me.TxtMa_LEsposo.Size = New System.Drawing.Size(212, 36)
+        Me.TxtMa_LEsposo.Size = New System.Drawing.Size(160, 30)
         Me.TxtMa_LEsposo.TabIndex = 67
         '
         'DateMa_FNEsposo
@@ -520,30 +565,33 @@ Partial Class FrmCMatrimonio
         Me.DateMa_FNEsposo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.DateMa_FNEsposo.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateMa_FNEsposo.HoverState.Parent = Me.DateMa_FNEsposo
-        Me.DateMa_FNEsposo.Location = New System.Drawing.Point(46, 217)
+        Me.DateMa_FNEsposo.Location = New System.Drawing.Point(34, 176)
+        Me.DateMa_FNEsposo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DateMa_FNEsposo.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.DateMa_FNEsposo.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.DateMa_FNEsposo.Name = "DateMa_FNEsposo"
         Me.DateMa_FNEsposo.ShadowDecoration.Parent = Me.DateMa_FNEsposo
-        Me.DateMa_FNEsposo.Size = New System.Drawing.Size(157, 36)
+        Me.DateMa_FNEsposo.Size = New System.Drawing.Size(118, 29)
         Me.DateMa_FNEsposo.TabIndex = 66
         Me.DateMa_FNEsposo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.DateMa_FNEsposo.Value = New Date(2021, 9, 8, 15, 36, 24, 541)
         '
         'TxtMa_NEsposa
         '
-        Me.TxtMa_NEsposa.Location = New System.Drawing.Point(520, 153)
+        Me.TxtMa_NEsposa.Location = New System.Drawing.Point(390, 124)
+        Me.TxtMa_NEsposa.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtMa_NEsposa.Multiline = True
         Me.TxtMa_NEsposa.Name = "TxtMa_NEsposa"
-        Me.TxtMa_NEsposa.Size = New System.Drawing.Size(427, 26)
+        Me.TxtMa_NEsposa.Size = New System.Drawing.Size(321, 22)
         Me.TxtMa_NEsposa.TabIndex = 65
         '
         'TxtMa_NEsposo
         '
-        Me.TxtMa_NEsposo.Location = New System.Drawing.Point(47, 153)
+        Me.TxtMa_NEsposo.Location = New System.Drawing.Point(35, 124)
+        Me.TxtMa_NEsposo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtMa_NEsposo.Multiline = True
         Me.TxtMa_NEsposo.Name = "TxtMa_NEsposo"
-        Me.TxtMa_NEsposo.Size = New System.Drawing.Size(427, 26)
+        Me.TxtMa_NEsposo.Size = New System.Drawing.Size(321, 22)
         Me.TxtMa_NEsposo.TabIndex = 64
         '
         'CboSacerdote
@@ -560,10 +608,11 @@ Partial Class FrmCMatrimonio
         Me.CboSacerdote.HoverState.Parent = Me.CboSacerdote
         Me.CboSacerdote.ItemHeight = 30
         Me.CboSacerdote.ItemsAppearance.Parent = Me.CboSacerdote
-        Me.CboSacerdote.Location = New System.Drawing.Point(520, 80)
+        Me.CboSacerdote.Location = New System.Drawing.Point(390, 65)
+        Me.CboSacerdote.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.CboSacerdote.Name = "CboSacerdote"
         Me.CboSacerdote.ShadowDecoration.Parent = Me.CboSacerdote
-        Me.CboSacerdote.Size = New System.Drawing.Size(427, 36)
+        Me.CboSacerdote.Size = New System.Drawing.Size(321, 36)
         Me.CboSacerdote.TabIndex = 63
         '
         'CboParroquia
@@ -580,17 +629,19 @@ Partial Class FrmCMatrimonio
         Me.CboParroquia.HoverState.Parent = Me.CboParroquia
         Me.CboParroquia.ItemHeight = 30
         Me.CboParroquia.ItemsAppearance.Parent = Me.CboParroquia
-        Me.CboParroquia.Location = New System.Drawing.Point(49, 80)
+        Me.CboParroquia.Location = New System.Drawing.Point(37, 65)
+        Me.CboParroquia.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.CboParroquia.Name = "CboParroquia"
         Me.CboParroquia.ShadowDecoration.Parent = Me.CboParroquia
-        Me.CboParroquia.Size = New System.Drawing.Size(427, 36)
+        Me.CboParroquia.Size = New System.Drawing.Size(321, 36)
         Me.CboParroquia.TabIndex = 62
         '
         'TxtId
         '
-        Me.TxtId.Location = New System.Drawing.Point(847, 24)
+        Me.TxtId.Location = New System.Drawing.Point(635, 20)
+        Me.TxtId.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtId.Name = "TxtId"
-        Me.TxtId.Size = New System.Drawing.Size(100, 22)
+        Me.TxtId.Size = New System.Drawing.Size(76, 20)
         Me.TxtId.TabIndex = 61
         Me.TxtId.Visible = False
         '
@@ -598,9 +649,10 @@ Partial Class FrmCMatrimonio
         '
         Me.Label18.AutoSize = True
         Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(517, 476)
+        Me.Label18.Location = New System.Drawing.Point(388, 387)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(86, 17)
+        Me.Label18.Size = New System.Drawing.Size(66, 13)
         Me.Label18.TabIndex = 60
         Me.Label18.Text = "Anotaciones"
         '
@@ -608,9 +660,10 @@ Partial Class FrmCMatrimonio
         '
         Me.Label17.AutoSize = True
         Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(46, 197)
+        Me.Label17.Location = New System.Drawing.Point(34, 160)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(160, 17)
+        Me.Label17.Size = New System.Drawing.Size(121, 13)
         Me.Label17.TabIndex = 58
         Me.Label17.Text = "Fecha de Nacimiento (*)"
         '
@@ -618,9 +671,10 @@ Partial Class FrmCMatrimonio
         '
         Me.Label16.AutoSize = True
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(526, 197)
+        Me.Label16.Location = New System.Drawing.Point(394, 160)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(160, 17)
+        Me.Label16.Size = New System.Drawing.Size(121, 13)
         Me.Label16.TabIndex = 57
         Me.Label16.Text = "Fecha de Nacimiento (*)"
         '
@@ -628,9 +682,10 @@ Partial Class FrmCMatrimonio
         '
         Me.Label15.AutoSize = True
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(47, 532)
+        Me.Label15.Location = New System.Drawing.Point(35, 432)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(159, 17)
+        Me.Label15.Size = New System.Drawing.Size(119, 13)
         Me.Label15.TabIndex = 54
         Me.Label15.Text = "Fecha de Matrimonio (*)"
         '
@@ -638,9 +693,10 @@ Partial Class FrmCMatrimonio
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(46, 488)
+        Me.Label4.Location = New System.Drawing.Point(34, 396)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(157, 17)
+        Me.Label4.Size = New System.Drawing.Size(116, 13)
         Me.Label4.TabIndex = 51
         Me.Label4.Text = "Lugar de Matrimonio (*)"
         '
@@ -648,9 +704,10 @@ Partial Class FrmCMatrimonio
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(47, 426)
+        Me.Label3.Location = New System.Drawing.Point(35, 346)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(76, 17)
+        Me.Label3.Size = New System.Drawing.Size(56, 13)
         Me.Label3.TabIndex = 48
         Me.Label3.Text = "Padrino (*)"
         '
@@ -658,29 +715,32 @@ Partial Class FrmCMatrimonio
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(517, 349)
+        Me.Label2.Location = New System.Drawing.Point(388, 284)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(117, 17)
+        Me.Label2.Size = New System.Drawing.Size(113, 13)
         Me.Label2.TabIndex = 41
-        Me.Label2.Text = "Madre esposa (*)"
+        Me.Label2.Text = "Madre de la esposa (*)"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(517, 271)
+        Me.Label1.Location = New System.Drawing.Point(388, 220)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(115, 17)
+        Me.Label1.Size = New System.Drawing.Size(111, 13)
         Me.Label1.TabIndex = 39
-        Me.Label1.Text = "Padre esposa (*)"
+        Me.Label1.Text = "Padre de la esposa (*)"
         '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(46, 349)
+        Me.Label14.Location = New System.Drawing.Point(34, 284)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(140, 17)
+        Me.Label14.Size = New System.Drawing.Size(104, 13)
         Me.Label14.TabIndex = 37
         Me.Label14.Text = "Madre del esposo (*)"
         '
@@ -688,9 +748,10 @@ Partial Class FrmCMatrimonio
         '
         Me.Label13.AutoSize = True
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(46, 271)
+        Me.Label13.Location = New System.Drawing.Point(34, 220)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(138, 17)
+        Me.Label13.Size = New System.Drawing.Size(102, 13)
         Me.Label13.TabIndex = 35
         Me.Label13.Text = "Padre del esposo (*)"
         '
@@ -698,9 +759,10 @@ Partial Class FrmCMatrimonio
         '
         Me.Label12.AutoSize = True
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(517, 45)
+        Me.Label12.Location = New System.Drawing.Point(388, 37)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(260, 17)
+        Me.Label12.Size = New System.Drawing.Size(193, 13)
         Me.Label12.TabIndex = 34
         Me.Label12.Text = "Nombre del sacerdote de Matrimonio (*)"
         '
@@ -708,9 +770,10 @@ Partial Class FrmCMatrimonio
         '
         Me.Label11.AutoSize = True
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(46, 45)
+        Me.Label11.Location = New System.Drawing.Point(34, 37)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(182, 17)
+        Me.Label11.Size = New System.Drawing.Size(134, 13)
         Me.Label11.TabIndex = 30
         Me.Label11.Text = "Parroquia de Matrimonio (*)"
         '
@@ -718,9 +781,10 @@ Partial Class FrmCMatrimonio
         '
         Me.Label9.AutoSize = True
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(517, 119)
+        Me.Label9.Location = New System.Drawing.Point(389, 109)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(127, 17)
+        Me.Label9.Size = New System.Drawing.Size(94, 13)
         Me.Label9.TabIndex = 28
         Me.Label9.Text = "Nombre esposa (*)"
         '
@@ -728,9 +792,10 @@ Partial Class FrmCMatrimonio
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(46, 119)
+        Me.Label8.Location = New System.Drawing.Point(35, 109)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(127, 17)
+        Me.Label8.Size = New System.Drawing.Size(94, 13)
         Me.Label8.TabIndex = 26
         Me.Label8.Text = "Nombre esposo (*)"
         '
@@ -738,9 +803,10 @@ Partial Class FrmCMatrimonio
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(262, 603)
+        Me.Label7.Location = New System.Drawing.Point(196, 490)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(95, 17)
+        Me.Label7.Size = New System.Drawing.Size(71, 13)
         Me.Label7.TabIndex = 24
         Me.Label7.Text = "N° Casado (*)"
         '
@@ -748,9 +814,10 @@ Partial Class FrmCMatrimonio
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(145, 603)
+        Me.Label6.Location = New System.Drawing.Point(109, 490)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(74, 17)
+        Me.Label6.Size = New System.Drawing.Size(55, 13)
         Me.Label6.TabIndex = 22
         Me.Label6.Text = "N° Foja (*)"
         '
@@ -758,9 +825,10 @@ Partial Class FrmCMatrimonio
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(44, 603)
+        Me.Label5.Location = New System.Drawing.Point(33, 490)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(79, 17)
+        Me.Label5.Size = New System.Drawing.Size(58, 13)
         Me.Label5.TabIndex = 20
         Me.Label5.Text = "N° Libro (*)"
         '
@@ -776,10 +844,11 @@ Partial Class FrmCMatrimonio
         Me.BtnGuardar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
         Me.BtnGuardar.HoverState.Parent = Me.BtnGuardar
-        Me.BtnGuardar.Location = New System.Drawing.Point(665, 627)
+        Me.BtnGuardar.Location = New System.Drawing.Point(499, 509)
+        Me.BtnGuardar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.ShadowDecoration.Parent = Me.BtnGuardar
-        Me.BtnGuardar.Size = New System.Drawing.Size(282, 45)
+        Me.BtnGuardar.Size = New System.Drawing.Size(212, 37)
         Me.BtnGuardar.TabIndex = 3
         Me.BtnGuardar.Text = "Guardar"
         '
@@ -795,10 +864,11 @@ Partial Class FrmCMatrimonio
         Me.BtnActualizar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnActualizar.ForeColor = System.Drawing.Color.White
         Me.BtnActualizar.HoverState.Parent = Me.BtnActualizar
-        Me.BtnActualizar.Location = New System.Drawing.Point(665, 627)
+        Me.BtnActualizar.Location = New System.Drawing.Point(499, 509)
+        Me.BtnActualizar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnActualizar.Name = "BtnActualizar"
         Me.BtnActualizar.ShadowDecoration.Parent = Me.BtnActualizar
-        Me.BtnActualizar.Size = New System.Drawing.Size(282, 45)
+        Me.BtnActualizar.Size = New System.Drawing.Size(212, 37)
         Me.BtnActualizar.TabIndex = 7
         Me.BtnActualizar.Text = "Actualizar"
         '
@@ -814,10 +884,11 @@ Partial Class FrmCMatrimonio
         Me.BtnCancelar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnCancelar.ForeColor = System.Drawing.Color.White
         Me.BtnCancelar.HoverState.Parent = Me.BtnCancelar
-        Me.BtnCancelar.Location = New System.Drawing.Point(520, 627)
+        Me.BtnCancelar.Location = New System.Drawing.Point(390, 509)
+        Me.BtnCancelar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.ShadowDecoration.Parent = Me.BtnCancelar
-        Me.BtnCancelar.Size = New System.Drawing.Size(124, 45)
+        Me.BtnCancelar.Size = New System.Drawing.Size(93, 37)
         Me.BtnCancelar.TabIndex = 4
         Me.BtnCancelar.Text = "Cancelar"
         '
@@ -825,36 +896,17 @@ Partial Class FrmCMatrimonio
         '
         Me.ErrorIcono.ContainerControl = Me
         '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(259, 197)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(158, 17)
-        Me.Label19.TabIndex = 82
-        Me.Label19.Text = "Lugar de Nacimiento (*)"
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.ForeColor = System.Drawing.Color.White
-        Me.Label20.Location = New System.Drawing.Point(716, 197)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(158, 17)
-        Me.Label20.TabIndex = 83
-        Me.Label20.Text = "Lugar de Nacimiento (*)"
-        '
         'FrmCMatrimonio
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1223, 784)
+        Me.ClientSize = New System.Drawing.Size(917, 637)
         Me.Controls.Add(Me.TabGeneral)
         Me.Controls.Add(Me.Guna2ControlBox1)
         Me.Controls.Add(Me.Label10)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FrmCMatrimonio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmCMatrimonio"
