@@ -7,8 +7,9 @@ Imports iText.IO.Image
 Imports System.Threading
 Imports System.Data.SqlClient
 
-Public Class FrmGivePartBautis
 
+
+Public Class FrmMatrimonio2
 
     Private Sub Formato()
         DataGridView1.Columns(0).Visible = True
@@ -263,4 +264,5 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
     End Sub
+
 End Class

@@ -61,7 +61,7 @@ Partial Class FrmLogin
         Me.Txt_Usuario.Animated = True
         Me.Txt_Usuario.BorderRadius = 13
         Me.Txt_Usuario.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Txt_Usuario.DefaultText = "hever"
+        Me.Txt_Usuario.DefaultText = ""
         Me.Txt_Usuario.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Txt_Usuario.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.Txt_Usuario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
@@ -81,7 +81,6 @@ Partial Class FrmLogin
         Me.Txt_Usuario.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.Txt_Usuario.PlaceholderText = "Digite Su Usuario"
         Me.Txt_Usuario.SelectedText = ""
-        Me.Txt_Usuario.SelectionStart = 5
         Me.Txt_Usuario.ShadowDecoration.Parent = Me.Txt_Usuario
         Me.Txt_Usuario.Size = New System.Drawing.Size(367, 41)
         Me.Txt_Usuario.TabIndex = 115
@@ -95,7 +94,7 @@ Partial Class FrmLogin
         Me.Txt_Clave.Animated = True
         Me.Txt_Clave.BorderRadius = 13
         Me.Txt_Clave.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Txt_Clave.DefaultText = "12345"
+        Me.Txt_Clave.DefaultText = ""
         Me.Txt_Clave.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.Txt_Clave.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.Txt_Clave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
@@ -115,7 +114,6 @@ Partial Class FrmLogin
         Me.Txt_Clave.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.Txt_Clave.PlaceholderText = "Contraseña"
         Me.Txt_Clave.SelectedText = ""
-        Me.Txt_Clave.SelectionStart = 5
         Me.Txt_Clave.ShadowDecoration.Parent = Me.Txt_Clave
         Me.Txt_Clave.Size = New System.Drawing.Size(367, 41)
         Me.Txt_Clave.TabIndex = 116
@@ -184,9 +182,9 @@ Partial Class FrmLogin
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(208, 481)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(67, 17)
+        Me.Label2.Size = New System.Drawing.Size(92, 17)
         Me.Label2.TabIndex = 122
-        Me.Label2.Text = "Dr. Zahaj"
+        Me.Label2.Text = "Dios es Amor"
         '
         'Label3
         '

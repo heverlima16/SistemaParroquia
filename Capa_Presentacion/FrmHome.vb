@@ -227,7 +227,7 @@ Public Class FrmHome
     End Sub
 
     Private Sub IconButton1_Click(sender As Object, e As EventArgs) Handles IconButton1.Click
-        Dim frm As New FrmMatrimonio
+        Dim frm As New FrmMatrimonio2
         frm.MdiParent = Me
         frm.Show()
     End Sub
