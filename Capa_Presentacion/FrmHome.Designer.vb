@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmHome
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -21,7 +21,7 @@ Partial Class FrmHome
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmHome))
@@ -45,7 +45,6 @@ Partial Class FrmHome
         Me.IconButton6 = New FontAwesome.Sharp.IconButton()
         Me.PanelLogo = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.IconButton2 = New FontAwesome.Sharp.IconButton()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.PanelMenu.SuspendLayout()
@@ -75,18 +74,21 @@ Partial Class FrmHome
         '
         'OptionsToolStripMenuItem
         '
+        Me.OptionsToolStripMenuItem.Image = Global.Capa_Presentacion.My.Resources.Resources.icono
         Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
         Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
         Me.OptionsToolStripMenuItem.Text = "Registrar Iglesias"
         '
         'RegistrarNumeroLibroToolStripMenuItem
         '
+        Me.RegistrarNumeroLibroToolStripMenuItem.Image = Global.Capa_Presentacion.My.Resources.Resources.editar
         Me.RegistrarNumeroLibroToolStripMenuItem.Name = "RegistrarNumeroLibroToolStripMenuItem"
         Me.RegistrarNumeroLibroToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
         Me.RegistrarNumeroLibroToolStripMenuItem.Text = "Registrar Numero Libro"
         '
         'RegistrarSacerdoteToolStripMenuItem
         '
+        Me.RegistrarSacerdoteToolStripMenuItem.Image = Global.Capa_Presentacion.My.Resources.Resources.cliente
         Me.RegistrarSacerdoteToolStripMenuItem.Name = "RegistrarSacerdoteToolStripMenuItem"
         Me.RegistrarSacerdoteToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
         Me.RegistrarSacerdoteToolStripMenuItem.Text = "Registrar Sacerdote"
@@ -142,7 +144,6 @@ Partial Class FrmHome
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
-        Me.PanelMenu.Controls.Add(Me.IconButton2)
         Me.PanelMenu.Controls.Add(Me.IconButton3)
         Me.PanelMenu.Controls.Add(Me.IconButton1)
         Me.PanelMenu.Controls.Add(Me.IconButton8)
@@ -282,18 +283,6 @@ Partial Class FrmHome
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'IconButton2
-        '
-        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton2.IconColor = System.Drawing.Color.Black
-        Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton2.Location = New System.Drawing.Point(93, 174)
-        Me.IconButton2.Name = "IconButton2"
-        Me.IconButton2.Size = New System.Drawing.Size(75, 23)
-        Me.IconButton2.TabIndex = 23
-        Me.IconButton2.Text = "IconButton2"
-        Me.IconButton2.UseVisualStyleBackColor = True
-        '
         'FrmHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -341,5 +330,4 @@ Partial Class FrmHome
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
     Friend WithEvents IconButton3 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
 End Class
