@@ -36,7 +36,7 @@ Public Class FrmMatrimonio2
     End Sub
 
 
-    Dim connection As New SqlConnection("Server=LAPTOP-7HVTS7G6; Database = DB_Parroquia; Integrated Security = true")
+    Dim connection As New SqlConnection("Server=PC-HEVER; Database = DB_Parroquia; Integrated Security = true")
     'declare my varible ::::::::::::: gaa
     Dim index As Integer
     '::::::::::::::::::::::::::folder location::::::::::::::::::::
@@ -235,6 +235,10 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
     End Sub
 
     Private Sub FrmMatrimonio2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub BtnSearchUser_Click_1(sender As Object, e As EventArgs) Handles BtnSearchUser.Click
 
     End Sub
 End Class
