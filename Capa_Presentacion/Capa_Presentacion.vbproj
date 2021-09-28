@@ -317,6 +317,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ico.ico" />
+    <None Include="Resources\cliente.png" />
+    <None Include="Resources\icono.png" />
+    <None Include="Resources\editar1.png" />
     <None Include="Resources\lupa.png" />
     <None Include="Resources\usuario.png" />
     <None Include="Resources\candado.png" />
