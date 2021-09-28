@@ -23,9 +23,9 @@ Partial Class FrmCBautismo
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TabGeneral = New Guna.UI2.WinForms.Guna2TabControl()
@@ -162,31 +162,31 @@ Partial Class FrmCBautismo
         Me.DgvListado.AllowUserToAddRows = False
         Me.DgvListado.AllowUserToDeleteRows = False
         Me.DgvListado.AllowUserToOrderColumns = True
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
-        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DgvListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DgvListado.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.DgvListado.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DgvListado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DgvListado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DgvListado.ColumnHeadersHeight = 27
         Me.DgvListado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Seleccionar})
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle3
         Me.DgvListado.EnableHeadersVisualStyles = False
         Me.DgvListado.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DgvListado.Location = New System.Drawing.Point(15, 56)
@@ -527,7 +527,7 @@ Partial Class FrmCBautismo
         Me.CboSacerdote.HoverState.Parent = Me.CboSacerdote
         Me.CboSacerdote.ItemHeight = 30
         Me.CboSacerdote.ItemsAppearance.Parent = Me.CboSacerdote
-        Me.CboSacerdote.Location = New System.Drawing.Point(466, 89)
+        Me.CboSacerdote.Location = New System.Drawing.Point(469, 67)
         Me.CboSacerdote.Name = "CboSacerdote"
         Me.CboSacerdote.ShadowDecoration.Parent = Me.CboSacerdote
         Me.CboSacerdote.Size = New System.Drawing.Size(450, 36)
@@ -547,7 +547,7 @@ Partial Class FrmCBautismo
         Me.CboParroquia.HoverState.Parent = Me.CboParroquia
         Me.CboParroquia.ItemHeight = 30
         Me.CboParroquia.ItemsAppearance.Parent = Me.CboParroquia
-        Me.CboParroquia.Location = New System.Drawing.Point(9, 87)
+        Me.CboParroquia.Location = New System.Drawing.Point(12, 65)
         Me.CboParroquia.Name = "CboParroquia"
         Me.CboParroquia.ShadowDecoration.Parent = Me.CboParroquia
         Me.CboParroquia.Size = New System.Drawing.Size(427, 36)
@@ -635,7 +635,7 @@ Partial Class FrmCBautismo
         '
         Me.Label12.AutoSize = True
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(461, 69)
+        Me.Label12.Location = New System.Drawing.Point(463, 39)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(249, 17)
         Me.Label12.TabIndex = 34
@@ -645,7 +645,7 @@ Partial Class FrmCBautismo
         '
         Me.Label11.AutoSize = True
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(6, 67)
+        Me.Label11.Location = New System.Drawing.Point(8, 37)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(171, 17)
         Me.Label11.TabIndex = 30
