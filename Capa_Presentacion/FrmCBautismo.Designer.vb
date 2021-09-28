@@ -494,7 +494,7 @@ Partial Class FrmCBautismo
         Me.DateBa_FNacimiento.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.DateBa_FNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateBa_FNacimiento.HoverState.Parent = Me.DateBa_FNacimiento
-        Me.DateBa_FNacimiento.Location = New System.Drawing.Point(520, 185)
+        Me.DateBa_FNacimiento.Location = New System.Drawing.Point(515, 108)
         Me.DateBa_FNacimiento.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.DateBa_FNacimiento.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.DateBa_FNacimiento.Name = "DateBa_FNacimiento"
@@ -506,7 +506,7 @@ Partial Class FrmCBautismo
         '
         'TxtBa_Nombre
         '
-        Me.TxtBa_Nombre.Location = New System.Drawing.Point(47, 155)
+        Me.TxtBa_Nombre.Location = New System.Drawing.Point(51, 108)
         Me.TxtBa_Nombre.Multiline = True
         Me.TxtBa_Nombre.Name = "TxtBa_Nombre"
         Me.TxtBa_Nombre.Size = New System.Drawing.Size(429, 26)
@@ -526,7 +526,7 @@ Partial Class FrmCBautismo
         Me.CboSacerdote.HoverState.Parent = Me.CboSacerdote
         Me.CboSacerdote.ItemHeight = 30
         Me.CboSacerdote.ItemsAppearance.Parent = Me.CboSacerdote
-        Me.CboSacerdote.Location = New System.Drawing.Point(520, 80)
+        Me.CboSacerdote.Location = New System.Drawing.Point(515, 36)
         Me.CboSacerdote.Name = "CboSacerdote"
         Me.CboSacerdote.ShadowDecoration.Parent = Me.CboSacerdote
         Me.CboSacerdote.Size = New System.Drawing.Size(427, 36)
@@ -546,7 +546,7 @@ Partial Class FrmCBautismo
         Me.CboParroquia.HoverState.Parent = Me.CboParroquia
         Me.CboParroquia.ItemHeight = 30
         Me.CboParroquia.ItemsAppearance.Parent = Me.CboParroquia
-        Me.CboParroquia.Location = New System.Drawing.Point(49, 80)
+        Me.CboParroquia.Location = New System.Drawing.Point(49, 38)
         Me.CboParroquia.Name = "CboParroquia"
         Me.CboParroquia.ShadowDecoration.Parent = Me.CboParroquia
         Me.CboParroquia.Size = New System.Drawing.Size(427, 36)
@@ -554,9 +554,9 @@ Partial Class FrmCBautismo
         '
         'TxtId
         '
-        Me.TxtId.Location = New System.Drawing.Point(847, 24)
+        Me.TxtId.Location = New System.Drawing.Point(986, 13)
         Me.TxtId.Name = "TxtId"
-        Me.TxtId.Size = New System.Drawing.Size(100, 22)
+        Me.TxtId.Size = New System.Drawing.Size(13, 22)
         Me.TxtId.TabIndex = 61
         Me.TxtId.Visible = False
         '
@@ -574,7 +574,7 @@ Partial Class FrmCBautismo
         '
         Me.Label17.AutoSize = True
         Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(517, 155)
+        Me.Label17.Location = New System.Drawing.Point(512, 82)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(160, 17)
         Me.Label17.TabIndex = 58
@@ -634,7 +634,7 @@ Partial Class FrmCBautismo
         '
         Me.Label12.AutoSize = True
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(517, 45)
+        Me.Label12.Location = New System.Drawing.Point(517, 16)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(249, 17)
         Me.Label12.TabIndex = 34
@@ -644,7 +644,7 @@ Partial Class FrmCBautismo
         '
         Me.Label11.AutoSize = True
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(46, 45)
+        Me.Label11.Location = New System.Drawing.Point(46, 18)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(171, 17)
         Me.Label11.TabIndex = 30
@@ -654,7 +654,7 @@ Partial Class FrmCBautismo
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(47, 129)
+        Me.Label8.Location = New System.Drawing.Point(51, 82)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(144, 17)
         Me.Label8.TabIndex = 26
