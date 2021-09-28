@@ -22,7 +22,7 @@ Partial Class FrmMatrimonio2
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -48,12 +48,12 @@ Partial Class FrmMatrimonio2
         Me.Guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.Guna2ControlBox1.HoverState.Parent = Me.Guna2ControlBox1
         Me.Guna2ControlBox1.IconColor = System.Drawing.Color.Red
-        Me.Guna2ControlBox1.Location = New System.Drawing.Point(1201, 0)
-        Me.Guna2ControlBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Guna2ControlBox1.Location = New System.Drawing.Point(901, 0)
+        Me.Guna2ControlBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
         Me.Guna2ControlBox1.PressedColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.Guna2ControlBox1.ShadowDecoration.Parent = Me.Guna2ControlBox1
-        Me.Guna2ControlBox1.Size = New System.Drawing.Size(73, 44)
+        Me.Guna2ControlBox1.Size = New System.Drawing.Size(55, 36)
         Me.Guna2ControlBox1.TabIndex = 58
         '
         'Label10
@@ -63,9 +63,8 @@ Partial Class FrmMatrimonio2
         Me.Label10.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
         Me.Label10.ForeColor = System.Drawing.Color.White
         Me.Label10.Location = New System.Drawing.Point(0, 0)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(1274, 44)
+        Me.Label10.Size = New System.Drawing.Size(956, 36)
         Me.Label10.TabIndex = 57
         Me.Label10.Text = "Generar Partida de Matrimonio A4"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -73,10 +72,9 @@ Partial Class FrmMatrimonio2
         'Label5
         '
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(750, 650)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(562, 528)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(361, 80)
+        Me.Label5.Size = New System.Drawing.Size(271, 65)
         Me.Label5.TabIndex = 74
         Me.Label5.Text = "Nota: Al Seleccionar, va salir un mensaje con la cual esta confirmando que se gen" &
     "ero satisfactoriamente!!." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
@@ -85,10 +83,9 @@ Partial Class FrmMatrimonio2
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(803, 556)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(602, 452)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(265, 60)
+        Me.Label4.Size = New System.Drawing.Size(231, 51)
         Me.Label4.TabIndex = 73
         Me.Label4.Text = "1. Ingrese el nombre a buscar." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "2. As click en el icono buscar" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "3. Seleccione al " &
     "usuario."
@@ -96,20 +93,18 @@ Partial Class FrmMatrimonio2
         'Label3
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(750, 523)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(562, 425)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(416, 21)
+        Me.Label3.Size = New System.Drawing.Size(312, 17)
         Me.Label3.TabIndex = 72
         Me.Label3.Text = "Pasos para  Generar el Documento:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Button1
         '
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(170, 607)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Location = New System.Drawing.Point(128, 493)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(215, 43)
+        Me.Button1.Size = New System.Drawing.Size(161, 35)
         Me.Button1.TabIndex = 71
         Me.Button1.Text = "ABRIR FOLDER"
         Me.Button1.UseVisualStyleBackColor = True
@@ -121,27 +116,25 @@ Partial Class FrmMatrimonio2
         Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.GridColor = System.Drawing.SystemColors.AppWorkspace
-        Me.DataGridView1.Location = New System.Drawing.Point(49, 201)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView1.Location = New System.Drawing.Point(37, 163)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DodgerBlue
-        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.DodgerBlue
+        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.DataGridView1.Size = New System.Drawing.Size(1176, 301)
+        Me.DataGridView1.Size = New System.Drawing.Size(882, 245)
         Me.DataGridView1.TabIndex = 70
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(62, 68)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(46, 55)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(371, 23)
+        Me.Label2.Size = New System.Drawing.Size(302, 19)
         Me.Label2.TabIndex = 69
         Me.Label2.Text = "GENERAR PARTIDA DE MATRIMONIO"
         '
@@ -149,10 +142,9 @@ Partial Class FrmMatrimonio2
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(62, 103)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(46, 84)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(267, 20)
+        Me.Label1.Size = New System.Drawing.Size(232, 17)
         Me.Label1.TabIndex = 68
         Me.Label1.Text = "Ingrese Nombre del Interesado"
         '
@@ -163,28 +155,26 @@ Partial Class FrmMatrimonio2
         Me.BtnSearchUser.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.BtnSearchUser.BackgroundImage = Global.Capa_Presentacion.My.Resources.Resources.lupa
         Me.BtnSearchUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BtnSearchUser.Location = New System.Drawing.Point(400, 126)
-        Me.BtnSearchUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnSearchUser.Location = New System.Drawing.Point(300, 102)
         Me.BtnSearchUser.Name = "BtnSearchUser"
         Me.BtnSearchUser.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BtnSearchUser.Size = New System.Drawing.Size(52, 47)
+        Me.BtnSearchUser.Size = New System.Drawing.Size(39, 38)
         Me.BtnSearchUser.TabIndex = 67
         Me.BtnSearchUser.UseVisualStyleBackColor = False
         '
         'TxtDNI
         '
-        Me.TxtDNI.Location = New System.Drawing.Point(66, 138)
-        Me.TxtDNI.Margin = New System.Windows.Forms.Padding(4)
+        Me.TxtDNI.Location = New System.Drawing.Point(50, 112)
         Me.TxtDNI.Name = "TxtDNI"
-        Me.TxtDNI.Size = New System.Drawing.Size(304, 22)
+        Me.TxtDNI.Size = New System.Drawing.Size(229, 20)
         Me.TxtDNI.TabIndex = 66
         '
         'FrmMatrimonio2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1274, 798)
+        Me.ClientSize = New System.Drawing.Size(956, 640)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -197,6 +187,7 @@ Partial Class FrmMatrimonio2
         Me.Controls.Add(Me.Guna2ControlBox1)
         Me.Controls.Add(Me.Label10)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FrmMatrimonio2"
         Me.Text = "FrmMatrimonio2"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
