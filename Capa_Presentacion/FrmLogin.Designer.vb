@@ -31,7 +31,6 @@ Partial Class FrmLogin
         Me.btn_IniciarSesion = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -74,7 +73,7 @@ Partial Class FrmLogin
         Me.Txt_Usuario.ForeColor = System.Drawing.SystemColors.Window
         Me.Txt_Usuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Txt_Usuario.HoverState.Parent = Me.Txt_Usuario
-        Me.Txt_Usuario.Location = New System.Drawing.Point(667, 280)
+        Me.Txt_Usuario.Location = New System.Drawing.Point(667, 288)
         Me.Txt_Usuario.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.Txt_Usuario.Name = "Txt_Usuario"
         Me.Txt_Usuario.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -107,7 +106,7 @@ Partial Class FrmLogin
         Me.Txt_Clave.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(197, Byte), Integer))
         Me.Txt_Clave.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Txt_Clave.HoverState.Parent = Me.Txt_Clave
-        Me.Txt_Clave.Location = New System.Drawing.Point(667, 338)
+        Me.Txt_Clave.Location = New System.Drawing.Point(667, 345)
         Me.Txt_Clave.Margin = New System.Windows.Forms.Padding(5, 3, 5, 3)
         Me.Txt_Clave.Name = "Txt_Clave"
         Me.Txt_Clave.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -134,7 +133,7 @@ Partial Class FrmLogin
         Me.btn_IniciarSesion.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
         Me.btn_IniciarSesion.ForeColor = System.Drawing.Color.White
         Me.btn_IniciarSesion.HoverState.Parent = Me.btn_IniciarSesion
-        Me.btn_IniciarSesion.Location = New System.Drawing.Point(781, 397)
+        Me.btn_IniciarSesion.Location = New System.Drawing.Point(781, 406)
         Me.btn_IniciarSesion.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_IniciarSesion.Name = "btn_IniciarSesion"
         Me.btn_IniciarSesion.ShadowDecoration.Parent = Me.btn_IniciarSesion
@@ -160,7 +159,7 @@ Partial Class FrmLogin
         Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
         Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(667, 397)
+        Me.Guna2Button1.Location = New System.Drawing.Point(667, 406)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
         Me.Guna2Button1.Size = New System.Drawing.Size(107, 53)
@@ -176,15 +175,6 @@ Partial Class FrmLogin
         Me.Label1.Size = New System.Drawing.Size(227, 19)
         Me.Label1.TabIndex = 120
         Me.Label1.Text = "Parroquia San Pedro de Pampas"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(208, 481)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(92, 17)
-        Me.Label2.TabIndex = 122
-        Me.Label2.Text = "Dios es Amor"
         '
         'Label3
         '
@@ -261,7 +251,6 @@ Partial Class FrmLogin
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Guna2Button1)
         Me.Controls.Add(Me.btn_IniciarSesion)
@@ -291,7 +280,6 @@ Partial Class FrmLogin
     Friend WithEvents Txt_Usuario As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label

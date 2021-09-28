@@ -184,7 +184,7 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
 
     End Sub
 
-    Private Sub BtnSearchUser_Click(sender As Object, e As EventArgs) Handles BtnSearchUser.Click
+    Private Sub BtnSearchUser_Click(sender As Object, e As EventArgs) 
 
         If (TxtDNI.Text.Length > 1 And Not IsNumeric(TxtDNI.Text)) Then
             'SearchUserBautismo()

@@ -23,9 +23,9 @@ Partial Class FrmCMatrimonio
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TabGeneral = New Guna.UI2.WinForms.Guna2TabControl()
@@ -161,7 +161,7 @@ Partial Class FrmCMatrimonio
         Me.TabPage1.Controls.Add(Me.LblTotal)
         Me.TabPage1.Location = New System.Drawing.Point(184, 4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(920, 583)
+        Me.TabPage1.Size = New System.Drawing.Size(938, 591)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Listado"
         '
@@ -170,31 +170,31 @@ Partial Class FrmCMatrimonio
         Me.DgvListado.AllowUserToAddRows = False
         Me.DgvListado.AllowUserToDeleteRows = False
         Me.DgvListado.AllowUserToOrderColumns = True
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
-        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DgvListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DgvListado.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.DgvListado.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DgvListado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DgvListado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DgvListado.ColumnHeadersHeight = 27
         Me.DgvListado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Seleccionar})
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle3
         Me.DgvListado.EnableHeadersVisualStyles = False
         Me.DgvListado.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DgvListado.Location = New System.Drawing.Point(6, 56)
@@ -400,12 +400,12 @@ Partial Class FrmCMatrimonio
         Me.TxtMa_NFoja.Location = New System.Drawing.Point(155, 529)
         Me.TxtMa_NFoja.Multiline = True
         Me.TxtMa_NFoja.Name = "TxtMa_NFoja"
-        Me.TxtMa_NFoja.Size = New System.Drawing.Size(131, 36)
+        Me.TxtMa_NFoja.Size = New System.Drawing.Size(131, 45)
         Me.TxtMa_NFoja.TabIndex = 81
         '
         'TxtMa_AnotacionesTextuales
         '
-        Me.TxtMa_AnotacionesTextuales.Location = New System.Drawing.Point(476, 369)
+        Me.TxtMa_AnotacionesTextuales.Location = New System.Drawing.Point(476, 387)
         Me.TxtMa_AnotacionesTextuales.Multiline = True
         Me.TxtMa_AnotacionesTextuales.Name = "TxtMa_AnotacionesTextuales"
         Me.TxtMa_AnotacionesTextuales.Size = New System.Drawing.Size(427, 94)
@@ -417,7 +417,7 @@ Partial Class FrmCMatrimonio
         Me.TxtNumeroCasado.Location = New System.Drawing.Point(310, 529)
         Me.TxtNumeroCasado.Multiline = True
         Me.TxtNumeroCasado.Name = "TxtNumeroCasado"
-        Me.TxtNumeroCasado.Size = New System.Drawing.Size(141, 36)
+        Me.TxtNumeroCasado.Size = New System.Drawing.Size(141, 45)
         Me.TxtNumeroCasado.TabIndex = 79
         '
         'CboLibro
@@ -619,7 +619,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label18.AutoSize = True
         Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(473, 335)
+        Me.Label18.Location = New System.Drawing.Point(473, 358)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(86, 17)
         Me.Label18.TabIndex = 60
@@ -681,9 +681,9 @@ Partial Class FrmCMatrimonio
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(473, 281)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(117, 17)
+        Me.Label2.Size = New System.Drawing.Size(294, 17)
         Me.Label2.TabIndex = 41
-        Me.Label2.Text = "Madre esposa (*)"
+        Me.Label2.Text = "Nombre completo del Madre de la  esposa (*)"
         '
         'Label1
         '
@@ -691,9 +691,9 @@ Partial Class FrmCMatrimonio
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(473, 227)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(115, 17)
+        Me.Label1.Size = New System.Drawing.Size(292, 17)
         Me.Label1.TabIndex = 39
-        Me.Label1.Text = "Padre esposa (*)"
+        Me.Label1.Text = "Nombre completo del Padre de la  esposa (*)"
         '
         'Label14
         '
@@ -701,9 +701,9 @@ Partial Class FrmCMatrimonio
         Me.Label14.ForeColor = System.Drawing.Color.White
         Me.Label14.Location = New System.Drawing.Point(24, 281)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(140, 17)
+        Me.Label14.Size = New System.Drawing.Size(290, 17)
         Me.Label14.TabIndex = 37
-        Me.Label14.Text = "Madre del esposo (*)"
+        Me.Label14.Text = "Nombre completo de la Madre del esposa (*)"
         '
         'Label13
         '
@@ -711,9 +711,9 @@ Partial Class FrmCMatrimonio
         Me.Label13.ForeColor = System.Drawing.Color.White
         Me.Label13.Location = New System.Drawing.Point(21, 227)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(138, 17)
+        Me.Label13.Size = New System.Drawing.Size(276, 17)
         Me.Label13.TabIndex = 35
-        Me.Label13.Text = "Padre del esposo (*)"
+        Me.Label13.Text = "Nombre completo del Padre del esposo (*)"
         '
         'Label12
         '
@@ -798,7 +798,7 @@ Partial Class FrmCMatrimonio
         Me.BtnGuardar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
         Me.BtnGuardar.HoverState.Parent = Me.BtnGuardar
-        Me.BtnGuardar.Location = New System.Drawing.Point(621, 520)
+        Me.BtnGuardar.Location = New System.Drawing.Point(621, 529)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.ShadowDecoration.Parent = Me.BtnGuardar
         Me.BtnGuardar.Size = New System.Drawing.Size(282, 45)
@@ -817,7 +817,7 @@ Partial Class FrmCMatrimonio
         Me.BtnActualizar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnActualizar.ForeColor = System.Drawing.Color.White
         Me.BtnActualizar.HoverState.Parent = Me.BtnActualizar
-        Me.BtnActualizar.Location = New System.Drawing.Point(621, 520)
+        Me.BtnActualizar.Location = New System.Drawing.Point(621, 529)
         Me.BtnActualizar.Name = "BtnActualizar"
         Me.BtnActualizar.ShadowDecoration.Parent = Me.BtnActualizar
         Me.BtnActualizar.Size = New System.Drawing.Size(282, 45)
@@ -836,7 +836,7 @@ Partial Class FrmCMatrimonio
         Me.BtnCancelar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnCancelar.ForeColor = System.Drawing.Color.White
         Me.BtnCancelar.HoverState.Parent = Me.BtnCancelar
-        Me.BtnCancelar.Location = New System.Drawing.Point(476, 520)
+        Me.BtnCancelar.Location = New System.Drawing.Point(476, 529)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.ShadowDecoration.Parent = Me.BtnCancelar
         Me.BtnCancelar.Size = New System.Drawing.Size(124, 45)
