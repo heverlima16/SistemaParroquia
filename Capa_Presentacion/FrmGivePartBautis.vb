@@ -96,7 +96,7 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
             Dim pNameParroqui = New Paragraph().SetTextAlignment(TextAlignment.CENTER)
             Dim nameParroquia = dni.Cells(14).Value.ToString()
             '7
-            pNameParroqui.SetMargins(8, 0, 0, 0)
+            pNameParroqui.SetMargins(10, 0, 0, 0)
             pNameParroqui.Add(New Text(vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + nameParroquia).SetTextAlignment(TextAlignment.CENTER).SetFontSize(12))
             document.Add(pNameParroqui)
 
@@ -107,7 +107,7 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
             Dim bNumber = dni.Cells(7).Value.ToString()
             'right
             '0 
-            pNumberBook.SetMargins(1, 35, 0, 0)
+            pNumberBook.SetMargins(3, 35, 0, 0)
             pNumberBook.Add(New Text(bNumber))
             pNumberBook.Add(New Text("                  " + foja + "                          "))
             pNumberBook.Add(New Text(numberBook))
@@ -119,7 +119,7 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
             Dim lastname = dni.Cells(1).Value.ToString()
             Dim pLastName = New Paragraph(New Text(vbCr + lastname))
             'left
-            pLastName.SetMargins(17, 0, 0, 80)
+            pLastName.SetMargins(12, 0, 0, 80)
             document.Add(pLastName)
 
             '::::::::::::::Name
@@ -268,6 +268,10 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
     End Sub
 
     Private Sub FrmGivePartBautis_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
 
     End Sub
 End Class

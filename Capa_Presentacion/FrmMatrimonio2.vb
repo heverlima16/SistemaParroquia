@@ -114,7 +114,7 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
             Dim lastname = dni.Cells(0).Value.ToString()
             Dim pLastName = New Paragraph(New Text(vbCr + lastname))
             'left
-            pLastName.SetMargins(17, 0, 0, 80)
+            pLastName.SetMargins(1, 0, 0, 80)
             document.Add(pLastName)
 
             '::::::::::::::wife
@@ -128,7 +128,7 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
             '::::::::::::::date union
             Dim dateBaptism = Convert.ToDateTime(dni.Cells(2).Value).ToString("yyyy-MM-dd")
             Dim pDateBaptism = New Paragraph(New Text(dateBaptism))
-            pDateBaptism.SetMargins(1, 0, 0, 145)
+            pDateBaptism.SetMargins(4, 0, 0, 145)
             document.Add(pDateBaptism)
 
             '::::::::::::::Place of union
@@ -141,7 +141,7 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
             '::::::::::::::names godparents --- 
             Dim godparents = dni.Cells(4).Value.ToString()
             Dim pGodparents = New Paragraph(New Text(godparents))
-            pGodparents.SetMargins(4, 0, 0, 83)
+            pGodparents.SetMargins(3, 0, 0, 83)
             document.Add(pGodparents)
 
             '::::::::::::::Anotation
@@ -167,13 +167,13 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
             '::::::::::::::Parroco
             Dim parroco = dni.Cells(10).Value.ToString()
             Dim pParroco = New Paragraph(New Text(vbCr + parroco)).SetTextAlignment(TextAlignment.RIGHT)
-            pParroco.SetMargins(20, 35, 0, 0)
+            pParroco.SetMargins(2, 35, 0, 0)
             document.Add(pParroco)
 
             '::::::::::::::Date Document
             Dim pdate2 = New Paragraph().SetTextAlignment(TextAlignment.LEFT)
             pdate2.SetMargins(0, 0, 0, 73)
-            pdate2.Add(New Text(vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + Bday))
+            pdate2.Add(New Text(vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + Bday))
             pdate2.Add(New Text("                " + Bmonth + "               "))
             pdate2.Add(New Text(Byear))
             document.Add(pdate2)
