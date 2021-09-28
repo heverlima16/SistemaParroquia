@@ -24,10 +24,7 @@ Public Class FrmMatrimonio2
         DataGridView1.Columns(8).Visible = False
         DataGridView1.Columns(9).Visible = False
         DataGridView1.Columns(10).Visible = False
-        DataGridView1.Columns(11).Visible = False
-        DataGridView1.Columns(12).Visible = False
-        DataGridView1.Columns(13).Visible = False
-        DataGridView1.Columns(14).Visible = False
+
 
 
 
@@ -39,7 +36,7 @@ Public Class FrmMatrimonio2
     End Sub
 
 
-    Dim connection As New SqlConnection("Server=PC-HEVER; Database = DB_Parroquia; Integrated Security = true")
+    Dim connection As New SqlConnection("Server=LAPTOP-7HVTS7G6; Database = DB_Parroquia; Integrated Security = true")
     'declare my varible ::::::::::::: gaa
     Dim index As Integer
     '::::::::::::::::::::::::::folder location::::::::::::::::::::
@@ -50,17 +47,16 @@ Public Class FrmMatrimonio2
 
     Public Sub FilterData(valueToSearch As String)
         'SELECT * From Users WHERE CONCAT(fname, lname, age) like '%F%'
-        Dim searchQuery As String = "Select PBautismo.Ba_Nombre as Nombre,  PBautismo.Ba_Apellido as Apellido, PBautismo.Ba_Numero  as Bautismo ,PBautismo.Ba_NMadre as Madre, 
-PBautismo.Ba_NPadre as Padre,  PBautismo.Ba_LNacimiento as Lugar ,PBautismo.Ba_NFoja,Libro.li_numero,
-PBautismo.Ba_FNacimiento, PBautismo.Ba_FBautismo, 
-PBautismo.Ba_LBautismo,  PBautismo.Ba_NPadrino as padrinos, PBautismo.Ba_AnotacionesTextuales, Sacerdote.sa_nombre, Parroquia.pa_nombre
-from PBautismo
+        Dim searchQuery As String = "Select PMatrimonio.Ma_NEsposo as Esposo,  PMatrimonio.Ma_NEsposa as Esposa ,PMatrimonio.Ma_FMatrimonio,PMatrimonio.Ma_LMatrimonio,
+PMatrimonio.Ma_NPadrino,PMatrimonio.Ma_AnotacionesTextuales, PMatrimonio.Ma_Numero, PMatrimonio.Ma_NFoja, Libro.li_numero, Parroquia.pa_nombre, 
+Sacerdote.sa_nombre
+from PMatrimonio
 inner join  Libro
-on Libro.idlibro = PBautismo.idlibro
+on Libro.idlibro = PMatrimonio.IdLibro
 inner join Sacerdote
-on Sacerdote.idsacerdote = PBautismo.idsacerdote
+on Sacerdote.idsacerdote = PMatrimonio.idsacerdote
 inner join Parroquia
-on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like '%" & valueToSearch & "%' or Ba_Apellido like  '%" & valueToSearch & "%'"
+on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.Ma_NEsposo like '%" & valueToSearch & "%' or PMatrimonio.Ma_NEsposa like  '%" & valueToSearch & "%'"
 
         Dim command As New SqlCommand(searchQuery, connection)
         Dim adapter As New SqlDataAdapter(command)
@@ -95,95 +91,68 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
 
             '::::::::::::::Name Parroquia
             Dim pNameParroqui = New Paragraph().SetTextAlignment(TextAlignment.CENTER)
-            Dim nameParroquia = dni.Cells(14).Value.ToString()
-            pNameParroqui.SetMargins(7, 0, 0, 0)
-            pNameParroqui.Add(New Text(vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + nameParroquia).SetTextAlignment(TextAlignment.CENTER).SetFontSize(12))
+            Dim nameParroquia = dni.Cells(9).Value.ToString()
+            pNameParroqui.SetMargins(8, 0, 0, 0)
+            pNameParroqui.Add(New Text(vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + nameParroquia).SetTextAlignment(TextAlignment.CENTER).SetFontSize(12))
             document.Add(pNameParroqui)
 
             '::::::::::::::data Parroquia
             Dim pNumberBook = New Paragraph().SetTextAlignment(TextAlignment.RIGHT)
-            Dim numberBook = dni.Cells(2).Value.ToString()
-            Dim foja = dni.Cells(6).Value.ToString()
-            Dim bNumber = dni.Cells(7).Value.ToString()
+            Dim numberBook = dni.Cells(6).Value.ToString()
+            Dim foja = dni.Cells(7).Value.ToString()
+            Dim bNumber = dni.Cells(8).Value.ToString()
             'right
-            pNumberBook.SetMargins(0, 35, 0, 0)
+            pNumberBook.SetMargins(1, 35, 0, 0)
             pNumberBook.Add(New Text(bNumber))
             pNumberBook.Add(New Text("                  " + foja + "                          "))
             pNumberBook.Add(New Text(numberBook))
 
             document.Add(pNumberBook)
 
-            '::::::::::::::LastName
+            '::::::::::::::husband
 
-            Dim lastname = dni.Cells(1).Value.ToString()
+            Dim lastname = dni.Cells(0).Value.ToString()
             Dim pLastName = New Paragraph(New Text(vbCr + lastname))
             'left
-            pLastName.SetMargins(19, 0, 0, 80)
+            pLastName.SetMargins(17, 0, 0, 80)
             document.Add(pLastName)
 
-            '::::::::::::::Name
-            Dim name = dni.Cells(0).Value.ToString()
+            '::::::::::::::wife
+            Dim name = dni.Cells(1).Value.ToString()
             Dim pName = New Paragraph(New Text(name))
             pName.SetMargins(1, 0, 0, 80)
             document.Add(pName)
 
-            '::::::::::::::Father
-            Dim father = dni.Cells(4).Value.ToString()
-            Dim pFather = New Paragraph(New Text(father))
-            pFather.SetMargins(1, 0, 0, 78)
-            document.Add(pFather)
-
-            '::::::::::::::Mother
-            Dim mother = dni.Cells(3).Value.ToString()
-            Dim pMother = New Paragraph(New Text(mother))
-            pMother.SetMargins(0, 0, 0, 78)
-            document.Add(pMother)
-
-            '::::::::::::::Place of Birth
-            Dim placeBirth = dni.Cells(5).Value.ToString()
-            Dim pBirth = New Paragraph(New Text(placeBirth))
-            pBirth.SetMargins(6, 0, 0, 153)
-            document.Add(pBirth)
-
-            '::::::::::::::date of Birth
-            ' Dim dateBirth = dni.Cells(8).Value
 
 
-            Dim dateBirth = Convert.ToDateTime(dni.Cells(8).Value).ToString("yyyy-MM-dd")
-
-
-            Dim pDateBirth = New Paragraph(New Text(dateBirth))
-            pDateBirth.SetMargins(2, 0, 0, 153)
-            document.Add(pDateBirth)
-
-            '::::::::::::::date of Baptism
-            'Dim dateBaptism = dni.Cells(9).Value
-            Dim dateBaptism = Convert.ToDateTime(dni.Cells(9).Value).ToString("yyyy-MM-dd")
+            '::::::::::::::date union
+            Dim dateBaptism = Convert.ToDateTime(dni.Cells(2).Value).ToString("yyyy-MM-dd")
             Dim pDateBaptism = New Paragraph(New Text(dateBaptism))
-            pDateBaptism.SetMargins(0, 0, 0, 153)
+            pDateBaptism.SetMargins(1, 0, 0, 145)
             document.Add(pDateBaptism)
 
-            '::::::::::::::place of Baptism
-            Dim placeBaptism = dni.Cells(10).Value.ToString()
-            Dim pPlaceBaptism = New Paragraph(New Text(placeBaptism))
-            pPlaceBaptism.SetMargins(1, 0, 0, 153)
-            document.Add(pPlaceBaptism)
+            '::::::::::::::Place of union
+            Dim placeBirth = dni.Cells(3).Value.ToString()
+            Dim pBirth = New Paragraph(New Text(placeBirth))
+            pBirth.SetMargins(0, 0, 0, 80)
+            document.Add(pBirth)
 
-            '::::::::::::::names godparents --- =2
-            Dim godparents = dni.Cells(11).Value.ToString()
+
+            '::::::::::::::names godparents --- 
+            Dim godparents = dni.Cells(4).Value.ToString()
             Dim pGodparents = New Paragraph(New Text(godparents))
-            pGodparents.SetMargins(2, 0, 0, 83)
+            pGodparents.SetMargins(4, 0, 0, 83)
             document.Add(pGodparents)
 
             '::::::::::::::Anotation
-            Dim anotation = dni.Cells(12).Value.ToString()
+            Dim anotation = dni.Cells(5).Value.ToString()
             Dim pAnotation = New Paragraph(New Text(anotation))
             pAnotation.SetMargins(3, 0, 0, 163)
             document.Add(pAnotation)
 
             '::::::::::::::Date Document --=7
             Dim pdate = New Paragraph().SetTextAlignment(TextAlignment.RIGHT)
-            pdate.SetMargins(0, 27, 0, 0)
+            pdate.SetMargins(15, 23, 0, 0)
             'Dim day = New Date()
             Dim Bday = DateTime.Now.ToString("dd")
             Dim Bmonth = DateTime.Now.ToString("MM")
@@ -196,15 +165,15 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
             document.Add(pdate)
 
             '::::::::::::::Parroco
-            Dim parroco = dni.Cells(13).Value.ToString()
-            Dim pParroco = New Paragraph(New Text(vbCr + vbCr + vbCr + parroco)).SetTextAlignment(TextAlignment.RIGHT)
-            pParroco.SetMargins(14, 37, 0, 0)
+            Dim parroco = dni.Cells(10).Value.ToString()
+            Dim pParroco = New Paragraph(New Text(vbCr + parroco)).SetTextAlignment(TextAlignment.RIGHT)
+            pParroco.SetMargins(20, 35, 0, 0)
             document.Add(pParroco)
 
             '::::::::::::::Date Document
             Dim pdate2 = New Paragraph().SetTextAlignment(TextAlignment.LEFT)
-            pdate2.SetMargins(0, 0, 0, 70)
-            pdate2.Add(New Text(vbCr + vbCr + vbCr + vbCr + Bday))
+            pdate2.SetMargins(0, 0, 0, 73)
+            pdate2.Add(New Text(vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + Bday))
             pdate2.Add(New Text("                " + Bmonth + "               "))
             pdate2.Add(New Text(Byear))
             document.Add(pdate2)
@@ -265,4 +234,7 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
 
     End Sub
 
+    Private Sub FrmMatrimonio2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

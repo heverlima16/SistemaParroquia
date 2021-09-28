@@ -38,7 +38,7 @@ Public Class FrmGivePartBautis
     End Sub
 
 
-    Dim connection As New SqlConnection("Server=PC-HEVER; Database = DB_Parroquia; Integrated Security = true")
+    Dim connection As New SqlConnection("Server=LAPTOP-7HVTS7G6; Database = DB_Parroquia; Integrated Security = true")
     'declare my varible ::::::::::::: gaa
     Dim index As Integer
     '::::::::::::::::::::::::::folder location::::::::::::::::::::
@@ -95,7 +95,8 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
             '::::::::::::::Name Parroquia
             Dim pNameParroqui = New Paragraph().SetTextAlignment(TextAlignment.CENTER)
             Dim nameParroquia = dni.Cells(14).Value.ToString()
-            pNameParroqui.SetMargins(7, 0, 0, 0)
+            '7
+            pNameParroqui.SetMargins(8, 0, 0, 0)
             pNameParroqui.Add(New Text(vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + nameParroquia).SetTextAlignment(TextAlignment.CENTER).SetFontSize(12))
             document.Add(pNameParroqui)
 
@@ -105,7 +106,8 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
             Dim foja = dni.Cells(6).Value.ToString()
             Dim bNumber = dni.Cells(7).Value.ToString()
             'right
-            pNumberBook.SetMargins(0, 35, 0, 0)
+            '0 
+            pNumberBook.SetMargins(1, 35, 0, 0)
             pNumberBook.Add(New Text(bNumber))
             pNumberBook.Add(New Text("                  " + foja + "                          "))
             pNumberBook.Add(New Text(numberBook))
@@ -117,7 +119,7 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
             Dim lastname = dni.Cells(1).Value.ToString()
             Dim pLastName = New Paragraph(New Text(vbCr + lastname))
             'left
-            pLastName.SetMargins(19, 0, 0, 80)
+            pLastName.SetMargins(17, 0, 0, 80)
             document.Add(pLastName)
 
             '::::::::::::::Name
@@ -182,7 +184,7 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
 
             '::::::::::::::Date Document --=7
             Dim pdate = New Paragraph().SetTextAlignment(TextAlignment.RIGHT)
-            pdate.SetMargins(0, 27, 0, 0)
+            pdate.SetMargins(0, 23, 0, 0)
             'Dim day = New Date()
             Dim Bday = DateTime.Now.ToString("dd")
             Dim Bmonth = DateTime.Now.ToString("MM")
@@ -197,7 +199,8 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
             '::::::::::::::Parroco
             Dim parroco = dni.Cells(13).Value.ToString()
             Dim pParroco = New Paragraph(New Text(vbCr + vbCr + vbCr + parroco)).SetTextAlignment(TextAlignment.RIGHT)
-            pParroco.SetMargins(14, 37, 0, 0)
+            '37
+            pParroco.SetMargins(14, 35, 0, 0)
             document.Add(pParroco)
 
             '::::::::::::::Date Document
@@ -261,6 +264,10 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    End Sub
+
+    Private Sub FrmGivePartBautis_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
