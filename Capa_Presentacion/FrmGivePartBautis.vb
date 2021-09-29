@@ -107,7 +107,7 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
             Dim bNumber = dni.Cells(7).Value.ToString()
             'right
             '0 
-            pNumberBook.SetMargins(6, 38, 0, 0)
+            pNumberBook.SetMargins(7, 38, 0, 0)
             pNumberBook.Add(New Text(bNumber))
             pNumberBook.Add(New Text("                  " + foja + "                          "))
             pNumberBook.Add(New Text(numberBook))
@@ -119,7 +119,7 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
             Dim lastname = dni.Cells(1).Value.ToString()
             Dim pLastName = New Paragraph(New Text(vbCr + lastname))
             'left
-            pLastName.SetMargins(7, 0, 0, 80)
+            pLastName.SetMargins(6, 0, 0, 80)
             document.Add(pLastName)
 
             '::::::::::::::Name
@@ -179,7 +179,7 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
             '::::::::::::::Anotation
             Dim anotation = dni.Cells(12).Value.ToString()
             Dim pAnotation = New Paragraph(New Text(anotation))
-            pAnotation.SetMargins(3, 0, 0, 163)
+            pAnotation.SetMargins(4, 0, 0, 163)
             document.Add(pAnotation)
 
             '::::::::::::::Date Document --=7
@@ -205,8 +205,8 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
 
             '::::::::::::::Date Document
             Dim pdate2 = New Paragraph().SetTextAlignment(TextAlignment.LEFT)
-            pdate2.SetMargins(0, 0, 0, 70)
-            pdate2.Add(New Text(vbCr + vbCr + vbCr + vbCr + Bday))
+            pdate2.SetMargins(16, 0, 0, 68)
+            pdate2.Add(New Text(vbCr + vbCr + vbCr + Bday))
             pdate2.Add(New Text("                " + Bmonth + "               "))
             pdate2.Add(New Text(Byear))
             document.Add(pdate2)

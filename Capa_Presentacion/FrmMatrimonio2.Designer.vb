@@ -22,7 +22,6 @@ Partial Class FrmMatrimonio2
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        'Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
@@ -51,8 +50,6 @@ Partial Class FrmMatrimonio2
         Me.Guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.Guna2ControlBox1.HoverState.Parent = Me.Guna2ControlBox1
         Me.Guna2ControlBox1.IconColor = System.Drawing.Color.Red
-        Me.Guna2ControlBox1.Location = New System.Drawing.Point(901, 0)
-        Me.Guna2ControlBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2ControlBox1.Location = New System.Drawing.Point(1087, 0)
         Me.Guna2ControlBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
@@ -69,7 +66,6 @@ Partial Class FrmMatrimonio2
         Me.Label10.ForeColor = System.Drawing.Color.White
         Me.Label10.Location = New System.Drawing.Point(0, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(956, 36)
         Me.Label10.Size = New System.Drawing.Size(1160, 44)
         Me.Label10.TabIndex = 57
         Me.Label10.Text = "Generar Partida de Matrimonio A4"
@@ -78,9 +74,6 @@ Partial Class FrmMatrimonio2
         'Label5
         '
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(562, 528)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(271, 65)
         Me.Label5.Location = New System.Drawing.Point(335, 579)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
@@ -93,7 +86,6 @@ Partial Class FrmMatrimonio2
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(602, 452)
         Me.Label4.Location = New System.Drawing.Point(384, 515)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
@@ -105,7 +97,6 @@ Partial Class FrmMatrimonio2
         'Label3
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(562, 425)
         Me.Label3.Location = New System.Drawing.Point(335, 486)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
@@ -117,9 +108,6 @@ Partial Class FrmMatrimonio2
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(128, 493)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(161, 35)
         Me.Button1.Location = New System.Drawing.Point(49, 486)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
@@ -135,7 +123,6 @@ Partial Class FrmMatrimonio2
         Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.GridColor = System.Drawing.SystemColors.AppWorkspace
-        Me.DataGridView1.Location = New System.Drawing.Point(37, 163)
         Me.DataGridView1.Location = New System.Drawing.Point(49, 168)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
@@ -146,7 +133,6 @@ Partial Class FrmMatrimonio2
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.DodgerBlue
         Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.DataGridView1.Size = New System.Drawing.Size(882, 245)
         Me.DataGridView1.Size = New System.Drawing.Size(1062, 301)
         Me.DataGridView1.TabIndex = 70
         '
@@ -164,7 +150,6 @@ Partial Class FrmMatrimonio2
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(46, 84)
         Me.Label1.Location = New System.Drawing.Point(62, 91)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
@@ -174,10 +159,10 @@ Partial Class FrmMatrimonio2
         '
         'TxtDNI
         '
-        Me.TxtDNI.Location = New System.Drawing.Point(69, 125)
+        Me.TxtDNI.Location = New System.Drawing.Point(50, 112)
         Me.TxtDNI.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtDNI.Name = "TxtDNI"
-        Me.TxtDNI.Size = New System.Drawing.Size(304, 22)
+        Me.TxtDNI.Size = New System.Drawing.Size(229, 20)
         Me.TxtDNI.TabIndex = 66
         '
         'Guna2Elipse1
@@ -191,20 +176,6 @@ Partial Class FrmMatrimonio2
         Me.BtnSearchUser.AutoSize = True
         Me.BtnSearchUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BtnSearchUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BtnSearchUser.Location = New System.Drawing.Point(300, 102)
-        Me.BtnSearchUser.Name = "BtnSearchUser"
-        Me.BtnSearchUser.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BtnSearchUser.Size = New System.Drawing.Size(39, 38)
-        Me.BtnSearchUser.TabIndex = 67
-        Me.BtnSearchUser.UseVisualStyleBackColor = False
-        '
-        'TxtDNI
-        '
-        Me.TxtDNI.Location = New System.Drawing.Point(50, 112)
-        Me.TxtDNI.Name = "TxtDNI"
-        Me.TxtDNI.Size = New System.Drawing.Size(229, 20)
-        Me.TxtDNI.TabIndex = 66
-        '
         Me.BtnSearchUser.Location = New System.Drawing.Point(388, 113)
         Me.BtnSearchUser.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnSearchUser.Name = "BtnSearchUser"
@@ -219,7 +190,6 @@ Partial Class FrmMatrimonio2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(956, 640)
         Me.ClientSize = New System.Drawing.Size(1160, 680)
         Me.Controls.Add(Me.BtnSearchUser)
         Me.Controls.Add(Me.Label5)
@@ -233,7 +203,7 @@ Partial Class FrmMatrimonio2
         Me.Controls.Add(Me.Guna2ControlBox1)
         Me.Controls.Add(Me.Label10)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmMatrimonio2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmMatrimonio2"

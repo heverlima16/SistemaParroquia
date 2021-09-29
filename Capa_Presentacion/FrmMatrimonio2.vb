@@ -102,7 +102,7 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
             Dim foja = dni.Cells(7).Value.ToString()
             Dim bNumber = dni.Cells(8).Value.ToString()
             'right
-            pNumberBook.SetMargins(1, 35, 0, 0)
+            pNumberBook.SetMargins(2, 35, 0, 0)
             pNumberBook.Add(New Text(bNumber))
             pNumberBook.Add(New Text("                  " + foja + "                          "))
             pNumberBook.Add(New Text(numberBook))
@@ -112,9 +112,9 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
             '::::::::::::::husband
 
             Dim lastname = dni.Cells(0).Value.ToString()
-            Dim pLastName = New Paragraph(New Text(lastname))
-            'left 8
-            pLastName.SetMargins(16, 0, 0, 80)
+            Dim pLastName = New Paragraph(New Text(vbCr + lastname))
+            'left 16
+            pLastName.SetMargins(0, 0, 0, 80)
             document.Add(pLastName)
 
             '::::::::::::::wife
@@ -152,7 +152,7 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
 
             '::::::::::::::Date Document --=7
             Dim pdate = New Paragraph().SetTextAlignment(TextAlignment.RIGHT)
-            pdate.SetMargins(12, 23, 0, 0)
+            pdate.SetMargins(8, 23, 0, 0)
             'Dim day = New Date()
             Dim Bday = DateTime.Now.ToString("dd")
             Dim Bmonth = DateTime.Now.ToString("MM")
@@ -172,7 +172,7 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
 
             '::::::::::::::Date Document
             Dim pdate2 = New Paragraph().SetTextAlignment(TextAlignment.LEFT)
-            pdate2.SetMargins(0, 0, 0, 73)
+            pdate2.SetMargins(0, 0, 0, 76)
             pdate2.Add(New Text(vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + Bday))
             pdate2.Add(New Text("                " + Bmonth + "               "))
             pdate2.Add(New Text(Byear))
@@ -235,6 +235,10 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
     End Sub
 
     Private Sub FrmMatrimonio2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
 
     End Sub
 End Class
