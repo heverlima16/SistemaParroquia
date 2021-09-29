@@ -112,9 +112,9 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
             '::::::::::::::husband
 
             Dim lastname = dni.Cells(0).Value.ToString()
-            Dim pLastName = New Paragraph(New Text(vbCr + lastname))
+            Dim pLastName = New Paragraph(New Text(lastname))
             'left
-            pLastName.SetMargins(1, 0, 0, 80)
+            pLastName.SetMargins(8, 0, 0, 80)
             document.Add(pLastName)
 
             '::::::::::::::wife
@@ -134,7 +134,7 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
             '::::::::::::::Place of union
             Dim placeBirth = dni.Cells(3).Value.ToString()
             Dim pBirth = New Paragraph(New Text(placeBirth))
-            pBirth.SetMargins(0, 0, 0, 80)
+            pBirth.SetMargins(8, 0, 0, 80)
             document.Add(pBirth)
 
 
@@ -147,12 +147,12 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
             '::::::::::::::Anotation
             Dim anotation = dni.Cells(5).Value.ToString()
             Dim pAnotation = New Paragraph(New Text(anotation))
-            pAnotation.SetMargins(3, 0, 0, 163)
+            pAnotation.SetMargins(5, 0, 0, 163)
             document.Add(pAnotation)
 
             '::::::::::::::Date Document --=7
             Dim pdate = New Paragraph().SetTextAlignment(TextAlignment.RIGHT)
-            pdate.SetMargins(15, 23, 0, 0)
+            pdate.SetMargins(12, 23, 0, 0)
             'Dim day = New Date()
             Dim Bday = DateTime.Now.ToString("dd")
             Dim Bmonth = DateTime.Now.ToString("MM")
@@ -166,14 +166,14 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
 
             '::::::::::::::Parroco
             Dim parroco = dni.Cells(10).Value.ToString()
-            Dim pParroco = New Paragraph(New Text(vbCr + parroco)).SetTextAlignment(TextAlignment.RIGHT)
+            Dim pParroco = New Paragraph(New Text(parroco)).SetTextAlignment(TextAlignment.RIGHT)
             pParroco.SetMargins(2, 35, 0, 0)
             document.Add(pParroco)
 
             '::::::::::::::Date Document
             Dim pdate2 = New Paragraph().SetTextAlignment(TextAlignment.LEFT)
             pdate2.SetMargins(0, 0, 0, 73)
-            pdate2.Add(New Text(vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + Bday))
+            pdate2.Add(New Text(vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + vbCr + Bday))
             pdate2.Add(New Text("                " + Bmonth + "               "))
             pdate2.Add(New Text(Byear))
             document.Add(pdate2)
