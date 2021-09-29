@@ -113,8 +113,8 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
 
             Dim lastname = dni.Cells(0).Value.ToString()
             Dim pLastName = New Paragraph(New Text(lastname))
-            'left
-            pLastName.SetMargins(8, 0, 0, 80)
+            'left 8
+            pLastName.SetMargins(16, 0, 0, 80)
             document.Add(pLastName)
 
             '::::::::::::::wife
@@ -134,7 +134,7 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
             '::::::::::::::Place of union
             Dim placeBirth = dni.Cells(3).Value.ToString()
             Dim pBirth = New Paragraph(New Text(placeBirth))
-            pBirth.SetMargins(8, 0, 0, 80)
+            pBirth.SetMargins(6, 0, 0, 80)
             document.Add(pBirth)
 
 
@@ -167,7 +167,7 @@ on Parroquia.idparroquia = PMatrimonio.IdParroquiaBautizado  WHERE PMatrimonio.M
             '::::::::::::::Parroco
             Dim parroco = dni.Cells(10).Value.ToString()
             Dim pParroco = New Paragraph(New Text(parroco)).SetTextAlignment(TextAlignment.RIGHT)
-            pParroco.SetMargins(2, 35, 0, 0)
+            pParroco.SetMargins(25, 35, 0, 0)
             document.Add(pParroco)
 
             '::::::::::::::Date Document
