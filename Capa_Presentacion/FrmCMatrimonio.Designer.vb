@@ -581,7 +581,7 @@ Partial Class FrmCMatrimonio
         Me.CboSacerdote.HoverState.Parent = Me.CboSacerdote
         Me.CboSacerdote.ItemHeight = 30
         Me.CboSacerdote.ItemsAppearance.Parent = Me.CboSacerdote
-        Me.CboSacerdote.Location = New System.Drawing.Point(476, 54)
+        Me.CboSacerdote.Location = New System.Drawing.Point(476, 45)
         Me.CboSacerdote.Name = "CboSacerdote"
         Me.CboSacerdote.ShadowDecoration.Parent = Me.CboSacerdote
         Me.CboSacerdote.Size = New System.Drawing.Size(427, 36)
@@ -601,7 +601,7 @@ Partial Class FrmCMatrimonio
         Me.CboParroquia.HoverState.Parent = Me.CboParroquia
         Me.CboParroquia.ItemHeight = 30
         Me.CboParroquia.ItemsAppearance.Parent = Me.CboParroquia
-        Me.CboParroquia.Location = New System.Drawing.Point(24, 54)
+        Me.CboParroquia.Location = New System.Drawing.Point(24, 45)
         Me.CboParroquia.Name = "CboParroquia"
         Me.CboParroquia.ShadowDecoration.Parent = Me.CboParroquia
         Me.CboParroquia.Size = New System.Drawing.Size(427, 36)
@@ -719,7 +719,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label12.AutoSize = True
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(473, 21)
+        Me.Label12.Location = New System.Drawing.Point(473, 14)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(260, 17)
         Me.Label12.TabIndex = 34
@@ -729,7 +729,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label11.AutoSize = True
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(21, 21)
+        Me.Label11.Location = New System.Drawing.Point(21, 14)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(182, 17)
         Me.Label11.TabIndex = 30
@@ -739,7 +739,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label9.AutoSize = True
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(473, 105)
+        Me.Label9.Location = New System.Drawing.Point(473, 96)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(127, 17)
         Me.Label9.TabIndex = 28
@@ -749,7 +749,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(21, 105)
+        Me.Label8.Location = New System.Drawing.Point(21, 96)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(127, 17)
         Me.Label8.TabIndex = 26

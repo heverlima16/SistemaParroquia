@@ -23,9 +23,9 @@ Partial Class FrmSacerdote
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TabGeneral = New Guna.UI2.WinForms.Guna2TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.ChkSeleccionar = New Guna.UI2.WinForms.Guna2CheckBox()
@@ -36,6 +36,7 @@ Partial Class FrmSacerdote
         Me.DgvListado = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Seleccionar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.CboParroquia = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.BtnGuardar = New Guna.UI2.WinForms.Guna2Button()
@@ -48,13 +49,12 @@ Partial Class FrmSacerdote
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.ErrorIcono = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TabGeneral.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.DgvListado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
-        CType(Me.ErrorIcono, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorIcono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabGeneral
@@ -195,31 +195,31 @@ Partial Class FrmSacerdote
         Me.DgvListado.AllowUserToAddRows = False
         Me.DgvListado.AllowUserToDeleteRows = False
         Me.DgvListado.AllowUserToOrderColumns = True
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.White
-        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.DgvListado.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         Me.DgvListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DgvListado.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.DgvListado.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DgvListado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DgvListado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DgvListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.DgvListado.ColumnHeadersHeight = 27
         Me.DgvListado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Seleccionar})
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DgvListado.DefaultCellStyle = DataGridViewCellStyle6
         Me.DgvListado.EnableHeadersVisualStyles = False
         Me.DgvListado.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DgvListado.Location = New System.Drawing.Point(16, 73)
@@ -278,6 +278,20 @@ Partial Class FrmSacerdote
         Me.TabPage2.TabIndex = 0
         Me.TabPage2.Text = "Registrar"
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.PictureBox2.Image = Global.Capa_Presentacion.My.Resources.Resources.user
+        Me.PictureBox2.Location = New System.Drawing.Point(12, 167)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(232, 171)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 124
+        Me.PictureBox2.TabStop = False
+        '
         'CboParroquia
         '
         Me.CboParroquia.BackColor = System.Drawing.Color.Transparent
@@ -317,10 +331,11 @@ Partial Class FrmSacerdote
         Me.BtnGuardar.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BtnGuardar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.BtnGuardar.DisabledState.Parent = Me.BtnGuardar
+        Me.BtnGuardar.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BtnGuardar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
         Me.BtnGuardar.HoverState.Parent = Me.BtnGuardar
-        Me.BtnGuardar.Location = New System.Drawing.Point(253, 328)
+        Me.BtnGuardar.Location = New System.Drawing.Point(506, 328)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.ShadowDecoration.Parent = Me.BtnGuardar
         Me.BtnGuardar.Size = New System.Drawing.Size(195, 45)
@@ -339,7 +354,7 @@ Partial Class FrmSacerdote
         Me.BtnActualizar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnActualizar.ForeColor = System.Drawing.Color.White
         Me.BtnActualizar.HoverState.Parent = Me.BtnActualizar
-        Me.BtnActualizar.Location = New System.Drawing.Point(253, 328)
+        Me.BtnActualizar.Location = New System.Drawing.Point(506, 328)
         Me.BtnActualizar.Name = "BtnActualizar"
         Me.BtnActualizar.ShadowDecoration.Parent = Me.BtnActualizar
         Me.BtnActualizar.Size = New System.Drawing.Size(195, 45)
@@ -374,7 +389,7 @@ Partial Class FrmSacerdote
         Me.BtnCancelar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnCancelar.ForeColor = System.Drawing.Color.White
         Me.BtnCancelar.HoverState.Parent = Me.BtnCancelar
-        Me.BtnCancelar.Location = New System.Drawing.Point(482, 328)
+        Me.BtnCancelar.Location = New System.Drawing.Point(253, 328)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.ShadowDecoration.Parent = Me.BtnCancelar
         Me.BtnCancelar.Size = New System.Drawing.Size(219, 45)
@@ -432,20 +447,6 @@ Partial Class FrmSacerdote
         '
         Me.ErrorIcono.ContainerControl = Me
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
-        Me.PictureBox2.Image = Global.Capa_Presentacion.My.Resources.Resources.user
-        Me.PictureBox2.Location = New System.Drawing.Point(12, 167)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(232, 171)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 124
-        Me.PictureBox2.TabStop = False
-        '
         'FrmSacerdote
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -465,8 +466,8 @@ Partial Class FrmSacerdote
         CType(Me.DgvListado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
-        CType(Me.ErrorIcono, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorIcono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

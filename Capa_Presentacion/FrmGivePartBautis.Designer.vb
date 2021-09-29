@@ -53,7 +53,7 @@ Partial Class FrmGivePartBautis
         Me.BtnSearchUser.AutoSize = True
         Me.BtnSearchUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BtnSearchUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BtnSearchUser.Location = New System.Drawing.Point(488, 119)
+        Me.BtnSearchUser.Location = New System.Drawing.Point(396, 119)
         Me.BtnSearchUser.Margin = New System.Windows.Forms.Padding(5)
         Me.BtnSearchUser.Name = "BtnSearchUser"
         Me.BtnSearchUser.RightToLeft = System.Windows.Forms.RightToLeft.No
