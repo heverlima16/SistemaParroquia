@@ -130,7 +130,7 @@ Partial Class FrmCMatrimonio
         Me.TabGeneral.Location = New System.Drawing.Point(12, 50)
         Me.TabGeneral.Name = "TabGeneral"
         Me.TabGeneral.SelectedIndex = 0
-        Me.TabGeneral.Size = New System.Drawing.Size(1126, 599)
+        Me.TabGeneral.Size = New System.Drawing.Size(1136, 618)
         Me.TabGeneral.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty
         Me.TabGeneral.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.TabGeneral.TabButtonHoverState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
@@ -161,7 +161,7 @@ Partial Class FrmCMatrimonio
         Me.TabPage1.Controls.Add(Me.LblTotal)
         Me.TabPage1.Location = New System.Drawing.Point(184, 4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(938, 591)
+        Me.TabPage1.Size = New System.Drawing.Size(948, 610)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Listado"
         '
@@ -242,6 +242,7 @@ Partial Class FrmCMatrimonio
         Me.ChkSeleccionar.CheckedState.BorderRadius = 0
         Me.ChkSeleccionar.CheckedState.BorderThickness = 0
         Me.ChkSeleccionar.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ChkSeleccionar.ForeColor = System.Drawing.Color.White
         Me.ChkSeleccionar.Location = New System.Drawing.Point(6, 525)
         Me.ChkSeleccionar.Name = "ChkSeleccionar"
         Me.ChkSeleccionar.Size = New System.Drawing.Size(104, 21)
@@ -317,6 +318,7 @@ Partial Class FrmCMatrimonio
         'LblTotal
         '
         Me.LblTotal.BackColor = System.Drawing.Color.Transparent
+        Me.LblTotal.ForeColor = System.Drawing.Color.White
         Me.LblTotal.Location = New System.Drawing.Point(813, 528)
         Me.LblTotal.Name = "LblTotal"
         Me.LblTotal.Size = New System.Drawing.Size(37, 18)
@@ -370,7 +372,7 @@ Partial Class FrmCMatrimonio
         Me.TabPage2.Controls.Add(Me.BtnCancelar)
         Me.TabPage2.Location = New System.Drawing.Point(184, 4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Size = New System.Drawing.Size(938, 591)
+        Me.TabPage2.Size = New System.Drawing.Size(948, 610)
         Me.TabPage2.TabIndex = 0
         Me.TabPage2.Text = "Registrar"
         '
@@ -378,7 +380,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label20.AutoSize = True
         Me.Label20.ForeColor = System.Drawing.Color.White
-        Me.Label20.Location = New System.Drawing.Point(656, 150)
+        Me.Label20.Location = New System.Drawing.Point(682, 148)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(158, 17)
         Me.Label20.TabIndex = 83
@@ -388,7 +390,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label19.AutoSize = True
         Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(193, 150)
+        Me.Label19.Location = New System.Drawing.Point(193, 148)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(158, 17)
         Me.Label19.TabIndex = 82
@@ -397,7 +399,7 @@ Partial Class FrmCMatrimonio
         'TxtMa_NFoja
         '
         Me.TxtMa_NFoja.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold)
-        Me.TxtMa_NFoja.Location = New System.Drawing.Point(155, 529)
+        Me.TxtMa_NFoja.Location = New System.Drawing.Point(155, 546)
         Me.TxtMa_NFoja.Multiline = True
         Me.TxtMa_NFoja.Name = "TxtMa_NFoja"
         Me.TxtMa_NFoja.Size = New System.Drawing.Size(131, 45)
@@ -405,16 +407,16 @@ Partial Class FrmCMatrimonio
         '
         'TxtMa_AnotacionesTextuales
         '
-        Me.TxtMa_AnotacionesTextuales.Location = New System.Drawing.Point(476, 387)
+        Me.TxtMa_AnotacionesTextuales.Location = New System.Drawing.Point(476, 401)
         Me.TxtMa_AnotacionesTextuales.Multiline = True
         Me.TxtMa_AnotacionesTextuales.Name = "TxtMa_AnotacionesTextuales"
-        Me.TxtMa_AnotacionesTextuales.Size = New System.Drawing.Size(427, 94)
+        Me.TxtMa_AnotacionesTextuales.Size = New System.Drawing.Size(453, 94)
         Me.TxtMa_AnotacionesTextuales.TabIndex = 80
         '
         'TxtNumeroCasado
         '
         Me.TxtNumeroCasado.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold)
-        Me.TxtNumeroCasado.Location = New System.Drawing.Point(310, 529)
+        Me.TxtNumeroCasado.Location = New System.Drawing.Point(310, 546)
         Me.TxtNumeroCasado.Multiline = True
         Me.TxtNumeroCasado.Name = "TxtNumeroCasado"
         Me.TxtNumeroCasado.Size = New System.Drawing.Size(141, 45)
@@ -433,7 +435,7 @@ Partial Class FrmCMatrimonio
         Me.CboLibro.HoverState.Parent = Me.CboLibro
         Me.CboLibro.ItemHeight = 30
         Me.CboLibro.ItemsAppearance.Parent = Me.CboLibro
-        Me.CboLibro.Location = New System.Drawing.Point(27, 529)
+        Me.CboLibro.Location = New System.Drawing.Point(27, 546)
         Me.CboLibro.Name = "CboLibro"
         Me.CboLibro.ShadowDecoration.Parent = Me.CboLibro
         Me.CboLibro.Size = New System.Drawing.Size(111, 36)
@@ -445,7 +447,7 @@ Partial Class FrmCMatrimonio
         Me.DateMa_FMatrimonio.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.DateMa_FMatrimonio.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.DateMa_FMatrimonio.HoverState.Parent = Me.DateMa_FMatrimonio
-        Me.DateMa_FMatrimonio.Location = New System.Drawing.Point(27, 448)
+        Me.DateMa_FMatrimonio.Location = New System.Drawing.Point(27, 459)
         Me.DateMa_FMatrimonio.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.DateMa_FMatrimonio.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.DateMa_FMatrimonio.Name = "DateMa_FMatrimonio"
@@ -457,7 +459,7 @@ Partial Class FrmCMatrimonio
         '
         'TxtMa_LMatrimonio
         '
-        Me.TxtMa_LMatrimonio.Location = New System.Drawing.Point(251, 387)
+        Me.TxtMa_LMatrimonio.Location = New System.Drawing.Point(251, 402)
         Me.TxtMa_LMatrimonio.Multiline = True
         Me.TxtMa_LMatrimonio.Name = "TxtMa_LMatrimonio"
         Me.TxtMa_LMatrimonio.Size = New System.Drawing.Size(200, 26)
@@ -465,7 +467,7 @@ Partial Class FrmCMatrimonio
         '
         'TxtMa_NPadrino
         '
-        Me.TxtMa_NPadrino.Location = New System.Drawing.Point(24, 355)
+        Me.TxtMa_NPadrino.Location = New System.Drawing.Point(27, 364)
         Me.TxtMa_NPadrino.Multiline = True
         Me.TxtMa_NPadrino.Name = "TxtMa_NPadrino"
         Me.TxtMa_NPadrino.Size = New System.Drawing.Size(427, 26)
@@ -473,15 +475,15 @@ Partial Class FrmCMatrimonio
         '
         'TxtMa_NMadreEsposa
         '
-        Me.TxtMa_NMadreEsposa.Location = New System.Drawing.Point(476, 304)
+        Me.TxtMa_NMadreEsposa.Location = New System.Drawing.Point(476, 312)
         Me.TxtMa_NMadreEsposa.Multiline = True
         Me.TxtMa_NMadreEsposa.Name = "TxtMa_NMadreEsposa"
-        Me.TxtMa_NMadreEsposa.Size = New System.Drawing.Size(427, 26)
+        Me.TxtMa_NMadreEsposa.Size = New System.Drawing.Size(453, 26)
         Me.TxtMa_NMadreEsposa.TabIndex = 73
         '
         'TxtMa_NMadreEsposo
         '
-        Me.TxtMa_NMadreEsposo.Location = New System.Drawing.Point(24, 304)
+        Me.TxtMa_NMadreEsposo.Location = New System.Drawing.Point(27, 312)
         Me.TxtMa_NMadreEsposo.Multiline = True
         Me.TxtMa_NMadreEsposo.Name = "TxtMa_NMadreEsposo"
         Me.TxtMa_NMadreEsposo.Size = New System.Drawing.Size(427, 26)
@@ -492,7 +494,7 @@ Partial Class FrmCMatrimonio
         Me.TxtMa_NPadreEsposa.Location = New System.Drawing.Point(476, 250)
         Me.TxtMa_NPadreEsposa.Multiline = True
         Me.TxtMa_NPadreEsposa.Name = "TxtMa_NPadreEsposa"
-        Me.TxtMa_NPadreEsposa.Size = New System.Drawing.Size(427, 26)
+        Me.TxtMa_NPadreEsposa.Size = New System.Drawing.Size(453, 26)
         Me.TxtMa_NPadreEsposa.TabIndex = 71
         '
         'TxtMa_NPadreEsposo
@@ -505,7 +507,7 @@ Partial Class FrmCMatrimonio
         '
         'TxtMa_LEsposa
         '
-        Me.TxtMa_LEsposa.Location = New System.Drawing.Point(659, 178)
+        Me.TxtMa_LEsposa.Location = New System.Drawing.Point(685, 178)
         Me.TxtMa_LEsposa.Multiline = True
         Me.TxtMa_LEsposa.Name = "TxtMa_LEsposa"
         Me.TxtMa_LEsposa.Size = New System.Drawing.Size(244, 36)
@@ -522,7 +524,7 @@ Partial Class FrmCMatrimonio
         Me.DateMa_FNEsposa.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.DateMa_FNEsposa.Name = "DateMa_FNEsposa"
         Me.DateMa_FNEsposa.ShadowDecoration.Parent = Me.DateMa_FNEsposa
-        Me.DateMa_FNEsposa.Size = New System.Drawing.Size(166, 36)
+        Me.DateMa_FNEsposa.Size = New System.Drawing.Size(185, 36)
         Me.DateMa_FNEsposa.TabIndex = 68
         Me.DateMa_FNEsposa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.DateMa_FNEsposa.Value = New Date(2021, 9, 8, 15, 36, 24, 541)
@@ -553,15 +555,15 @@ Partial Class FrmCMatrimonio
         '
         'TxtMa_NEsposa
         '
-        Me.TxtMa_NEsposa.Location = New System.Drawing.Point(476, 117)
+        Me.TxtMa_NEsposa.Location = New System.Drawing.Point(476, 112)
         Me.TxtMa_NEsposa.Multiline = True
         Me.TxtMa_NEsposa.Name = "TxtMa_NEsposa"
-        Me.TxtMa_NEsposa.Size = New System.Drawing.Size(427, 26)
+        Me.TxtMa_NEsposa.Size = New System.Drawing.Size(453, 26)
         Me.TxtMa_NEsposa.TabIndex = 65
         '
         'TxtMa_NEsposo
         '
-        Me.TxtMa_NEsposo.Location = New System.Drawing.Point(24, 117)
+        Me.TxtMa_NEsposo.Location = New System.Drawing.Point(24, 112)
         Me.TxtMa_NEsposo.Multiline = True
         Me.TxtMa_NEsposo.Name = "TxtMa_NEsposo"
         Me.TxtMa_NEsposo.Size = New System.Drawing.Size(427, 26)
@@ -581,10 +583,10 @@ Partial Class FrmCMatrimonio
         Me.CboSacerdote.HoverState.Parent = Me.CboSacerdote
         Me.CboSacerdote.ItemHeight = 30
         Me.CboSacerdote.ItemsAppearance.Parent = Me.CboSacerdote
-        Me.CboSacerdote.Location = New System.Drawing.Point(476, 45)
+        Me.CboSacerdote.Location = New System.Drawing.Point(476, 42)
         Me.CboSacerdote.Name = "CboSacerdote"
         Me.CboSacerdote.ShadowDecoration.Parent = Me.CboSacerdote
-        Me.CboSacerdote.Size = New System.Drawing.Size(427, 36)
+        Me.CboSacerdote.Size = New System.Drawing.Size(453, 36)
         Me.CboSacerdote.TabIndex = 63
         '
         'CboParroquia
@@ -601,7 +603,7 @@ Partial Class FrmCMatrimonio
         Me.CboParroquia.HoverState.Parent = Me.CboParroquia
         Me.CboParroquia.ItemHeight = 30
         Me.CboParroquia.ItemsAppearance.Parent = Me.CboParroquia
-        Me.CboParroquia.Location = New System.Drawing.Point(24, 45)
+        Me.CboParroquia.Location = New System.Drawing.Point(24, 42)
         Me.CboParroquia.Name = "CboParroquia"
         Me.CboParroquia.ShadowDecoration.Parent = Me.CboParroquia
         Me.CboParroquia.Size = New System.Drawing.Size(427, 36)
@@ -619,7 +621,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label18.AutoSize = True
         Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(473, 358)
+        Me.Label18.Location = New System.Drawing.Point(473, 364)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(86, 17)
         Me.Label18.TabIndex = 60
@@ -629,7 +631,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label17.AutoSize = True
         Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(24, 150)
+        Me.Label17.Location = New System.Drawing.Point(24, 148)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(160, 17)
         Me.Label17.TabIndex = 58
@@ -639,7 +641,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label16.AutoSize = True
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(473, 150)
+        Me.Label16.Location = New System.Drawing.Point(473, 148)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(160, 17)
         Me.Label16.TabIndex = 57
@@ -649,7 +651,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label15.AutoSize = True
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(27, 428)
+        Me.Label15.Location = New System.Drawing.Point(27, 435)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(159, 17)
         Me.Label15.TabIndex = 54
@@ -659,7 +661,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(24, 390)
+        Me.Label4.Location = New System.Drawing.Point(27, 402)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(157, 17)
         Me.Label4.TabIndex = 51
@@ -669,7 +671,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(24, 335)
+        Me.Label3.Location = New System.Drawing.Point(25, 342)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(76, 17)
         Me.Label3.TabIndex = 48
@@ -679,7 +681,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(473, 281)
+        Me.Label2.Location = New System.Drawing.Point(473, 285)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(294, 17)
         Me.Label2.TabIndex = 41
@@ -699,7 +701,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label14.AutoSize = True
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(24, 281)
+        Me.Label14.Location = New System.Drawing.Point(24, 284)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(290, 17)
         Me.Label14.TabIndex = 37
@@ -739,7 +741,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label9.AutoSize = True
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(473, 90)
+        Me.Label9.Location = New System.Drawing.Point(473, 86)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(127, 17)
         Me.Label9.TabIndex = 28
@@ -749,7 +751,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(21, 90)
+        Me.Label8.Location = New System.Drawing.Point(21, 86)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(127, 17)
         Me.Label8.TabIndex = 26
@@ -759,7 +761,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(307, 505)
+        Me.Label7.Location = New System.Drawing.Point(307, 522)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(95, 17)
         Me.Label7.TabIndex = 24
@@ -769,7 +771,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(155, 505)
+        Me.Label6.Location = New System.Drawing.Point(155, 522)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(74, 17)
         Me.Label6.TabIndex = 22
@@ -779,7 +781,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(25, 505)
+        Me.Label5.Location = New System.Drawing.Point(25, 522)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(79, 17)
         Me.Label5.TabIndex = 20
@@ -798,7 +800,7 @@ Partial Class FrmCMatrimonio
         Me.BtnGuardar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
         Me.BtnGuardar.HoverState.Parent = Me.BtnGuardar
-        Me.BtnGuardar.Location = New System.Drawing.Point(621, 529)
+        Me.BtnGuardar.Location = New System.Drawing.Point(647, 546)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.ShadowDecoration.Parent = Me.BtnGuardar
         Me.BtnGuardar.Size = New System.Drawing.Size(282, 45)
@@ -817,7 +819,7 @@ Partial Class FrmCMatrimonio
         Me.BtnActualizar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnActualizar.ForeColor = System.Drawing.Color.White
         Me.BtnActualizar.HoverState.Parent = Me.BtnActualizar
-        Me.BtnActualizar.Location = New System.Drawing.Point(621, 529)
+        Me.BtnActualizar.Location = New System.Drawing.Point(647, 546)
         Me.BtnActualizar.Name = "BtnActualizar"
         Me.BtnActualizar.ShadowDecoration.Parent = Me.BtnActualizar
         Me.BtnActualizar.Size = New System.Drawing.Size(282, 45)
@@ -836,7 +838,7 @@ Partial Class FrmCMatrimonio
         Me.BtnCancelar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BtnCancelar.ForeColor = System.Drawing.Color.White
         Me.BtnCancelar.HoverState.Parent = Me.BtnCancelar
-        Me.BtnCancelar.Location = New System.Drawing.Point(476, 529)
+        Me.BtnCancelar.Location = New System.Drawing.Point(476, 546)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.ShadowDecoration.Parent = Me.BtnCancelar
         Me.BtnCancelar.Size = New System.Drawing.Size(124, 45)
