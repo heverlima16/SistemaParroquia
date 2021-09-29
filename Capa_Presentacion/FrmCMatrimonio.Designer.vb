@@ -378,7 +378,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label20.AutoSize = True
         Me.Label20.ForeColor = System.Drawing.Color.White
-        Me.Label20.Location = New System.Drawing.Point(656, 158)
+        Me.Label20.Location = New System.Drawing.Point(656, 150)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(158, 17)
         Me.Label20.TabIndex = 83
@@ -388,7 +388,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label19.AutoSize = True
         Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(193, 158)
+        Me.Label19.Location = New System.Drawing.Point(193, 150)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(158, 17)
         Me.Label19.TabIndex = 82
@@ -457,10 +457,10 @@ Partial Class FrmCMatrimonio
         '
         'TxtMa_LMatrimonio
         '
-        Me.TxtMa_LMatrimonio.Location = New System.Drawing.Point(180, 387)
+        Me.TxtMa_LMatrimonio.Location = New System.Drawing.Point(251, 387)
         Me.TxtMa_LMatrimonio.Multiline = True
         Me.TxtMa_LMatrimonio.Name = "TxtMa_LMatrimonio"
-        Me.TxtMa_LMatrimonio.Size = New System.Drawing.Size(271, 26)
+        Me.TxtMa_LMatrimonio.Size = New System.Drawing.Size(200, 26)
         Me.TxtMa_LMatrimonio.TabIndex = 75
         '
         'TxtMa_NPadrino
@@ -473,7 +473,7 @@ Partial Class FrmCMatrimonio
         '
         'TxtMa_NMadreEsposa
         '
-        Me.TxtMa_NMadreEsposa.Location = New System.Drawing.Point(476, 301)
+        Me.TxtMa_NMadreEsposa.Location = New System.Drawing.Point(476, 304)
         Me.TxtMa_NMadreEsposa.Multiline = True
         Me.TxtMa_NMadreEsposa.Name = "TxtMa_NMadreEsposa"
         Me.TxtMa_NMadreEsposa.Size = New System.Drawing.Size(427, 26)
@@ -481,7 +481,7 @@ Partial Class FrmCMatrimonio
         '
         'TxtMa_NMadreEsposo
         '
-        Me.TxtMa_NMadreEsposo.Location = New System.Drawing.Point(24, 301)
+        Me.TxtMa_NMadreEsposo.Location = New System.Drawing.Point(24, 304)
         Me.TxtMa_NMadreEsposo.Multiline = True
         Me.TxtMa_NMadreEsposo.Name = "TxtMa_NMadreEsposo"
         Me.TxtMa_NMadreEsposo.Size = New System.Drawing.Size(427, 26)
@@ -489,7 +489,7 @@ Partial Class FrmCMatrimonio
         '
         'TxtMa_NPadreEsposa
         '
-        Me.TxtMa_NPadreEsposa.Location = New System.Drawing.Point(476, 247)
+        Me.TxtMa_NPadreEsposa.Location = New System.Drawing.Point(476, 250)
         Me.TxtMa_NPadreEsposa.Multiline = True
         Me.TxtMa_NPadreEsposa.Name = "TxtMa_NPadreEsposa"
         Me.TxtMa_NPadreEsposa.Size = New System.Drawing.Size(427, 26)
@@ -497,7 +497,7 @@ Partial Class FrmCMatrimonio
         '
         'TxtMa_NPadreEsposo
         '
-        Me.TxtMa_NPadreEsposo.Location = New System.Drawing.Point(24, 247)
+        Me.TxtMa_NPadreEsposo.Location = New System.Drawing.Point(24, 250)
         Me.TxtMa_NPadreEsposo.Multiline = True
         Me.TxtMa_NPadreEsposo.Name = "TxtMa_NPadreEsposo"
         Me.TxtMa_NPadreEsposo.Size = New System.Drawing.Size(427, 26)
@@ -553,7 +553,7 @@ Partial Class FrmCMatrimonio
         '
         'TxtMa_NEsposa
         '
-        Me.TxtMa_NEsposa.Location = New System.Drawing.Point(476, 125)
+        Me.TxtMa_NEsposa.Location = New System.Drawing.Point(476, 117)
         Me.TxtMa_NEsposa.Multiline = True
         Me.TxtMa_NEsposa.Name = "TxtMa_NEsposa"
         Me.TxtMa_NEsposa.Size = New System.Drawing.Size(427, 26)
@@ -561,7 +561,7 @@ Partial Class FrmCMatrimonio
         '
         'TxtMa_NEsposo
         '
-        Me.TxtMa_NEsposo.Location = New System.Drawing.Point(24, 125)
+        Me.TxtMa_NEsposo.Location = New System.Drawing.Point(24, 117)
         Me.TxtMa_NEsposo.Multiline = True
         Me.TxtMa_NEsposo.Name = "TxtMa_NEsposo"
         Me.TxtMa_NEsposo.Size = New System.Drawing.Size(427, 26)
@@ -629,7 +629,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label17.AutoSize = True
         Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(24, 158)
+        Me.Label17.Location = New System.Drawing.Point(24, 150)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(160, 17)
         Me.Label17.TabIndex = 58
@@ -639,7 +639,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label16.AutoSize = True
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(473, 158)
+        Me.Label16.Location = New System.Drawing.Point(473, 150)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(160, 17)
         Me.Label16.TabIndex = 57
@@ -739,7 +739,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label9.AutoSize = True
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(473, 96)
+        Me.Label9.Location = New System.Drawing.Point(473, 90)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(127, 17)
         Me.Label9.TabIndex = 28
@@ -749,7 +749,7 @@ Partial Class FrmCMatrimonio
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(21, 96)
+        Me.Label8.Location = New System.Drawing.Point(21, 90)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(127, 17)
         Me.Label8.TabIndex = 26
