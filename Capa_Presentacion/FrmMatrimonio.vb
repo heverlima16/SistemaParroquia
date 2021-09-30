@@ -40,7 +40,7 @@ Public Class FrmMatrimonio
     End Sub
 
 
-    Dim connection As New SqlConnection("Server=PC-HEVER; Database = DB_Parroquia; Integrated Security = true")
+    Dim connection As New SqlConnection("Server=LAPTOP-7HVTS7G6; Database = DB_Parroquia; Integrated Security = true")
     'declare my varible ::::::::::::: gaa
     Dim index As Integer
     '::::::::::::::::::::::::::folder location::::::::::::::::::::
