@@ -121,7 +121,7 @@ WHERE pma.Ma_NEsposo like  '%" & valueToSearch & "%'   or pma.Ma_NEsposa like  '
 
 
             'right
-            pNumberBook.SetMargins(0, 35, 0, 0)
+            pNumberBook.SetMargins(1, 35, 0, 0)
             pNumberBook.Add(New Text(bNumber))
             pNumberBook.Add(New Text("                  " + foja + "                          "))
             pNumberBook.Add(New Text(numberBook))
@@ -134,11 +134,11 @@ WHERE pma.Ma_NEsposo like  '%" & valueToSearch & "%'   or pma.Ma_NEsposa like  '
             Dim pLastName = New Paragraph().SetTextAlignment(TextAlignment.CENTER)
             'lugar nacimiento+n fecha
             Dim lugar = dni.Cells(2).Value.ToString()
-            pLastName.Add(New Text(lastname))
+            pLastName.Add(New Text(vbCr + lastname))
             pLastName.Add(New Text("                                             " + lugar))
 
-            'left
-            pLastName.SetMargins(20, 0, 0, 80)
+            'left 36
+            pLastName.SetMargins(0, 0, 0, 80)
             document.Add(pLastName)
 
             '::::::::::::::Esposo fecha y padre name
@@ -260,7 +260,7 @@ WHERE pma.Ma_NEsposo like  '%" & valueToSearch & "%'   or pma.Ma_NEsposa like  '
 
             '::::::::::::::Date Document
             Dim pdate2 = New Paragraph().SetTextAlignment(TextAlignment.LEFT)
-            pdate2.SetMargins(0, 0, 0, 70)
+            pdate2.SetMargins(0, 0, 0, 73)
             pdate2.Add(New Text(vbCr + vbCr + vbCr + vbCr + Bday))
             pdate2.Add(New Text("                " + Bmonth + "               "))
             pdate2.Add(New Text(Byear))
@@ -326,5 +326,7 @@ WHERE pma.Ma_NEsposo like  '%" & valueToSearch & "%'   or pma.Ma_NEsposa like  '
 
     End Sub
 
+    Private Sub FrmMatrimonio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
 End Class
