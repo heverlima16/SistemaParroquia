@@ -414,4 +414,48 @@ Public Class FrmCMatrimonio
             e.KeyChar = ""
         End If
     End Sub
+
+    Private Sub TxtMa_NEsposo_MouseDown(sender As Object, e As MouseEventArgs) Handles TxtMa_NEsposo.MouseDown
+        If e.Button = Windows.Forms.MouseButtons.Right Then
+            MIMENU()
+        End If
+    End Sub
+
+    Private Sub MIMENU()
+
+        Dim MENU As New ContextMenu
+
+        Dim COPIAR As New MenuItem("COPIAR")
+        AddHandler COPIAR.Click, AddressOf COPIAR_Click
+
+        Dim PEGAR As New MenuItem("PEGAR")
+        AddHandler PEGAR.Click, AddressOf PEGAR_Click
+
+        Dim CORTAR As New MenuItem("CORTAR")
+        AddHandler CORTAR.Click, AddressOf CORTAR_Click
+
+        MENU.MenuItems.Add(COPIAR)
+        MENU.MenuItems.Add(PEGAR)
+        MENU.MenuItems.Add(CORTAR)
+
+        TxtMa_NEsposo.ContextMenu = MENU
+
+
+    End Sub
+
+    Private Sub COPIAR_Click()
+        TxtMa_NEsposo.Copy()
+
+    End Sub
+
+    Private Sub PEGAR_Click()
+        TxtMa_NEsposo.Paste()
+
+    End Sub
+
+    Private Sub CORTAR_Click()
+        TxtMa_NEsposo.Cut()
+
+    End Sub
+
 End Class

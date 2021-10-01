@@ -162,4 +162,46 @@
             e.KeyChar = ""
         End If
     End Sub
+
+    Private Sub TxtParroquia_MouseDown(sender As Object, e As MouseEventArgs) Handles TxtParroquia.MouseDown
+        If e.Button = Windows.Forms.MouseButtons.Right Then
+            MIMENU()
+        End If
+    End Sub
+    Private Sub MIMENU()
+
+        Dim MENU As New ContextMenu
+
+        Dim COPIAR As New MenuItem("COPIAR")
+        AddHandler COPIAR.Click, AddressOf COPIAR_Click
+
+        Dim PEGAR As New MenuItem("PEGAR")
+        AddHandler PEGAR.Click, AddressOf PEGAR_Click
+
+        Dim CORTAR As New MenuItem("CORTAR")
+        AddHandler CORTAR.Click, AddressOf CORTAR_Click
+
+        MENU.MenuItems.Add(COPIAR)
+        MENU.MenuItems.Add(PEGAR)
+        MENU.MenuItems.Add(CORTAR)
+
+        TxtParroquia.ContextMenu = MENU
+
+
+    End Sub
+
+    Private Sub COPIAR_Click()
+        TxtParroquia.Copy()
+
+    End Sub
+
+    Private Sub PEGAR_Click()
+        TxtParroquia.Paste()
+
+    End Sub
+
+    Private Sub CORTAR_Click()
+        TxtParroquia.Cut()
+
+    End Sub
 End Class
