@@ -381,7 +381,7 @@ Partial Class FrmCBautismo
         '
         'TxtBa_Apellido
         '
-        Me.TxtBa_Apellido.Location = New System.Drawing.Point(14, 214)
+        Me.TxtBa_Apellido.Location = New System.Drawing.Point(11, 217)
         Me.TxtBa_Apellido.Multiline = True
         Me.TxtBa_Apellido.Name = "TxtBa_Apellido"
         Me.TxtBa_Apellido.Size = New System.Drawing.Size(427, 26)
@@ -391,7 +391,7 @@ Partial Class FrmCBautismo
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(669, 135)
+        Me.Label1.Location = New System.Drawing.Point(669, 121)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(158, 17)
         Me.Label1.TabIndex = 81
@@ -439,22 +439,22 @@ Partial Class FrmCBautismo
         Me.DateBa_FBautismo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.DateBa_FBautismo.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.DateBa_FBautismo.HoverState.Parent = Me.DateBa_FBautismo
-        Me.DateBa_FBautismo.Location = New System.Drawing.Point(620, 257)
+        Me.DateBa_FBautismo.Location = New System.Drawing.Point(652, 257)
         Me.DateBa_FBautismo.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.DateBa_FBautismo.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.DateBa_FBautismo.Name = "DateBa_FBautismo"
         Me.DateBa_FBautismo.ShadowDecoration.Parent = Me.DateBa_FBautismo
-        Me.DateBa_FBautismo.Size = New System.Drawing.Size(294, 36)
+        Me.DateBa_FBautismo.Size = New System.Drawing.Size(262, 36)
         Me.DateBa_FBautismo.TabIndex = 76
         Me.DateBa_FBautismo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.DateBa_FBautismo.Value = New Date(2021, 9, 8, 15, 36, 24, 541)
         '
         'TxtBa_LBautismo
         '
-        Me.TxtBa_LBautismo.Location = New System.Drawing.Point(620, 214)
+        Me.TxtBa_LBautismo.Location = New System.Drawing.Point(652, 214)
         Me.TxtBa_LBautismo.Multiline = True
         Me.TxtBa_LBautismo.Name = "TxtBa_LBautismo"
-        Me.TxtBa_LBautismo.Size = New System.Drawing.Size(294, 26)
+        Me.TxtBa_LBautismo.Size = New System.Drawing.Size(262, 26)
         Me.TxtBa_LBautismo.TabIndex = 75
         '
         'TxtBa_NPadrino
@@ -483,7 +483,7 @@ Partial Class FrmCBautismo
         '
         'TxtBa_LNacimiento
         '
-        Me.TxtBa_LNacimiento.Location = New System.Drawing.Point(677, 161)
+        Me.TxtBa_LNacimiento.Location = New System.Drawing.Point(677, 145)
         Me.TxtBa_LNacimiento.Multiline = True
         Me.TxtBa_LNacimiento.Name = "TxtBa_LNacimiento"
         Me.TxtBa_LNacimiento.Size = New System.Drawing.Size(237, 36)
@@ -495,7 +495,7 @@ Partial Class FrmCBautismo
         Me.DateBa_FNacimiento.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.DateBa_FNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateBa_FNacimiento.HoverState.Parent = Me.DateBa_FNacimiento
-        Me.DateBa_FNacimiento.Location = New System.Drawing.Point(464, 161)
+        Me.DateBa_FNacimiento.Location = New System.Drawing.Point(464, 145)
         Me.DateBa_FNacimiento.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.DateBa_FNacimiento.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.DateBa_FNacimiento.Name = "DateBa_FNacimiento"
@@ -507,7 +507,7 @@ Partial Class FrmCBautismo
         '
         'TxtBa_Nombre
         '
-        Me.TxtBa_Nombre.Location = New System.Drawing.Point(11, 157)
+        Me.TxtBa_Nombre.Location = New System.Drawing.Point(13, 145)
         Me.TxtBa_Nombre.Multiline = True
         Me.TxtBa_Nombre.Name = "TxtBa_Nombre"
         Me.TxtBa_Nombre.Size = New System.Drawing.Size(429, 26)
@@ -575,7 +575,7 @@ Partial Class FrmCBautismo
         '
         Me.Label17.AutoSize = True
         Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(463, 135)
+        Me.Label17.Location = New System.Drawing.Point(463, 117)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(160, 17)
         Me.Label17.TabIndex = 58
@@ -655,7 +655,7 @@ Partial Class FrmCBautismo
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(11, 131)
+        Me.Label8.Location = New System.Drawing.Point(11, 113)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(167, 17)
         Me.Label8.TabIndex = 26

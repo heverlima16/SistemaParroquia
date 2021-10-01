@@ -67,6 +67,7 @@ Partial Class FrmHome
         'MenuRegistro
         '
         Me.MenuRegistro.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OptionsToolStripMenuItem, Me.RegistrarNumeroLibroToolStripMenuItem, Me.RegistrarSacerdoteToolStripMenuItem})
+        Me.MenuRegistro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.MenuRegistro.Image = Global.Capa_Presentacion.My.Resources.Resources.editar
         Me.MenuRegistro.Name = "MenuRegistro"
         Me.MenuRegistro.Size = New System.Drawing.Size(118, 27)
@@ -96,6 +97,7 @@ Partial Class FrmHome
         'MenuUsuarios
         '
         Me.MenuUsuarios.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosParroquiaToolStripMenuItem})
+        Me.MenuUsuarios.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.MenuUsuarios.Image = Global.Capa_Presentacion.My.Resources.Resources.candado
         Me.MenuUsuarios.Name = "MenuUsuarios"
         Me.MenuUsuarios.Size = New System.Drawing.Size(113, 27)
@@ -132,8 +134,8 @@ Partial Class FrmHome
         '
         Me.ToolStripStatusLabel.ForeColor = System.Drawing.Color.Black
         Me.ToolStripStatusLabel.Name = "ToolStripStatusLabel"
-        Me.ToolStripStatusLabel.Size = New System.Drawing.Size(175, 20)
-        Me.ToolStripStatusLabel.Text = "Todos los derechos 2021."
+        Me.ToolStripStatusLabel.Size = New System.Drawing.Size(349, 20)
+        Me.ToolStripStatusLabel.Text = "Todos los derechos Parroquia San Pedro de Pampas"
         '
         'ToolStripStatusLabel1
         '

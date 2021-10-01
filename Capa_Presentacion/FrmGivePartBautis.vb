@@ -38,7 +38,7 @@ Public Class FrmGivePartBautis
     End Sub
 
 
-    Dim connection As New SqlConnection("Server=LAPTOP-7HVTS7G6; Database = DB_Parroquia; Integrated Security = true")
+    Dim connection As New SqlConnection("Server=PC-HEVER; Database = DB_Parroquia; Integrated Security = true")
     'declare my varible ::::::::::::: gaa
     Dim index As Integer
     '::::::::::::::::::::::::::folder location::::::::::::::::::::
@@ -263,15 +263,5 @@ on Parroquia.idparroquia = PBautismo.IdParroquiaBautizado  WHERE Ba_Nombre like 
         Process.Start("explorer.exe", location)
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
-    End Sub
-
-    Private Sub FrmGivePartBautis_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
-
-    End Sub
 End Class
