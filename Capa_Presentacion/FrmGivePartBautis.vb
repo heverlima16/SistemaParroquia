@@ -38,7 +38,7 @@ Public Class FrmGivePartBautis
     End Sub
 
 
-    Dim connection As New SqlConnection("Server=PC-HEVER; Database = DB_Parroquia; Integrated Security = true")
+    Dim connection As New SqlConnection("Server=DESKTOP-18RCR3S; Database = DB_Parroquia; Integrated Security = true")
     'declare my varible ::::::::::::: gaa
     Dim index As Integer
     '::::::::::::::::::::::::::folder location::::::::::::::::::::
