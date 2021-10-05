@@ -164,7 +164,7 @@ Partial Class FrmMatrimonio2
         Me.TxtDNI.Location = New System.Drawing.Point(50, 112)
         Me.TxtDNI.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtDNI.Name = "TxtDNI"
-        Me.TxtDNI.Size = New System.Drawing.Size(229, 20)
+        Me.TxtDNI.Size = New System.Drawing.Size(229, 22)
         Me.TxtDNI.TabIndex = 66
         '
         'Guna2Elipse1
